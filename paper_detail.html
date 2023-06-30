@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-padding-top: 70px;">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/expo/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/static/virtual/css/virtual.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</script>
+
+<script>
+    if (typeof jQuery === 'undefined') {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "/static/core/js/jquery-3.6.1.min.js";
+        document.head.appendChild(script);
+    }
+</script>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.3.1/typeahead.bundle.min.js" integrity="sha512-lEb9Vp/rkl9g2E/LdHIMFTqz21+LA79f84gqP75fbimHqVTu6483JG1AwJlWLLQ8ezTehty78fObKupq3HSHPQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="/static/core/js/ajax-csrf-snippet.js" type="text/javascript"></script>
+<script src="/static/virtual/js/virtual.js"></script>
+
+
+<link rel="stylesheet" href="/static/virtual/css/calendar.css">
+<link rel="stylesheet" href="/static/virtual/css/calendar-ICML.css">
+<link rel="stylesheet" href="/static/virtual/css/calendar-ICML2023.css">
+<script src='https://slideslive.com/embed_presentation.js'></script>
+
+</head>
+
+<body>
+    <!-- NAV -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+    style="background-image: url(/static/virtual/img/navbackground.png); background-repeat: repeat-x;" id="main-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="/static/core/img/ICML-logo.svg" height="40px">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li>
+                <a class="nav-link" href="/virtual/2023/index.html">Getting Started</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/virtual/2023/calendar">Schedule</a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="/virtual/2023/events/tutorial">Tutorials</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Main Conference
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <a class="dropdown-item"
+                href="/virtual/2023/events/invited%20talk">Invited Talks</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/virtual/2023/events/oral">Orals</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/virtual/2023/events/spotlight">Spotlights</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/virtual/2023/awards_detail">Awards</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/virtual/2023/test-of-time-award">Test of Time Award</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/virtual/2023/papers.html">Papers</a>
+
+            </div>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="/virtual/2023/events/workshop">Workshops</a>
+        </li>
+
+        <!--
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Community
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/virtual/2023/affinity_events">Affinity Events</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/virtual/2023/community?show=socials">Socials</a>
+            <div class="dropdown-divider"></div>
+        </div>
+    -->
+
+        <!--
+        <li class="nav-item ">
+            <a class="nav-link" href="/virtual/2023/sponsor_list">Sponsors</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="/virtual/2023/organizers">Organizers</a>
+        </li>
+    -->
+
+    <li class="nav-item ">
+        <a class="nav-link" href="/virtual/2023/search"><i class="fas fa-search"></i> &nbsp;</a>
+    </li>
+
+        <!--
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Help
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/virtual/2023/faq">FAQ</a>
+            <div class="dropdown-divider"></div>
+
+            <a class="dropdown-item" target="_blank"
+            href="https://wiki.eventhosts.cc/reference/physical-presenter-instructions">Presenters Instructions&nbsp;<small><i
+                class="fas fa-external-link-alt"></i></small></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" target="_blank"
+                href="https://wiki.eventhosts.cc/en/reference/moderator-instructions">Moderators Instructions&nbsp;<small><i
+                    class="fas fa-external-link-alt"></i></small></a>
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" target="_blank" href="https://chat.icml.cc/channel/HelpDesk">RocketChat
+                        Help &nbsp;<small><i class="fas fa-external-link-alt"></i></small></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://rocket.chat/install/">RocketChat Desktop
+                            Client &nbsp;<small><i class="fas fa-external-link-alt"></i></small></a>
+
+                        </div>
+                    </li>
+                -->
+
+
+                <!--
+                    <li class="nav-item dropdown">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-sm"> Paul</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+
+                            <a class="dropdown-item" href="/MyStuff">My Stuff</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Profile/change-password">Password</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/logout">Log Out</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"
+                            href="/set_timezone?nextp=/virtual/2022/spotlight/17114">TZ: America/Toronto</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/virtual/2023/mycalendar"><i
+                                class="far fa-bookmark"></i>&nbsp; My Bookmarks</a>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item" id="show_metadata_menu_button">
+
+                                    &#x2713;
+
+                                    &nbsp; Show Metadata
+                                </button>
+                                <script>
+                                  $(document).ready(function () {
+                                    $("#show_metadata_menu_button").click(function () {
+                                      $.ajax({
+                                        type: "POST",
+                                        url: "/toggle_show_metadata",
+                                        data: {
+                                          csrfmiddlewaretoken: csrftoken,
+                                      },
+                                  }).done(function (data) {
+        window.location.href = window.location.href;  // reload the page
+    }).fail(function (error) {
+        console.log(error)
+        alert("Error Toggling Show Metadata");
+    });
+})
+                                })
+                            </script>
+
+                        </div>
+                    </div>
+                </li>
+            -->
+
+
+
+
+        </ul>
+    </div>
+</div>
+</nav>
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+    <span class="bookmark-right far fa-bookmark fa-lg bump20" title="Add/Remove bookmark for this event" id="the-bookmark-1"></span>
+
+    <script>
+        add_bookmark_click(
+            17114,
+            1,
+            'the-bookmark-1',
+            'Add/Remove bookmark for this event',
+            'Add/Remove bookmark for this event'
+
+            )
+        </script>
+
+
+
+        <!-- Title -->
+        <div class="pp-card m-3" style="" id="bookmark-here">
+            <div class="card-header">
+                <h3 class="text-center">Spotlight</h3>
+
+                <h2 class="card-title main-title text-center" style="">
+                    Multi-Task Learning as a Bargaining Game
+                </h2>
+
+                <h3 class="card-subtitle mb-2 text-muted text-center">
+                    Aviv Navon &middot; Aviv Shamsian &middot; Idan Achituve &middot; Haggai Maron &middot; Kenji Kawaguchi &middot; Gal Chechik &middot; Ethan Fetaya
+                </h3>
+
+                <h5 class="text-center text-muted">Room 318 - 320</h5>
+
+                <div class="text-center p-3">
+
+                    <a class="card-link" data-toggle="collapse" role="button" href="#details">
+                        Abstract
+                    </a>
+
+
+                    <!-- [ Livestream: Visit <a href="/virtual/2022/session/20052">Transfer/Multitask/Meta Learning</a> ] -->
+
+                                <!--
+                                <div>Tue 19 Jul 10:30 a.m. &mdash; 10:35 a.m. EDT
+
+
+                                <span class="bookmark-word abc far bump20" title="Add/Remove bookmark for this event" id="bookmark-number-0">(Bookmark)</span>
+
+                                <script>
+                                    add_bookmark_click(
+                                        17114,
+                                         1,
+                                        'bookmark-number-0',
+                                        'Add/Remove bookmark for this event',
+                                        'Add/Remove bookmark for this event'
+
+                                            , 'the-bookmark-1'
+
+                                    )
+                                </script>
+                                </div>
+                            -->
+
+                            <div class="schedule-html-detail"></div>
+
+                            <div class="related-events">
+                                <!-- <a href="/virtual/2022/poster/17113">Poster</a> presentation: -->
+                                <a href="/virtual/2022/poster/17113">Multi-Task Learning as a Bargaining Game</a>
+                                <br>
+                            </div>
+
+                            <div>
+                                <span class="nowrap" style="white-space:nowrap">
+                                    <a href="/media/icml-2022/Slides/17114.pdf" class="btn btn-default btn-xs href_PDF" title="Slides">
+                                        <i class="fa fa-file-pdf-o"></i> Slides</a>
+                                </span>
+
+                                <span class="nowrap" style="white-space:nowrap">
+                                    <a href="https://proceedings.mlr.press/v162/navon22a.html" class="btn btn-default btn-xs href_PDF" title="Paper PDF">
+                                        <i class="fa fa-file-pdf-o"></i>Paper PDF
+                                    </a>
+                                </span>
+                            </div>
+
+                        <!--
+                        <div></div>
+                        <div></div>
+                    -->
+
+                </div>
+                <div class=" text-center text-muted text-monospace ">
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="details" class="pp-card m-3">
+            <div class="card-body">
+                <p class="card-text">
+                    <div id="abstractExample">
+                        <p>
+                            In Multi-task learning (MTL), a joint model is trained to simultaneously make predictions for several tasks. Joint training reduces computation costs and improves data efficiency; however, since the gradients of these different tasks may conflict, training a joint model for MTL often yields lower performance than its corresponding single-task counterparts. A common method for alleviating this issue is to combine per-task gradients into a joint update direction using a particular heuristic. In this paper, we propose viewing the gradients combination step as a bargaining game, where tasks negotiate to reach an agreement on a joint direction of parameter update. Under certain assumptions, the bargaining problem has a unique solution, known as the \emph{Nash Bargaining Solution}, which we propose to use as a principled approach to multi-task learning. We describe a new MTL optimization procedure, Nash-MTL, and derive theoretical guarantees for its convergence. Empirically, we show that Nash-MTL achieves state-of-the-art results on multiple MTL benchmarks in various domains.
+                        </p>
+                    </div>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SlidesLive -->
+
+    <div class="container" style="background-color:white; padding: 0px;">
+        <div class="row m-2">
+            <div class="col-md-12 col-xs-12 my-auto p-2">
+                <div id="presentation-embed-38983842" class="slp my-auto"></div>
+                <script>
+                    embed = new SlidesLiveEmbed('presentation-embed-38983842', {
+                        presentationId: '38983842',
+                autoPlay: false, // change to true to autoplay the embedded presentation
+                verticalEnabled: true,
+                allowHiddenControlsWhenPaused: true,
+                hideTitle: true
+            });
+        </script>
+    </div>
+</div>
+</div>
+
+
+    <!--
+    <div class="container">
+        <div class="m-3">
+            <div style="color:#ccc;text-align:center;"><span>Chat is not available.</span></div>
+        </div>
+    </div>
+-->
+
+<!-- Recs -->
+    <!--
+    <p></p>
+    <div class="container" style="padding-bottom: 30px; padding-top:30px">
+        <center>
+
+        </center>
+    </div>
+-->
+
+<script>
+    var show_abstract = false;
+</script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      "tex2jax": {
+        "inlineMath": [["$","$"], ["\\(","\\)"]],
+        "displayMath": [["\\[","\\]"]],
+        "processEscapes": true
+    }
+}
+);
+var jq2 = $;
+</script>
+
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+</body>
+</html>
