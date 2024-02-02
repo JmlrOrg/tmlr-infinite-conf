@@ -161,7 +161,99 @@
             <div class="col-sm-12">
                 <div style="max-width: 1500px; margin:auto; border">
                     <div class="grid-displaycards">
-                        <div class="displaycards touchup-date" id="event-JllRdycmLk">
+                        <div class="displaycards touchup-date" id="event-DPvwr4HJdt">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/DPvwr4HJdt.html">On the Choice of Learning Rate for Local SGD</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Lukas Balles &middot; Prabhu Teja S &middot; Cedric Archambeau</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-DPvwr4HJdt"></div>
+
+    <a href="paper_pages/DPvwr4HJdt.html">
+        <img src="http://img.youtube.com/vi/0D5B1ysq5Zg/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-DPvwr4HJdt" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-DPvwr4HJdt" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-DPvwr4HJdt">
+                Abstract <i id="caret-DPvwr4HJdt" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-DPvwr4HJdt">
+        <div class="abstract-display">
+            <p>Distributed data-parallel optimization accelerates the training of neural networks, but requires constant synchronization of gradients between the workers, which can become a bottleneck. One way to reduce communication overhead is to use Local SGD, where each
+worker asynchronously takes multiple local gradient steps, after which the model weights are averaged. In this work, we discuss the choice of learning rate for Local SGD, showing that it faces an intricate trade-off. Unlike in the synchronous case, its gradient estimate is
+biased, with the bias dependent on the learning rate itself. Thus using learning rate scaling techniques designed for faster convergence in the synchronous case with Local SGD results in a performance degradation as previously observed. To analyze the manifestation of this bias, we study convergence behaviour of Local SGD and synchronous data-parallel SGD when using their optimal learning rates. Our experiments show that the optimal learning rate for Local SGD differs substantially from that of SGD, and when using it the performance of Local SGD matches that of SGD. However, this performance comes at the cost of added training iterations, rendering Local SGD faster than SGD only when communication is much more time-consuming than computation. This suggests that Local SGD may be of limited practical utility.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-eN9CjU3h1b">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/eN9CjU3h1b.html">MMD-Regularized Unbalanced Optimal Transport</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Piyushi Manupriya &middot; SakethaNath Jagarlapudi &middot; Pratik Jawanpuria</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-eN9CjU3h1b"></div>
+
+    <a href="paper_pages/eN9CjU3h1b.html">
+        <img src="http://img.youtube.com/vi/FSJ4_GfLhHo/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-eN9CjU3h1b" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-eN9CjU3h1b" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-eN9CjU3h1b">
+                Abstract <i id="caret-eN9CjU3h1b" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-eN9CjU3h1b">
+        <div class="abstract-display">
+            <p>We study the unbalanced optimal transport (UOT) problem, where the marginal constraints are enforced using Maximum Mean Discrepancy (MMD) regularization. Our work is motivated by the observation that the literature on UOT is focused on regularization based on $\phi$-divergence (e.g., KL divergence). Despite the popularity of MMD, its role as a regularizer in the context of UOT seems less understood. We begin by deriving a specific dual of MMD-regularized UOT (MMD-UOT), which helps us prove several useful properties. One interesting outcome of this duality result is that MMD-UOT induces novel metrics, which not only lift the ground metric like the Wasserstein but are also sample-wise efficient to estimate like the MMD. Further, for real-world applications involving non-discrete measures, we present an estimator for the transport plan that is supported only on the given ($m$) samples. Under certain conditions, we prove that the estimation error with this finitely-supported transport plan is also $\mathcal{O}(1/\sqrt{m})$. As far as we know, such error bounds that are free from the curse of dimensionality are not known for $\phi$-divergence regularized UOT. Finally, we discuss how the proposed estimator can be computed efficiently using accelerated gradient descent. Our experiments show that MMD-UOT consistently outperforms popular baselines, including KL-regularized UOT and MMD, in diverse machine learning applications.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-n2YifD4Dxo">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/n2YifD4Dxo.html">Are you using test log-likelihood correctly?</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Sameer Deshpande &middot; Soumya Ghosh &middot; Tin D. Nguyen &middot; Tamara Broderick</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-n2YifD4Dxo"></div>
+
+    <a href="paper_pages/n2YifD4Dxo.html">
+        <img src="https://drive.google.com/thumbnail?id=10Hg_OBUU52ARiWjDJK7q6fYHU74my8vX" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-n2YifD4Dxo" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-n2YifD4Dxo" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-n2YifD4Dxo">
+                Abstract <i id="caret-n2YifD4Dxo" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-n2YifD4Dxo">
+        <div class="abstract-display">
+            <p>Test log-likelihood is commonly used to compare different models of the same data or different approximate inference algorithms for fitting the same probabilistic model. We present simple examples demonstrating how comparisons based on test log-likelihood can contradict comparisons according to other objectives. Specifically, our examples show that (i) approximate Bayesian inference algorithms that attain higher test log-likelihoods need not also yield more accurate posterior approximations and (ii) conclusions about forecast accuracy based on test log-likelihood comparisons may not agree with conclusions based on root mean squared error.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-JllRdycmLk">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/JllRdycmLk.html">The (Un)Scalability of Informed Heuristic Function Estimation in NP-Hard Search Problems</a>
     </div>
@@ -187,6 +279,42 @@
     <div class="collapse" id="collapse-event-abstract-JllRdycmLk">
         <div class="abstract-display">
             <p>The A* algorithm is commonly used to solve NP-hard combinatorial optimization problems. When provided with a completely informed heuristic function, A* can solve such problems in time complexity that is polynomial in the solution cost and branching factor. In light of this fact, we examine a line of recent publications that propose fitting deep neural networks to the completely informed heuristic function. We assert that these works suffer from inherent scalability limitations since --- under the assumption of NP $\not \subseteq$ P/poly --- such approaches result in either (a) network sizes that scale super-polynomially in the instance sizes or (b) the accuracy of the fitted deep neural networks scales inversely with the instance sizes. Complementing our theoretical claims, we provide experimental results for three representative NP-hard search problems. The results suggest that fitting deep neural networks to informed heuristic functions requires network sizes that grow quickly with the problem instance size. We conclude by suggesting that the research community should focus on scalable methods for integrating heuristic search with machine learning, as opposed to methods relying on informed heuristic estimation.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-YVPb6tyRJu">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/YVPb6tyRJu.html">FREED++: Improving RL Agents for Fragment-Based Molecule Generation by Thorough Reproduction</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Alexander Telepov &middot; Artem Tsypin &middot; Kuzma Khrabrov &middot; Sergey Yakukhnov &middot; Pavel Strashnov &middot; Petr Zhilyaev &middot; Egor Rumiantsev &middot; Daniel Ezhov &middot; Manvel Avetisian &middot; Olga Popova &middot; Artur Kadurin</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-YVPb6tyRJu"></div>
+
+    <a href="paper_pages/YVPb6tyRJu.html">
+        <img src="http://img.youtube.com/vi/BctJymnJfJg/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-YVPb6tyRJu" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-YVPb6tyRJu" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-YVPb6tyRJu">
+                Abstract <i id="caret-YVPb6tyRJu" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-YVPb6tyRJu">
+        <div class="abstract-display">
+            <p>A rational design of new therapeutic drugs aims to find a molecular structure with desired biological functionality, e.g., an ability to activate or suppress a specific protein via binding to it.
+Molecular docking is a common technique for evaluating protein-molecule interactions.
+Recently, Reinforcement Learning (RL) has emerged as a promising approach to generating molecules with the docking score (DS) as a reward.
+In this work, we reproduce, scrutinize and improve the recent RL model for molecule generation called FREED (Yang et al., 2021).
+Extensive evaluation of the proposed method reveals several limitations and challenges despite the outstanding results reported for three target proteins.
+Our contributions include fixing numerous implementation bugs and simplifying the model while increasing its quality, significantly extending experiments, and conducting an accurate comparison with current state-of-the-art methods for protein-conditioned molecule generation.
+We show that the resulting fixed model is capable of producing molecules with superior docking scores compared to alternative approaches.</p>
         </div>
     </div>
 </div>
@@ -251,6 +379,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-lTOku838Zv">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/lTOku838Zv.html">Neural Implicit Manifold Learning for Topology-Aware Density Estimation</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Brendan Leigh Ross &middot; Gabriel Loaiza-Ganem &middot; Anthony L. Caterini &middot; Jesse C. Cresswell</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-lTOku838Zv"></div>
+
+    <a href="paper_pages/lTOku838Zv.html">
+        <img src="http://img.youtube.com/vi/f1a_8LoyZxw/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-lTOku838Zv" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-lTOku838Zv" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-lTOku838Zv">
+                Abstract <i id="caret-lTOku838Zv" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-lTOku838Zv">
+        <div class="abstract-display">
+            <p>Natural data observed in $\mathbb{R}^n$ is often constrained to an $m$-dimensional manifold $\mathcal{M}$, where $m < n$. This work focuses on the task of building theoretically principled generative models for such data. Current generative models learn $\mathcal{M}$ by mapping an $m$-dimensional latent variable through a neural network $f_\theta: \mathbb{R}^m \to \mathbb{R}^n$. These procedures, which we call pushforward models, incur a straightforward limitation: manifolds cannot in general be represented with a single parameterization, meaning that attempts to do so will incur either computational instability or the inability to learn probability densities within the manifold. To remedy this problem, we propose to model $\mathcal{M}$ as a neural implicit manifold: the set of zeros of a neural network. We then learn the probability density within $\mathcal{M}$ with a constrained energy-based model, which employs a constrained variant of Langevin dynamics to train and sample from the learned manifold. In experiments on synthetic and natural data, we show that our model can learn manifold-supported distributions with complex topologies more accurately than pushforward models.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-igDOV2KBwM">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/igDOV2KBwM.html">On Perfect Clustering for Gaussian Processes</a>
@@ -307,6 +465,38 @@
     <div class="collapse" id="collapse-event-abstract-Q4aAITDgdP">
         <div class="abstract-display">
             <p>Replay methods are known to be successful at mitigating catastrophic forgetting in continual learning scenarios despite having limited access to historical data. However, storing historical data is cheap in many real-world settings, yet replaying all historical data is often prohibited due to processing time constraints. In such settings, we propose that continual learning systems should learn the time to learn and schedule which tasks to replay at different time steps. We first demonstrate the benefits of our proposal by using Monte Carlo tree search to find a proper replay schedule, and show that the found replay schedules can outperform fixed scheduling policies when combined with various replay methods in different continual learning settings. Additionally, we propose a framework for learning replay scheduling policies with reinforcement learning. We show that the learned policies can generalize better in new continual learning scenarios compared to equally replaying all seen tasks, without added computational cost. Our study reveals the importance of learning the time to learn in continual learning, which brings current research closer to real-world needs.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-RyZB4qXEgt">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/RyZB4qXEgt.html">Neural Circuit Diagrams: Robust Diagrams for the Communication, Implementation, and Analysis of Deep Learning Architectures</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Vincent Abbott</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-RyZB4qXEgt"></div>
+
+    <a href="paper_pages/RyZB4qXEgt.html">
+        <img src="http://img.youtube.com/vi/ghlIs8bVXU4/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-RyZB4qXEgt" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-RyZB4qXEgt" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-RyZB4qXEgt">
+                Abstract <i id="caret-RyZB4qXEgt" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-RyZB4qXEgt">
+        <div class="abstract-display">
+            <p>Diagrams matter. Unfortunately, the deep learning community has no standard method for diagramming architectures. The current combination of linear algebra notation and ad-hoc diagrams fails to offer the necessary precision to understand architectures in all their detail. However, this detail is critical for faithful implementation, mathematical analysis, further innovation, and ethical assurances. I present neural circuit diagrams, a graphical language tailored to the needs of communicating deep learning architectures. Neural circuit diagrams naturally keep track of the changing arrangement of data, precisely show how operations are broadcast over axes, and display the critical parallel behavior of linear operations. A lingering issue with existing diagramming methods is the inability to simultaneously express the detail of axes and the free arrangement of data, which neural circuit diagrams solve. Their compositional structure is analogous to code, creating a close correspondence between diagrams and implementation.
+
+In this work, I introduce neural circuit diagrams for an audience of machine learning researchers. After introducing neural circuit diagrams, I cover a host of architectures to show their utility and breed familiarity. This includes the transformer architecture, convolution (and its difficult-to-explain extensions), residual networks, the U-Net, and the vision transformer. I include a Jupyter notebook that provides evidence for the close correspondence between diagrams and code. Finally, I examine backpropagation using neural circuit diagrams. I show their utility in providing mathematical insight and analyzing algorithms' time and space complexities.</p>
         </div>
     </div>
 </div>
@@ -458,6 +648,36 @@ Subsequently, we provide the benchmark results of several reinforcement learning
     <div class="collapse" id="collapse-event-abstract-3taIQG4C7H">
         <div class="abstract-display">
             <p>In learning tasks with label noise, improving model robustness against overfitting is a pivotal challenge because the model eventually memorizes labels, including the noisy ones. Identifying the samples with noisy labels and preventing the model from learning them is a promising approach to address this challenge. When training with noisy labels, the per-class confidence scores of the model, represented by the class probabilities, can be reliable criteria for assessing whether the input label is the true label or the corrupted one. In this work, we exploit this observation and propose a novel discriminator metric called confidence error and a sieving strategy called CONFES to differentiate between the clean and noisy samples effectively. We provide theoretical guarantees on the probability of error for our proposed metric. Then, we experimentally illustrate the superior performance of our proposed approach compared to recent studies on various settings, such as synthetic and real-world label noise. Moreover, we show CONFES can be combined with other state-of-the-art approaches, such as Co-teaching and DivideMix to further improve model performance.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-4i1MXH8Sle">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/4i1MXH8Sle.html">CAREER: A Foundation Model for Labor Sequence Data</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Keyon Vafa &middot; Emil Palikot &middot; Tianyu Du &middot; Ayush Kanodia &middot; Susan Athey &middot; David Blei</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-4i1MXH8Sle"></div>
+
+    <a href="paper_pages/4i1MXH8Sle.html">
+        <img src="http://img.youtube.com/vi/BLgfbNeTLCI/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-4i1MXH8Sle" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-4i1MXH8Sle" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-4i1MXH8Sle">
+                Abstract <i id="caret-4i1MXH8Sle" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-4i1MXH8Sle">
+        <div class="abstract-display">
+            <p>Labor economists regularly analyze employment data by fitting predictive models to small, carefully constructed longitudinal survey datasets. Although machine learning methods offer promise for such problems, these survey datasets are too small to take advantage of them. In recent years large datasets of online resumes have also become available, providing data about the career trajectories of millions of individuals. However, standard econometric models cannot take advantage of their scale or incorporate them into the analysis of survey data. To this end we develop CAREER, a foundation model for job sequences. CAREER is first fit to large, passively-collected resume data and then fine-tuned to smaller, better-curated datasets for economic inferences. We fit CAREER to a dataset of 24 million job sequences from resumes, and adjust it on small longitudinal survey datasets. We find that CAREER forms accurate predictions of job sequences, outperforming econometric baselines on three widely-used economics datasets. We further find that CAREER can be used to form good predictions of other downstream variables. For example, incorporating CAREER into a wage model provides better predictions than the econometric models currently in use.</p>
         </div>
     </div>
 </div>
