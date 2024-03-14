@@ -191,6 +191,66 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-YCgX7sJRF1">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/YCgX7sJRF1.html">Adapting Contrastive Language-Image Pretrained (CLIP) Models for Out-of-Distribution Detection</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Nikolas Adaloglou &middot; Felix Michels &middot; Tim Kaiser &middot; Markus Kollmann</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-YCgX7sJRF1"></div>
+
+    <a href="paper_pages/YCgX7sJRF1.html">
+        <img src="http://img.youtube.com/vi/eVUKVfxpx8A/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-YCgX7sJRF1" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-YCgX7sJRF1" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-YCgX7sJRF1">
+                Abstract <i id="caret-YCgX7sJRF1" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-YCgX7sJRF1">
+        <div class="abstract-display">
+            <p>We present a comprehensive experimental study on pre-trained feature extractors for visual out-of-distribution (OOD) detection, focusing on leveraging contrastive language-image pre-trained (CLIP) models. Without fine-tuning on the training data, we are able to establish a positive correlation ($R^2\geq0.92$) between in-distribution classification and unsupervised OOD detection for CLIP models in $4$ benchmarks. We further propose a new simple and scalable method called \textit{pseudo-label probing} (PLP) that adapts vision-language models for OOD detection. Given a set of label names of the training set, PLP trains a linear layer using the pseudo-labels derived from the text encoder of CLIP. Intriguingly, we show that without modifying the weights of CLIP or training additional image/text encoders (i) PLP outperforms the previous state-of-the-art on all $5$ large-scale benchmarks based on ImageNet, specifically by an average AUROC gain of 3.4\% using the largest CLIP model (ViT-G), (ii) linear probing outperforms fine-tuning by large margins for CLIP architectures (i.e. CLIP ViT-H achieves a mean gain of 7.3\% AUROC on average on all ImageNet-based benchmarks), and (iii) billion-parameter CLIP models still fail at detecting feature-based adversarially manipulated OOD images. The code is available at https://github.com/HHU-MMBS/plp-official-tmlr2024.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-hFALpTb4fR">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/hFALpTb4fR.html">LLM-grounded Diffusion: Enhancing Prompt Understanding of Text-to-Image Diffusion Models with Large Language Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Long Lian &middot; Boyi Li &middot; Adam Yala &middot; Trevor Darrell</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-hFALpTb4fR"></div>
+
+    <a href="paper_pages/hFALpTb4fR.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-hFALpTb4fR" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-hFALpTb4fR" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-hFALpTb4fR">
+                Abstract <i id="caret-hFALpTb4fR" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-hFALpTb4fR">
+        <div class="abstract-display">
+            <p>Recent advancements in text-to-image diffusion models have yielded impressive results in generating realistic and diverse images. However, these models still struggle with complex prompts, such as those that involve numeracy and spatial reasoning. This work proposes to enhance prompt understanding capabilities in diffusion models. Our method leverages a pretrained large language model (LLM) for grounded generation in a novel two-stage process. In the first stage, the LLM generates a scene layout that comprises captioned bounding boxes from a given prompt describing the desired image. In the second stage, a novel controller guides an off-the-shelf diffusion model for layout-grounded image generation. Both stages utilize existing pretrained models without additional model parameter optimization. Our method significantly outperforms the base diffusion model and several strong baselines in accurately generating images according to prompts that require various capabilities, doubling the generation accuracy across four tasks on average. Furthermore, our method enables instruction-based multi-round scene specification and can handle prompts in languages not supported by the underlying diffusion model. We anticipate that our method will unleash users' creativity by accurately following more complex prompts. Our code, demo, and benchmark are available at: https://llm-grounded-diffusion.github.io</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-Jy2IgzjoFH">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/Jy2IgzjoFH.html">Hierarchical Neural Simulation-Based Inference Over Event Ensembles</a>
@@ -247,6 +307,36 @@
     <div class="collapse" id="collapse-event-abstract-Wqn8zirthg">
         <div class="abstract-display">
             <p>We propose a new object-centric video prediction algorithm based on the deep latent particle (DLP) representation of Daniel and Tamar (2022). In comparison to existing slot- or patch-based representations, DLPs model the scene using a set of keypoints with learned parameters for properties such as position and size, and are both efficient and interpretable. Our method, \textit{deep dynamic latent particles} (DDLP), yields state-of-the-art object-centric video prediction results on several challenging datasets. The interpretable nature of DDLP allows us to perform ``what-if'' generation -- predict the consequence of changing properties of objects in the initial frames, and DLP's compact structure enables efficient diffusion-based unconditional video generation. Videos, code and pre-trained models are available: https://taldatech.github.io/ddlp-web</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-7yswRA8zzw">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/7yswRA8zzw.html">Pull-back Geometry of Persistent Homology Encodings</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Shuang Liang &middot; Renata Turkes &middot; Jiayi Li &middot; Nina Otter &middot; Guido Montufar</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-7yswRA8zzw"></div>
+
+    <a href="paper_pages/7yswRA8zzw.html">
+        <img src="http://img.youtube.com/vi/q4DctLOZZTs/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-7yswRA8zzw" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-7yswRA8zzw" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-7yswRA8zzw">
+                Abstract <i id="caret-7yswRA8zzw" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-7yswRA8zzw">
+        <div class="abstract-display">
+            <p>Persistent homology (PH) is a method for generating topology-inspired representations of data. Empirical studies that investigate the properties of PH, such as its sensitivity to perturbations or ability to detect a feature of interest, commonly rely on training and testing an additional model on the basis of the PH representation. To gain more intrinsic insights about PH, independently of the choice of such a model, we propose a novel methodology based on the pull-back geometry that a PH encoding induces on the data manifold. The spectrum and eigenvectors of the induced metric help to identify the most and least significant information captured by PH. Furthermore, the pull-back norm of tangent vectors provides insights about the sensitivity of PH to a given perturbation, or its potential to detect a given feature of interest, and in turn its ability to solve a given classification or regression problem. Experimentally, the insights gained through our methodology align well with the existing knowledge about PH. Moreover, we show that the pull-back norm correlates with the performance on downstream tasks, and can therefore guide the choice of a suitable PH encoding.</p>
         </div>
     </div>
 </div>
@@ -337,6 +427,36 @@
     <div class="collapse" id="collapse-event-abstract-uxNfN2PU1W">
         <div class="abstract-display">
             <p>Scientific Machine Learning (SciML) is a burgeoning field that synergistically combines domain-aware and interpretable models with agnostic machine learning techniques. In this work, we introduce GOKU-UI, an evolution of the SciML generative model GOKU-nets. GOKU-UI not only broadens the original model's spectrum to incorporate other classes of differential equations, such as Stochastic Differential Equations (SDEs), but also integrates attention mechanisms and a novel multiple shooting training strategy in the latent space. These modifications have led to a significant increase in its performance in both reconstruction and forecast tasks, as demonstrated by our evaluation on simulated and empirical data. Specifically, GOKU-UI outperformed all baseline models on synthetic datasets even with a training set 16-fold smaller, underscoring its remarkable data efficiency. Furthermore, when applied to empirical human brain data, while incorporating stochastic Stuart-Landau oscillators into its dynamical core, our proposed enhancements markedly increased the model's effectiveness in capturing complex brain dynamics. GOKU-UI demonstrated a reconstruction error five times lower than other baselines, and the multiple shooting method reduced the GOKU-nets prediction error for future brain activity up to 15 seconds ahead. By training GOKU-UI on resting state fMRI data, we encoded whole-brain dynamics into a latent representation, learning a low-dimensional dynamical system model that could offer insights into brain functionality and open avenues for practical applications such as the classification of mental states or psychiatric conditions. Ultimately, our research provides further impetus for the field of Scientific Machine Learning, showcasing the potential for advancements when established scientific insights are interwoven with modern machine learning.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-Uv3XVAEgG6">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/Uv3XVAEgG6.html">Kernel Normalized Convolutional Networks</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Reza Nasirigerdeh &middot; Reihaneh Torkzadehmahani &middot; Daniel Rueckert &middot; Georgios Kaissis</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-Uv3XVAEgG6"></div>
+
+    <a href="paper_pages/Uv3XVAEgG6.html">
+        <img src="http://img.youtube.com/vi/V7fQTc6MNSE/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-Uv3XVAEgG6" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-Uv3XVAEgG6" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-Uv3XVAEgG6">
+                Abstract <i id="caret-Uv3XVAEgG6" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-Uv3XVAEgG6">
+        <div class="abstract-display">
+            <p>Existing convolutional neural network architectures frequently rely upon batch normalization (BatchNorm) to effectively train the model. BatchNorm, however, performs poorly with small batch sizes, and is inapplicable to differential privacy. To address these limitations, we propose the kernel normalization (KernelNorm) and kernel normalized convolutional layers, and incorporate them into kernel normalized convolutional networks (KNConvNets) as the main building blocks. We implement KNConvNets corresponding to the state-of-the-art ResNets while forgoing the BatchNorm layers. Through extensive experiments, we illustrate that KNConvNets achieve higher or competitive performance compared to the BatchNorm counterparts in image classification and semantic segmentation. They also significantly outperform their batch-independent competitors including those based on layer and group normalization in non-private and differentially private training. Given that, KernelNorm combines the batch-independence property of layer and group normalization with the performance advantage of BatchNorm.</p>
         </div>
     </div>
 </div>
