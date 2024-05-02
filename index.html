@@ -161,7 +161,67 @@
             <div class="col-sm-12">
                 <div style="max-width: 1500px; margin:auto; border">
                     <div class="grid-displaycards">
-                        <div class="displaycards touchup-date" id="event-zn3fB4VVF0">
+                        <div class="displaycards touchup-date" id="event-KleJZ9ZzYw">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/KleJZ9ZzYw.html">DP-ImgSyn: Dataset Alignment for Obfuscated, Differentially Private Image Synthesis</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Efstathia Soufleri &middot; Deepak Ravikumar &middot; Kaushik Roy</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-KleJZ9ZzYw"></div>
+
+    <a href="paper_pages/KleJZ9ZzYw.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-KleJZ9ZzYw" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-KleJZ9ZzYw" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-KleJZ9ZzYw">
+                Abstract <i id="caret-KleJZ9ZzYw" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-KleJZ9ZzYw">
+        <div class="abstract-display">
+            <p>The availability of abundant data has catalyzed the expansion of deep learning vision algorithms. However, certain vision datasets cannot be publicly released due to privacy reasons. Releasing synthetic images instead of private images is a common approach to overcome this issue. A popular method to generate synthetic images is using Generative Adversarial Networks (GANs) with Differential Privacy (DP) guarantees. However, GAN-generated synthetic images are visually similar to private images. This is a severe limitation, particularly when the private dataset depicts visually sensitive and disturbing content. To address this, we propose a non-generative framework, Differentially Private Image Synthesis (DP-ImgSyn), to generate and release synthetic images for image classification tasks. These synthetic images: (1) have DP guarantees, (2) retain the utility of the private images, i.e., a model trained using synthetic images results in similar accuracy as a model trained on private images, (3) the synthetic images are visually dissimilar to private images. DP-ImgSyn consists of the following steps: First, a teacher model is trained on the private images using a DP training algorithm. Second, public images are used as initialization for the synthetic images which are optimized to align them with the private images. The optimization uses the teacher network's batch normalization layer statistics (mean, standard deviation) to inject information about the private images into the synthetic images. Third, the synthetic images and their soft labels, obtained from the teacher model, are released and can be deployed for neural network training on image classification tasks. Our experiments on various image classification datasets show that when using similar DP training mechanisms, our framework performs better than generative techniques (up to $\approx$ 20% in terms of image classification accuracy).</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-iulMde3dP1">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/iulMde3dP1.html">What Has Been Overlooked in Contrastive Source-Free Domain Adaptation: Leveraging Source-Informed Latent Augmentation within Neighborhood Context</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Jing Wang &middot; Wonho Bae &middot; Jiahong Chen &middot; Kuangen Zhang &middot; Leonid Sigal &middot; Clarence W. de Silva</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-iulMde3dP1"></div>
+
+    <a href="paper_pages/iulMde3dP1.html">
+        <img src="http://img.youtube.com/vi/A0YLvomkOwU/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-iulMde3dP1" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-iulMde3dP1" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-iulMde3dP1">
+                Abstract <i id="caret-iulMde3dP1" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-iulMde3dP1">
+        <div class="abstract-display">
+            <p>Source-free domain adaptation (SFDA) involves adapting a model originally trained using a labeled dataset (source domain) to perform effectively on an unlabeled dataset (target domain) without relying on any source data during adaptation. This adaptation is especially crucial when significant disparities in data distributions exist between the two domains and when there are privacy concerns regarding the source model's training data. The absence of access to source data during adaptation makes it challenging to analytically estimate the domain gap. To tackle this issue, various techniques have been proposed, such as unsupervised clustering, contrastive learning, and continual learning. In this paper, we first conduct an extensive theoretical analysis of SFDA based on contrastive learning, primarily because it has demonstrated superior performance compared to other techniques. Motivated by the obtained insights, we then introduce a straightforward yet highly effective latent augmentation method tailored for contrastive SFDA. This augmentation method leverages the dispersion of latent features within the neighborhood of the query sample, guided by the source pre-trained model, to enhance the informativeness of positive keys. Our approach, based on a single InfoNCE-based contrastive loss, outperforms state-of-the-art SFDA methods on widely recognized benchmark datasets.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-zn3fB4VVF0">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/zn3fB4VVF0.html">Navigating Noise: A Study of How Noise Influences Generalisation and Calibration of Neural Networks</a>
     </div>
@@ -278,6 +338,49 @@
         <div class="abstract-display">
             <p>Training at the edge utilizes continuously evolving data generated at different locations. Privacy concerns prohibit the co-location of this spatially as well as temporally distributed data, deeming it crucial to design training algorithms that enable efficient continual learning
 over decentralized private data. Decentralized learning allows serverless training with spatially distributed data. A fundamental barrier in such setups is the high bandwidth cost of communicating model updates between agents. Moreover, existing works under this training paradigm are not inherently suitable for learning a temporal sequence of tasks while retaining the previously acquired knowledge. In this work, we propose CoDeC, a novel communication-efficient decentralized continual learning algorithm that addresses these challenges. We mitigate catastrophic forgetting while learning a distributed task sequence by incorporating orthogonal gradient projection within a gossip-based decentralized learning algorithm. Further, CoDeC includes a novel lossless communication compression scheme based on the gradient subspaces. We theoretically analyze the convergence rate for our algorithm and demonstrate through an extensive set of experiments that CoDeC successfully learns distributed continual tasks with minimal forgetting. The proposed compression scheme results in up to 4.8× reduction in communication costs without any loss in performance.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-mrJi5kdKA4">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/mrJi5kdKA4.html">DSI2I: Dense Style for Unpaired Exemplar-based Image-to- Image Translation</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Baran Ozaydin &middot; Tong Zhang &middot; Sabine Susstrunk &middot; Mathieu Salzmann</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-mrJi5kdKA4"></div>
+
+    <a href="paper_pages/mrJi5kdKA4.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-mrJi5kdKA4" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-mrJi5kdKA4" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-mrJi5kdKA4">
+                Abstract <i id="caret-mrJi5kdKA4" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-mrJi5kdKA4">
+        <div class="abstract-display">
+            <p>Unpaired exemplar-based image-to-image (UEI2I) translation aims to translate a source
+image to a target image domain with the style of a target image exemplar, without ground-
+truth input-translation pairs. Existing UEI2I methods represent style using one vector per
+image or rely on semantic supervision to define one style vector per object. Here, in contrast,
+we propose to represent style as a dense feature map, allowing for a finer-grained transfer
+to the source image without requiring any external semantic information. We then rely on
+perceptual and adversarial losses to disentangle our dense style and content representations.
+To stylize the source content with the exemplar style, we extract unsupervised cross-domain
+semantic correspondences and warp the exemplar style to the source content. We demon-
+strate the effectiveness of our method on four datasets using standard metrics together with
+a localized style metric we propose, which measures style similarity in a class-wise man-
+ner. Our results show that the translations produced by our approach are more diverse,
+preserve the source content better, and are closer to the exemplars when compared to the
+state-of-the-art methods.</p>
         </div>
     </div>
 </div>
@@ -462,6 +565,36 @@ over decentralized private data. Decentralized learning allows serverless traini
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-tP1PBrMUlX">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/tP1PBrMUlX.html">Synthesizing Libraries of Programs with Auxiliary Functions</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Habibur Rahman &middot; Thirupathi Reddy Emireddy &middot; Kenneth Tjhia &middot; Elham Parhizkar &middot; Levi Lelis</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-tP1PBrMUlX"></div>
+
+    <a href="paper_pages/tP1PBrMUlX.html">
+        <img src="http://img.youtube.com/vi/SJAAMtyqqnE/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-tP1PBrMUlX" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-tP1PBrMUlX" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-tP1PBrMUlX">
+                Abstract <i id="caret-tP1PBrMUlX" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-tP1PBrMUlX">
+        <div class="abstract-display">
+            <p>A common approach to program synthesis is to use a learned function to guide the search for a program that satisfies the user's intent. In this paper, we propose a method that offers search guidance, through a domain-dependent auxiliary function, that can be orthogonal to the guidance previous functions provide. Our method, which we call Auxiliary-Based Library Learning (Aulile), searches for a solution in the program space using a base algorithm. If this search does not produce a solution, Aulile enhances the language with a library of programs discovered in the search that optimizes for the auxiliary function. Then, it repeats the search with this library-augmented language. This process is repeated until a solution is found or the system reaches a timeout. We evaluate Aulile in string manipulation tasks. Aulile improved, in some cases by a large margin, the performance of several base algorithms that use different search and learning strategies: Bus, Bustle, Crossbeam, and Bee Search. Our results suggest that Aulile offers an effective method of injecting domain knowledge into existing systems through a library learning scheme that optimizes for an auxiliary function.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-7yswRA8zzw">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/7yswRA8zzw.html">Pull-back Geometry of Persistent Homology Encodings</a>
@@ -488,6 +621,36 @@ over decentralized private data. Decentralized learning allows serverless traini
     <div class="collapse" id="collapse-event-abstract-7yswRA8zzw">
         <div class="abstract-display">
             <p>Persistent homology (PH) is a method for generating topology-inspired representations of data. Empirical studies that investigate the properties of PH, such as its sensitivity to perturbations or ability to detect a feature of interest, commonly rely on training and testing an additional model on the basis of the PH representation. To gain more intrinsic insights about PH, independently of the choice of such a model, we propose a novel methodology based on the pull-back geometry that a PH encoding induces on the data manifold. The spectrum and eigenvectors of the induced metric help to identify the most and least significant information captured by PH. Furthermore, the pull-back norm of tangent vectors provides insights about the sensitivity of PH to a given perturbation, or its potential to detect a given feature of interest, and in turn its ability to solve a given classification or regression problem. Experimentally, the insights gained through our methodology align well with the existing knowledge about PH. Moreover, we show that the pull-back norm correlates with the performance on downstream tasks, and can therefore guide the choice of a suitable PH encoding.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-YY2iA0hfia">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/YY2iA0hfia.html">Does Representation Similarity Capture Function Similarity?</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Lucas Hayne &middot; Heejung Jung &middot; R. Carter</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-YY2iA0hfia"></div>
+
+    <a href="paper_pages/YY2iA0hfia.html">
+        <img src="http://img.youtube.com/vi/9m9f45_72B0/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-YY2iA0hfia" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-YY2iA0hfia" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-YY2iA0hfia">
+                Abstract <i id="caret-YY2iA0hfia" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-YY2iA0hfia">
+        <div class="abstract-display">
+            <p>Representation similarity metrics are widely used to compare learned representations in neural networks, as is evident in extensive literature investigating metrics that accurately capture information encoded in representations. However, aiming to capture all of the information available in representations may have little to do with what information is actually used by the downstream network. One solution is to experiment with interventions on network function. By ablating groups of units thought to carry information and observing whether those ablations affect network performance, we can focus on an outcome that mechanistically links representations to function. In this paper, we systematically test representation similarity metrics to evaluate their sensitivity to functional changes induced by ablation. We use network performance changes after ablation as a way to measure the influence of representation on function. These measures of function allow us to test how well similarity metrics capture changes in network performance versus changes to linear decodability. Network performance measures index the information used by the downstream network, while linear decoding methods index available information in the representation. We show that all of the tested metrics are more sensitive to decodable features than network performance. When comparing these metrics, Procrustes and CKA outperform regularized CCA-based methods on average. Although Procrustes and CKA outperform on average, these metrics have a diminished advantage when looking at network performance. We provide ablation tests of the utility of different representational similarity metrics. Our results suggest that interpretability methods will be more effective if they are based on representational similarity metrics that have been evaluated using ablation tests.</p>
         </div>
     </div>
 </div>
