@@ -521,36 +521,6 @@
     </div>
 </div>
 
-<div class="displaycards touchup-date" id="event-KleJZ9ZzYw">
-    <div style="width:80%;margin:auto;">
-        <a class="small-title" href="paper_pages/KleJZ9ZzYw.html">DP-ImgSyn: Dataset Alignment for Obfuscated, Differentially Private Image Synthesis</a>
-    </div>
-    <div class="type_display_name_minus_type"></div>
-    <div class="author-str">Efstathia Soufleri &middot; Deepak Ravikumar &middot; Kaushik Roy</div>
-    <div class="author-str higher"></div>
-    <div class="text-muted touchup-date-div" id="touchup-date-event-KleJZ9ZzYw"></div>
-
-    <a href="paper_pages/KleJZ9ZzYw.html">
-        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
-    </a>
-
-    <div class="abstract-section">
-        <div>
-            <a id="abstract-link-KleJZ9ZzYw" class="abstract-link" data-toggle="collapse"
-               href="#collapse-event-abstract-KleJZ9ZzYw" role="button"
-               aria-expanded="false" aria-controls="collapse-event-abstract-KleJZ9ZzYw">
-                Abstract <i id="caret-KleJZ9ZzYw" class="fas fa-caret-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="collapse" id="collapse-event-abstract-KleJZ9ZzYw">
-        <div class="abstract-display">
-            <p>The availability of abundant data has catalyzed the expansion of deep learning vision algorithms. However, certain vision datasets cannot be publicly released due to privacy reasons. Releasing synthetic images instead of private images is a common approach to overcome this issue. A popular method to generate synthetic images is using Generative Adversarial Networks (GANs) with Differential Privacy (DP) guarantees. However, GAN-generated synthetic images are visually similar to private images. This is a severe limitation, particularly when the private dataset depicts visually sensitive and disturbing content. To address this, we propose a non-generative framework, Differentially Private Image Synthesis (DP-ImgSyn), to generate and release synthetic images for image classification tasks. These synthetic images: (1) have DP guarantees, (2) retain the utility of the private images, i.e., a model trained using synthetic images results in similar accuracy as a model trained on private images, (3) the synthetic images are visually dissimilar to private images. DP-ImgSyn consists of the following steps: First, a teacher model is trained on the private images using a DP training algorithm. Second, public images are used as initialization for the synthetic images which are optimized to align them with the private images. The optimization uses the teacher network's batch normalization layer statistics (mean, standard deviation) to inject information about the private images into the synthetic images. Third, the synthetic images and their soft labels, obtained from the teacher model, are released and can be deployed for neural network training on image classification tasks. Our experiments on various image classification datasets show that when using similar DP training mechanisms, our framework performs better than generative techniques (up to $\approx$ 20% in terms of image classification accuracy).</p>
-        </div>
-    </div>
-</div>
-
 <div class="displaycards touchup-date" id="event-kfhoeZCeW7">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/kfhoeZCeW7.html">Fine-tuning can cripple your foundation model; preserving features may be the solution</a>
@@ -667,36 +637,6 @@
     <div class="collapse" id="collapse-event-abstract-VzKXbCzNoU">
         <div class="abstract-display">
             <p>Advancements in accelerated physics simulations have greatly reduced training times for reinforcement learning policies, yet the conventional step-by-step agent-simulator interaction undermines simulation accuracy. In the real-world, interactions are asynchronous, with sensing, acting and processing happening simultaneously. Failing to capture this widens the sim2real gap and results in suboptimal real-world performance. In this paper, we address the challenges of simulating realistic asynchronicity and delays within parallelized simulations, crucial to bridging the sim2real gap in complex cyber-physical systems. Our approach efficiently parallelizes cyber-physical system simulations on accelerator hardware, including physics, sensors, actuators, processing components and their asynchronous interactions. We extend existing accelerated physics simulations with latency simulation capabilities by constructing a `supergraph' that encodes all data dependencies across parallelized simulation steps, ensuring accurate simulation. By finding the smallest supergraph, we minimize redundant computation. We validate our approach on two real-world systems and perform an extensive ablation, demonstrating superior performance compared to baseline methods.</p>
-        </div>
-    </div>
-</div>
-
-<div class="displaycards touchup-date" id="event-T6RygOFZ6B">
-    <div style="width:80%;margin:auto;">
-        <a class="small-title" href="paper_pages/T6RygOFZ6B.html">A Study of the Effects of Transfer Learning on Adversarial Robustness</a>
-    </div>
-    <div class="type_display_name_minus_type"></div>
-    <div class="author-str">Pratik Vaishnavi &middot; Kevin Eykholt &middot; Amir Rahmati</div>
-    <div class="author-str higher"></div>
-    <div class="text-muted touchup-date-div" id="touchup-date-event-T6RygOFZ6B"></div>
-
-    <a href="paper_pages/T6RygOFZ6B.html">
-        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
-    </a>
-
-    <div class="abstract-section">
-        <div>
-            <a id="abstract-link-T6RygOFZ6B" class="abstract-link" data-toggle="collapse"
-               href="#collapse-event-abstract-T6RygOFZ6B" role="button"
-               aria-expanded="false" aria-controls="collapse-event-abstract-T6RygOFZ6B">
-                Abstract <i id="caret-T6RygOFZ6B" class="fas fa-caret-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="collapse" id="collapse-event-abstract-T6RygOFZ6B">
-        <div class="abstract-display">
-            <p>The security and robustness of AI systems are paramount in real-world applications. Previous research has focused on developing methods to train robust networks, assuming the availability of sufficient labeled training data. However, in deployment scenarios with limited training data, existing techniques for training robust networks become impractical. In such low-data scenarios, non-robust training methods often resort to transfer learning. This involves pre-training a network on a large, possibly labeled dataset and fine-tuning it for a new task with a limited set of training samples. The efficacy of transfer learning in enhancing adversarial robustness is not comprehensively explored. Specifically, it remains uncertain whether transfer learning can improve adversarial performance in low-data scenarios. Furthermore, the potential benefits of transfer learning for certified robustness are unexplored. In this paper, we conduct an extensive analysis of the impact of transfer learning on both empirical and certified adversarial robustness. Employing supervised and self-supervised pre-training methods and fine-tuning across 12 downstream tasks representing diverse data availability scenarios, we identify the conditions conducive to training adversarially robust models through transfer learning. Our study reveals that the effectiveness of transfer learning in improving adversarial robustness is attributed to an increase in standard accuracy and not the direct ``transfer'' of robustness from the source to the target task, contrary to previous beliefs. Our findings provide valuable insights for practitioners aiming to deploy robust ML models in their applications.</p>
         </div>
     </div>
 </div>
@@ -2006,36 +1946,6 @@ In this work, I introduce neural circuit diagrams for an audience of machine lea
     </div>
 </div>
 
-<div class="displaycards touchup-date" id="event-JwGKVpRfVD">
-    <div style="width:80%;margin:auto;">
-        <a class="small-title" href="paper_pages/JwGKVpRfVD.html">SkillS: Adaptive Skill Sequencing for Efficient Temporally-Extended Exploration</a>
-    </div>
-    <div class="type_display_name_minus_type"></div>
-    <div class="author-str">Giulia Vezzani &middot; Dhruva Tirumala &middot; Markus Wulfmeier &middot; Dushyant Rao &middot; Abbas Abdolmaleki &middot; Ben Moran &middot; Tuomas Haarnoja &middot; Jan Humplik &middot; Roland Hafner &middot; Michael Neunert &middot; Claudio Fantacci &middot; Tim Hertweck &middot; Thomas Lampe &middot; Fereshteh Sadeghi &middot; Nicolas Heess &middot; Martin Riedmiller</div>
-    <div class="author-str higher"></div>
-    <div class="text-muted touchup-date-div" id="touchup-date-event-JwGKVpRfVD"></div>
-
-    <a href="paper_pages/JwGKVpRfVD.html">
-        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
-    </a>
-
-    <div class="abstract-section">
-        <div>
-            <a id="abstract-link-JwGKVpRfVD" class="abstract-link" data-toggle="collapse"
-               href="#collapse-event-abstract-JwGKVpRfVD" role="button"
-               aria-expanded="false" aria-controls="collapse-event-abstract-JwGKVpRfVD">
-                Abstract <i id="caret-JwGKVpRfVD" class="fas fa-caret-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="collapse" id="collapse-event-abstract-JwGKVpRfVD">
-        <div class="abstract-display">
-            <p>The ability to effectively reuse prior knowledge is a key requirement when building general and flexible Reinforcement Learning (RL) agents. Skill reuse is one of the most common approaches, but current methods have considerable limitations. For example, fine-tuning an existing policy frequently fails, as the policy can degrade rapidly early in training. In a similar vein, distillation of expert behavior can lead to poor results when given sub-optimal experts. We compare several common approaches for skill transfer on multiple domains including changes in task and system dynamics. We identify how existing methods fail and introduce an alternative approach to mitigate these problems. Our approach learns to sequence temporally-extended skills for exploration but learns the final policy directly from the raw experience. This conceptual split enables rapid adaptation and thus efficient data collection but without constraining the final solution. It significantly outperforms many classical methods across a suite of evaluation tasks and we use a broad set of ablations to highlight the importance of different components of our method.</p>
-        </div>
-    </div>
-</div>
-
 <div class="displaycards touchup-date" id="event-leqr0vQzeN">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/leqr0vQzeN.html">A Robust Backpropagation-Free Framework for Images</a>
@@ -2429,36 +2339,6 @@ If our hypothesis holds true, then this would imply that LLMs are like parrots i
     <div class="collapse" id="collapse-event-abstract-m8U9rSs6gU">
         <div class="abstract-display">
             <p>Characters do not convey meaning, but sequences of characters do.  We propose an unsupervised distributional method to learn the abstract meaning-bearing units in a sequence of characters. Rather than segmenting the sequence, our Dynamic Capacity Slot Attention model discovers continuous representations of the objects in the sequence, extending an architecture for object discovery in images.  We train our model on different languages and evaluate the quality of the obtained representations with forward and reverse probing classifiers.  These experiments show that our model succeeds in discovering units which are similar to those proposed previously in form, content, and level of abstraction, and which show promise for capturing meaningful information at a higher level of abstraction.</p>
-        </div>
-    </div>
-</div>
-
-<div class="displaycards touchup-date" id="event-0XBuaxqEcG">
-    <div style="width:80%;margin:auto;">
-        <a class="small-title" href="paper_pages/0XBuaxqEcG.html">Execution-based Code Generation using Deep Reinforcement Learning</a>
-    </div>
-    <div class="type_display_name_minus_type"></div>
-    <div class="author-str">Parshin Shojaee &middot; Aneesh Jain &middot; Sindhu Tipirneni &middot; Chandan K. Reddy</div>
-    <div class="author-str higher"></div>
-    <div class="text-muted touchup-date-div" id="touchup-date-event-0XBuaxqEcG"></div>
-
-    <a href="paper_pages/0XBuaxqEcG.html">
-        <img src="http://img.youtube.com/vi/EuwuzyRDC30/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
-    </a>
-
-    <div class="abstract-section">
-        <div>
-            <a id="abstract-link-0XBuaxqEcG" class="abstract-link" data-toggle="collapse"
-               href="#collapse-event-abstract-0XBuaxqEcG" role="button"
-               aria-expanded="false" aria-controls="collapse-event-abstract-0XBuaxqEcG">
-                Abstract <i id="caret-0XBuaxqEcG" class="fas fa-caret-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="collapse" id="collapse-event-abstract-0XBuaxqEcG">
-        <div class="abstract-display">
-            <p>The utilization of programming language (PL) models, pre-trained on large-scale code corpora, as a means of automating software engineering processes has demonstrated considerable potential in streamlining various code generation tasks such as code completion, code translation, and program synthesis. However, current approaches mainly rely on supervised fine-tuning objectives borrowed from text generation, neglecting unique sequence-level characteristics of code, including but not limited to compilability as well as syntactic and functional correctness. To address this limitation, we propose PPOCoder, a new framework for code generation that synergistically combines pre-trained PL models with Proximal Policy Optimization (PPO) which is a widely used deep reinforcement learning technique. By utilizing non-differentiable feedback from code execution and structure alignment, PPOCoder seamlessly integrates external code-specific knowledge into the model optimization process. It's important to note that PPOCoder is a task-agnostic and model-agnostic framework that can be used across different code generation tasks and PLs. Extensive experiments on three code generation tasks demonstrate the effectiveness of our proposed approach compared to SOTA methods, achieving significant improvements in compilation success rates and functional correctness across different PLs.</p>
         </div>
     </div>
 </div>
