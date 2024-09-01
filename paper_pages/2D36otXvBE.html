@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-padding-top: 70px;">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/expo/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</script>
+
+<script>
+    if (typeof jQuery === 'undefined') {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "/static/core/js/jquery-3.6.1.min.js";
+        document.head.appendChild(script);
+    }
+</script>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.3.1/typeahead.bundle.min.js" integrity="sha512-lEb9Vp/rkl9g2E/LdHIMFTqz21+LA79f84gqP75fbimHqVTu6483JG1AwJlWLLQ8ezTehty78fObKupq3HSHPQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="/static/core/js/ajax-csrf-snippet.js" type="text/javascript"></script>
+<script src="/static/virtual/js/virtual.js"></script>
+
+
+<link rel="stylesheet" href="../virtual.css">
+<link rel="stylesheet" href="/static/virtual/css/calendar.css">
+<link rel="stylesheet" href="/static/virtual/css/calendar-ICML.css">
+<link rel="stylesheet" href="/static/virtual/css/calendar-ICML2023.css">
+<script src='https://slideslive.com/embed_presentation.js'></script>
+
+</head>
+
+<body>
+    <!-- NAV -->
+
+    <!--<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">-->
+    <nav class="navbar sticky-top navbar-expand-lg mr-auto navbar-light" id="main-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+        <img src="../tmlr_logo.jpeg" height="40px">
+            Transactions on Machine Learning Research
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+            <!--
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Main Conference
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/virtual/2023/events/oral">Orals</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/virtual/2023/events/spotlight">Spotlights</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/virtual/2023/papers.html">Papers</a>
+                </div>
+            </li>
+            -->
+
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href="../index_file.html">All Papers</a>
+            </li>
+            -->
+
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href="../">Papers with Videos</a>
+            </li>
+            -->
+
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href="../features_papers.html">Featured Papers</a>
+            </li>
+            -->
+
+    <!--
+    <li class="nav-item ">
+        <a class="nav-link" href="/virtual/2023/search"><i class="fas fa-search"></i> &nbsp;</a>
+    </li>
+    -->
+        </ul>
+    </div>
+</div>
+</nav>
+
+
+<div class="container">
+        <!-- Title -->
+        <div class="pp-card m-3" style="" id="bookmark-here">
+            <div class="card-header">
+                <!-- <h3 class="text-center">Spotlight</h3> -->
+
+                <h2 class="card-title main-title text-center" style="">
+                    Identifying and Clustering Counter Relationships of Team Compositions in PvP Games for Efficient Balance Analysis
+                </h2>
+
+                <h3 class="card-subtitle mb-2 text-muted text-center">
+                    Chiu-Chou Lin &middot; Yu-Wei Shih &middot; Kuei-Ting Kuo &middot; Yu-Cheng Chen &middot; Chien-Hua Chen &middot; Wei-Chen Chiu &middot; I-Chen Wu
+                </h3>
+
+                <div class="text-center p-3">
+
+                    <!--
+                    <a class="card-link" data-toggle="collapse" role="button" href="#details">
+                        Abstract
+                    </a>
+                    -->
+
+                    <div class="schedule-html-detail"></div>
+
+                    <div>
+                        <span class="nowrap" style="white-space:nowrap">
+                            <a href="https://openreview.net/forum?id=2D36otXvBE" class="btn btn-default" title="OpenReview">
+                                <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
+                        </span>
+
+                        <span class="nowrap" style="white-space:nowrap">
+                            <a href="https://openreview.net/pdf?id=2D36otXvBE" class="btn btn-default href_PDF" title="Paper PDF">
+                                <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
+                            </a>
+                        </span>
+
+                                <span class="nowrap" style="white-space:nowrap">
+            <a href="https://github.com/DSobscure/cgi_drl_platform/tree/game_balance_measures_tmlr" class="btn btn-default href_PDF" title="Code">
+                <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
+            </a>
+        </span>
+                    </div>
+                </div>
+                <div class=" text-center text-muted text-monospace ">
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- YouTube Embed -->
+                <div class="text-center">
+            <h4 class="text-center">Video</h4>
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/None" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="m-3 text-center">
+            <h4 class="text-center">Paper PDF</h4>
+            <a href="https://openreview.net/pdf?id=2D36otXvBE"><img src="../paper_thumbnails/2D36otXvBE.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+        </div>
+
+        <div id="details" class="pp-card m-3">
+            <div class="card-body">
+                <p class="card-text">
+                    <div id="abstractExample">
+                        <h4 class="text-center">Abstract</h4>
+                        <p>
+                            \textbf{How can balance be quantified in game settings?} This question is crucial for game designers, especially in player-versus-player (PvP) games, where analyzing the strength relations among predefined team compositions—such as hero combinations in multiplayer online battle arena (MOBA) games or decks in card games—is essential for enhancing gameplay and achieving balance. We have developed two advanced measures that extend beyond the simplistic win rate to quantify balance in zero-sum competitive scenarios. These measures are derived from win value estimations, which employ strength rating approximations via the Bradley-Terry model and counter relationship approximations via vector quantization, significantly reducing the computational complexity associated with traditional win value estimations. Throughout the learning process of these models, we identify useful categories of compositions and pinpoint their counter relationships, aligning with the experiences of human players without requiring specific game knowledge. Our methodology hinges on a simple technique to enhance codebook utilization in discrete representation with a deterministic vector quantization process for an extremely small state space. Our framework has been validated in popular online games, including \textit{Age of Empires II}, \textit{Hearthstone}, \textit{Brawl Stars}, and \textit{League of Legends}. The accuracy of the observed strength relations in these games is comparable to traditional pairwise win value predictions, while also offering a more manageable complexity for analysis. Ultimately, our findings contribute to a deeper understanding of PvP game dynamics and present a methodology that significantly improves game balance evaluation and design.
+                        </p>
+                    </div>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    var show_abstract = false;
+</script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      "tex2jax": {
+        "inlineMath": [["$","$"], ["\(","\)"]],
+        "displayMath": [["\[","\]"]],
+        "processEscapes": true
+    }
+}
+);
+var jq2 = $;
+</script>
+
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</body>
+</html>
