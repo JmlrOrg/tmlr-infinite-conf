@@ -441,6 +441,37 @@ et al (2016). This algorithm is also generalized to utilize vector valued RKHSs.
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-WzHuebRSgQ">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/WzHuebRSgQ.html">A Greedy Hierarchical Approach to Whole-Network Filter-Pruning in CNNs</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Kiran Purohit &middot; Anurag Reddy Parvathgari &middot; Sourangshu Bhattacharya</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-WzHuebRSgQ"></div>
+
+    <a href="paper_pages/WzHuebRSgQ.html">
+        <img src="http://img.youtube.com/vi/egk0ZJb89Ao/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-WzHuebRSgQ" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-WzHuebRSgQ" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-WzHuebRSgQ">
+                Abstract <i id="caret-WzHuebRSgQ" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-WzHuebRSgQ">
+        <div class="abstract-display">
+            <p>Deep convolutional neural networks (CNNs) have achieved impressive performance in many computer vision tasks. However, their large model sizes require heavy computational resources, making pruning redundant filters from existing pre-trained CNNs an essential task in developing efficient models for resource-constrained devices. Whole-network filter pruning algorithms prune varying fractions of filters from each layer, hence providing greater flexibility. State-of-the-art whole-network pruning methods are either computationally expensive due to the need to calculate the loss for each pruned filter using a training dataset, or use various heuristic / learned criteria for determining the pruning fractions for each layer. Hence there is a need for a simple and efficient technique for whole network pruning. This paper proposes
+a two-level hierarchical approach for whole-network filter pruning which is efficient and uses the classification loss as the final criterion. The lower-level algorithm (called filter-pruning) uses a sparse-approximation formulation based on linear approximation of filter weights. We explore two algorithms: orthogonal matching pursuit-based greedy selection and a greedy backward pruning approach. The backward pruning algorithm uses a novel closed-form error criterion for efficiently selecting the optimal filter at each stage, thus making the whole algorithm much faster. The higher-level algorithm (called layer-selection) greedily selects the best-pruned layer (pruning using the filter-selection algorithm) using a global pruning criterion. We propose algorithms for two different global-pruning criteria: (1) layerwise-relative error (HBGS), and (2) final classification error (HBGTS). Our suite of algorithms outperforms state-of-the-art pruning methods on ResNet18, ResNet32, ResNet56, VGG16, and ResNext101. Our method reduces the RAM requirement for ResNext101 from 7.6 GB to 1.5 GB and achieves a 94% reduction in FLOPS without losing accuracy on CIFAR-10.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-PLIt3a4yTm">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/PLIt3a4yTm.html">Training-free linear image inverses via flows</a>
