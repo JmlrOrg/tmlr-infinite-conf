@@ -281,6 +281,38 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-aWRMvXTvPf">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/aWRMvXTvPf.html">Shapley Values of Structured Additive Regression Models and Application to RKHS Weightings of Functions</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Gabriel Dubé &middot; Mario Marchand</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-aWRMvXTvPf"></div>
+
+    <a href="paper_pages/aWRMvXTvPf.html">
+        <img src="http://img.youtube.com/vi/hQM7fJ_aBrQ/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-aWRMvXTvPf" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-aWRMvXTvPf" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-aWRMvXTvPf">
+                Abstract <i id="caret-aWRMvXTvPf" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-aWRMvXTvPf">
+        <div class="abstract-display">
+            <p>Shapley values are widely used in machine learning to interpret model predictions. However, they have an important drawback in their computational time, which is exponential in the number of variables in the data. Recent work has yielded algorithms that can efficiently and exactly calculate the Shapley values of specific model families, such as Decision Trees and Generalized Additive Models (GAMs). Unfortunately, these model families are fairly restricted.
+Consequently, we present STAR-SHAP, an algorithm for efficiently calculating the Shapley values of Structured Additive Regression (STAR) models, a generalization of GAMs which allow any number of variable interactions. While the computational cost of STAR-SHAP scales exponentially in the size of these interactions, it is independent of the total number of variables. This allows the interpretation of more complex and flexible models. As long as the variable interactions are moderately-sized, the computation of the Shapley values will be fast, even on high-dimensional datasets.
+Since STAR models with more than pairwise interactions (e.g. GA2Ms) are seldom used in practice, we also present a new class of STAR models built on the RKHS Weightings of Functions paradigm. More precisely, we introduce a new RKHS Weighting instantiation, and show how to transform it and other RKHS Weightings into STAR models. We therefore introduce a new family of STAR models, as well as the means to interpret their outputs in a timely manner.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-MHJlFCqXdA">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/MHJlFCqXdA.html">Is Value Functions Estimation with Classification Plug-and- play for Offline Reinforcement Learning?</a>
@@ -680,6 +712,36 @@ a result of interest by its own.</p>
     <div class="collapse" id="collapse-event-abstract-lh6vOAHuvo">
         <div class="abstract-display">
             <p>In this paper we investigate transformer architectures designed for partially observable online reinforcement learning. The self-attention mechanism in the transformer architecture is capable of capturing long-range dependencies and it is the main reason behind its effectiveness in processing sequential data. Nevertheless, despite their success, transformers have two significant drawbacks that still limit their applicability in online reinforcement learning: (1) in order to remember all past information, the self-attention mechanism requires access to the whole history to be provided as context. (2) The inference cost in transformers is expensive. In this paper, we introduce recurrent alternatives to the transformer self-attention mechanism that offer context-independent inference cost, leverage long-range dependencies effectively, and performs well in online reinforcement learning task. We quantify the impact of the different components of our architecture in a diagnostic environment and assess performance gains in 2D and 3D pixel-based partially-observable environments (e.g. T-Maze, Mystery Path, Craftax, and Memory Maze). Compared with a state-of-the-art architecture, GTrXL, inference in our approach is at least 40% cheaper while reducing memory use more than 50%. Our approach either performs similarly or better than GTrXL, improving more than 37% upon GTrXL performance in harder tasks.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-VmfWywWuYQ">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/VmfWywWuYQ.html">Interactive Task Planning with Language Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Boyi Li &middot; Philipp Wu &middot; Pieter Abbeel &middot; Jitendra Malik</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-VmfWywWuYQ"></div>
+
+    <a href="paper_pages/VmfWywWuYQ.html">
+        <img src="http://img.youtube.com/vi/TrKLuyv26_g/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-VmfWywWuYQ" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-VmfWywWuYQ" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-VmfWywWuYQ">
+                Abstract <i id="caret-VmfWywWuYQ" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-VmfWywWuYQ">
+        <div class="abstract-display">
+            <p>An interactive robot framework accomplishes long-horizon task planning and can easily generalize to new goals or distinct tasks, even during execution. However, most traditional methods require predefined module design, which makes it hard to generalize to different goals. Recent large language model based approaches can allow for more open-ended planning but often require heavy prompt engineering or domain specific pretrained models. To tackle this, we propose a simple framework that achieves interactive task planning with language models by incorporating both high-level planning and low-level skill execution through function calling, leveraging pretrained vision models to ground the scene in language. We verify the robustness of our system on the real world task of making milk tea drinks. Our system is able to generate novel high-level instructions for unseen objectives and successfully accomplishes user tasks. Furthermore, when the user sends a new request, our system is able to replan accordingly with precision based on the new request, task guidelines and previously executed steps. Our approach is easy to adapt to different tasks by merely substituting the task guidelines, without the need for additional complex prompt engineering.</p>
         </div>
     </div>
 </div>
