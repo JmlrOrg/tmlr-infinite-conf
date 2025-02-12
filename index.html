@@ -161,7 +161,69 @@
             <div class="col-sm-12">
                 <div style="max-width: 1500px; margin:auto; border">
                     <div class="grid-displaycards">
-                        <div class="displaycards touchup-date" id="event-O4CQ5AM5yP">
+                        <div class="displaycards touchup-date" id="event-IrBYuh9W3T">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/IrBYuh9W3T.html">What Makes ImageNet Look Unlike LAION</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Ali Shirali &middot; Moritz Hardt</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-IrBYuh9W3T"></div>
+
+    <a href="paper_pages/IrBYuh9W3T.html">
+        <img src="http://img.youtube.com/vi/ioUdKJgRrJ0/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-IrBYuh9W3T" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-IrBYuh9W3T" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-IrBYuh9W3T">
+                Abstract <i id="caret-IrBYuh9W3T" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-IrBYuh9W3T">
+        <div class="abstract-display">
+            <p>ImageNet was famously created by querying several image search engines such as Flickr. What if we recreated ImageNet instead by searching the massive LAION dataset based on image captions alone? In this work, we carry out this counterfactual investigation. We find that the resulting ImageNet recreation, which we call LAIONet, looks distinctly unlike the original. Specifically, the intra-class similarity of images in the original ImageNet is dramatically higher than it is for LAIONet. Consequently, models trained on ImageNet perform significantly worse on LAIONet. We propose a rigorous explanation for the discrepancy in terms of a subtle, yet important, difference in two plausible causal data-generating processes for the respective datasets, that we support with systematic experimentation. In a nutshell, searching based on an image caption alone creates an information bottleneck that mitigates the selection bias otherwise present in image-based filtering. Our explanation formalizes a long-held intuition in the community that ImageNet images are stereotypical, unnatural, and overly simple representations of the class category. At the same time, it provides a simple and actionable takeaway for future dataset creation efforts.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-1QeI99nH9k">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/1QeI99nH9k.html">Robust High-Dimensional Mean Estimation With Low Data Size, an Empirical Study</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Cullen Anderson &middot; Jeff M. Phillips</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-1QeI99nH9k"></div>
+
+    <a href="paper_pages/1QeI99nH9k.html">
+        <img src="http://img.youtube.com/vi/Tp_1rFTRMBI/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-1QeI99nH9k" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-1QeI99nH9k" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-1QeI99nH9k">
+                Abstract <i id="caret-1QeI99nH9k" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-1QeI99nH9k">
+        <div class="abstract-display">
+            <p>Robust statistics aims to compute quantities to represent data where a fraction of it may be arbitrarily corrupted.   The most essential statistic is the mean, and in recent years, there has been a flurry of theoretical advancement for efficiently estimating the mean in high dimensions on corrupted data.  While several algorithms have been proposed that achieve near-optimal error, they all rely on large data size requirements as a function of dimension. In this paper, we perform an extensive experimentation over various mean estimation techniques where data size might not meet this requirement due to the high-dimensional setting.  
+
+For data with inliers generated from a Gaussian with known covariance, we find experimentally that several robust mean estimation techniques can practically improve upon the sample mean, with the quantum entropy scaling approach from Dong \etal (NeurIPS 2019) performing consistently the best.  However, this consistent improvement is conditioned on a couple of simple modifications to how the steps to prune outliers work in the high-dimension low-data setting, and when the inliers deviate significantly from Gaussianity. In fact, with these modifications, they are typically able to achieve roughly the same error as taking the sample mean of the uncorrupted inlier data, even with very low data size. In addition to controlled experiments on synthetic data, we also explore these methods on large language models, deep pretrained image models, and non-contextual word embedding models that do not necessarily have an inherent Gaussian distribution.  Yet, in these settings, a mean point of a set of embedded objects is a desirable quantity to learn, and the data exhibits the high-dimension low-data setting studied in this paper.  We show both the challenges of achieving this goal, and that our updated robust mean estimation methods can provide significant improvement over using just the sample mean. We additionally publish a library of Python implementations of robust mean estimation algorithms, allowing practitioners and researchers to apply these techniques and to perform further experimentation.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-O4CQ5AM5yP">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/O4CQ5AM5yP.html">REX: GPU-Accelerated Sim2Real Framework with Delay and Dynamics Estimation</a>
     </div>
@@ -277,6 +339,36 @@
     <div class="collapse" id="collapse-event-abstract-QezxDgd5hf">
         <div class="abstract-display">
             <p>Systems characterized by evolving interactions, prevalent in social, financial, and biological domains, are effectively modeled as continuous-time dynamic graphs (CTDGs). To manage the scale and complexity of these graph datasets, machine learning (ML) approaches have become essential. However, CTDGs pose challenges for ML because traditional static graph methods fail to account for event timings naturally. Newer approaches, such as graph recurrent neural networks (GRNNs), are inherently time-aware and offer advantages over static methods for CTDGs. Yet, GRNNs face another issue: the short truncation of backpropagation-through-time (BPTT) whose impact has never been properly examined until now. In this work, we demonstrate that this truncation can limit the learning of dependencies more than a hop away, resulting in reduced performance. Through experiments on a novel synthetic task as well as real-world datasets, we reveal that there exists a performance gap between full backpropagation-through-time (F-BPTT) and the truncated backpropagation-through-time (T-BPTT) commonly used to train GRNN models. We term this gap the "truncation gap" and argue that understanding and addressing it is essential as the importance of CTDGs grows, discussing potential future directions of research for this type of models.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-7CUluLpLxV">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/7CUluLpLxV.html">Explaining Explainability: Recommendations for Effective Use of Concept Activation Vectors</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Angus Nicolson &middot; Lisa Schut &middot; Alison Noble &middot; Yarin Gal</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-7CUluLpLxV"></div>
+
+    <a href="paper_pages/7CUluLpLxV.html">
+        <img src="http://img.youtube.com/vi/7LYfz5pKZdU/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-7CUluLpLxV" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-7CUluLpLxV" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-7CUluLpLxV">
+                Abstract <i id="caret-7CUluLpLxV" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-7CUluLpLxV">
+        <div class="abstract-display">
+            <p>Concept-based explanations translate the internal representations of deep learning models into a language that humans are familiar with: concepts. One popular method for finding concepts is Concept Activation Vectors (CAVs), which are learnt using a probe dataset of concept exemplars. In this work, we investigate three properties of CAVs: (1) inconsistency across layers, (2) entanglement with other concepts, and (3) spatial dependency. Each property provides both challenges and opportunities in interpreting models. We introduce tools designed to detect the presence of these properties, provide insight into how each property can lead to misleading explanations, and provide recommendations to mitigate their impact. To demonstrate practical applications, we apply our recommendations to a melanoma classification task, showing how entanglement can lead to uninterpretable results and that the choice of negative probe set can have a substantial impact on the meaning of a CAV. Further, we show that understanding these properties can be used to our advantage. For example, we introduce spatially dependent CAVs to test if a model is translation invariant with respect to a specific concept and class. Our experiments are performed on natural images (ImageNet), skin lesions (ISIC 2019), and a new synthetic dataset, Elements. Elements is designed to capture a known ground truth relationship between concepts and classes. We release this dataset to facilitate further research in understanding and evaluating interpretability methods.</p>
         </div>
     </div>
 </div>
