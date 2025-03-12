@@ -191,6 +191,58 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-OGifiton47">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/OGifiton47.html">Active Diffusion Subsampling</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Oisín Nolan &middot; Tristan Stevens &middot; Wessel L. van Nierop &middot; Ruud Van Sloun</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-OGifiton47"></div>
+
+    <a href="paper_pages/OGifiton47.html">
+        <img src="http://img.youtube.com/vi/kFTfiwRKwlw/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-OGifiton47" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-OGifiton47" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-OGifiton47">
+                Abstract <i id="caret-OGifiton47" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-OGifiton47">
+        <div class="abstract-display">
+            <p>Subsampling is commonly used to mitigate costs associated with data acquisition, such as
+time or energy requirements, motivating the development of algorithms for estimating the
+fully-sampled signal of interest $x$ from partially observed measurements $y$. In maximum-
+entropy sampling, one selects measurement locations that are expected to have the highest
+entropy, so as to minimize uncertainty about $x$. This approach relies on an accurate model
+of the posterior distribution over future measurements, given the measurements observed so
+far. Recently, diffusion models have been shown to produce high-quality posterior samples
+of high-dimensional signals using guided diffusion. In this work, we propose Active Diffusion
+Subsampling (ADS), a method for designing intelligent subsampling masks using guided dif-
+fusion in which the model tracks a distribution of beliefs over the true state of $x$ throughout
+the reverse diffusion process, progressively decreasing its uncertainty by actively choosing
+to acquire measurements with maximum expected entropy, ultimately producing the pos-
+terior distribution $p(x | y)$. ADS can be applied using pre-trained diffusion models for any
+subsampling rate, and does not require task-specific retraining – just the specification of
+a measurement model. Furthermore, the maximum entropy sampling policy employed by
+ADS is interpretable, enhancing transparency relative to existing methods using black-box
+policies. Experimentally, we show that through designing informative subsampling masks,
+ADS significantly improves reconstruction quality compared to fixed sampling strategies on
+the MNIST and CelebA datasets, as measured by standard image quality metrics, includ-
+ing PSNR, SSIM, and LPIPS. Furthermore, on the task of Magnetic Resonance Imaging
+acceleration, we find that ADS performs competitively with existing supervised methods in
+reconstruction quality while using a more interpretable acquisition scheme design procedure.
+Code is available at https://active-diffusion-subsampling.github.io/.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-jJOVpnNrEp">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/jJOVpnNrEp.html">Video-Language Critic: Transferable Reward Functions for Language-Conditioned Robotics</a>
