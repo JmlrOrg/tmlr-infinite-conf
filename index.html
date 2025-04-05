@@ -281,6 +281,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-s1zfBJysbI">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/s1zfBJysbI.html">Enhancing Temporal Consistency in Video Editing by Reconstructing Videos with 3D Gaussian Splatting</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Inkyu Shin &middot; Qihang Yu &middot; Xiaohui Shen &middot; In So Kweon &middot; Kuk-Jin Yoon &middot; Liang-Chieh Chen</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-s1zfBJysbI"></div>
+
+    <a href="paper_pages/s1zfBJysbI.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-s1zfBJysbI" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-s1zfBJysbI" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-s1zfBJysbI">
+                Abstract <i id="caret-s1zfBJysbI" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-s1zfBJysbI">
+        <div class="abstract-display">
+            <p>Recent advancements in zero-shot video diffusion models have shown promise for text-driven video editing, but challenges remain in achieving high temporal consistency. To address this, we introduce Video-3DGS, a 3D Gaussian Splatting (3DGS)-based video refiner designed to enhance temporal consistency in zero-shot video editors. Our approach utilizes a two-stage 3D Gaussian optimizing process tailored for editing dynamic monocular videos. In the first stage, Video-3DGS employs an improved version of COLMAP, referred to as MC-COLMAP, which processes original videos using a Masked and Clipped approach. For each video clip, MC-COLMAP generates the point clouds for dynamic foreground objects and complex backgrounds. These point clouds are utilized to initialize two sets of 3D Gaussians (Frg-3DGS and Bkg-3DGS) aiming to represent foreground and background views. Both foreground and background views are then merged with a 2D learnable parameter map to reconstruct full views. In the second stage, we leverage the reconstruction ability developed in the first stage to impose the temporal constraints on the video diffusion model. This approach ensures the temporal consistency in the edited videos while maintaining high fidelity to the editing text prompt. We further propose a recursive and ensembled refinement by revisiting the denoising step and guidance scale used in video diffusion process with Video-3DGS. To demonstrate the efficacy of Video-3DGS on both stages, we conduct extensive experiments across two related tasks: Video Reconstruction and Video Editing. Video-3DGS trained with 3k iterations significantly improves video reconstruction quality (+3 PSNR, +7 PSNR increase) and training efficiency (×1.9, ×4.5 times faster) over NeRF-based and 3DGS-based state-of-art methods on DAVIS dataset, respectively. Moreover, it enhances video editing by ensuring temporal consistency across 58 dynamic monocular videos.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-OGifiton47">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/OGifiton47.html">Active Diffusion Subsampling</a>
@@ -1402,36 +1432,6 @@ These CL objective functions can be posed as a supervised discriminative task us
     </div>
 </div>
 
-<div class="displaycards touchup-date" id="event-oG65SjZNIF">
-    <div style="width:80%;margin:auto;">
-        <a class="small-title" href="paper_pages/oG65SjZNIF.html">Expressive Higher-Order Link Prediction through Hypergraph Symmetry Breaking</a>
-    </div>
-    <div class="type_display_name_minus_type"></div>
-    <div class="author-str">Simon Zhang &middot; Cheng Xin &middot; Tamal K. Dey</div>
-    <div class="author-str higher"></div>
-    <div class="text-muted touchup-date-div" id="touchup-date-event-oG65SjZNIF"></div>
-
-    <a href="paper_pages/oG65SjZNIF.html">
-        <img src="http://img.youtube.com/vi/ZRiaYiN6BNw/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
-    </a>
-
-    <div class="abstract-section">
-        <div>
-            <a id="abstract-link-oG65SjZNIF" class="abstract-link" data-toggle="collapse"
-               href="#collapse-event-abstract-oG65SjZNIF" role="button"
-               aria-expanded="false" aria-controls="collapse-event-abstract-oG65SjZNIF">
-                Abstract <i id="caret-oG65SjZNIF" class="fas fa-caret-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="collapse" id="collapse-event-abstract-oG65SjZNIF">
-        <div class="abstract-display">
-            <p>A hypergraph consists of a set of nodes along with a collection of subsets of the nodes called hyperedges. Higher order link prediction is the task of predicting the existence of a missing hyperedge in a hypergraph. A hyperedge representation learned for higher order link prediction is fully expressive when it does not lose distinguishing power up to an isomorphism. Many existing hypergraph representation learners, are bounded in expressive power by the Generalized Weisfeiler Lehman-1 (GWL-1) algorithm, a generalization of the Weisfeiler Lehman-1 (WL-1) algorithm. The WL-1 algorithm can approximately decide whether two graphs are isomorphic. However, GWL-1 has limited expressive power. In fact, GWL-1 can only view the hypergraph as a collection of trees rooted at each of the nodes in the hypergraph. Furthermore, message passing on hypergraphs can already be computationally expensive, particularly with limited GPU device memory. To address these limitations, we devise a preprocessing algorithm that can identify certain regular subhypergraphs exhibiting symmetry with respect to GWL-1. Our preprocessing algorithm runs once with the time complexity linear in the size of the input hypergraph. During training, we randomly drop the hyperedges of the subhypergraphs identifed by the algorithm and add  covering hyperedges to break symmetry. We show that our method improves the expressivity of GWL-1. Our extensive experiments 1 also demonstrate the effectiveness of our approach for higher-order link prediction on both graph and hypergraph datasets with negligible change in computation.</p>
-        </div>
-    </div>
-</div>
-
 <div class="displaycards touchup-date" id="event-mDGvrH7lju">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/mDGvrH7lju.html">CFASL: Composite Factor-Aligned Symmetry Learning for Disentanglement in Variational AutoEncoder</a>
@@ -1489,6 +1489,36 @@ novel method, Composite Factor-Aligned Symmetry Learning (CFASL), which is integ
     <div class="collapse" id="collapse-event-abstract-IJlbuSrXmk">
         <div class="abstract-display">
             <p>In this article, we introduce \textit{audio-visual dataset distillation}, a task to construct a smaller yet representative synthetic audio-visual dataset that maintains the cross-modal semantic association between audio and visual modalities. Dataset distillation techniques have primarily focused on image classification. However, with the growing capabilities of audio-visual models and the vast datasets required for their training, it is necessary to explore distillation methods beyond the visual modality. Our approach builds upon the foundation of Distribution Matching (DM), extending it to handle the unique challenges of audio-visual data. A key challenge is to jointly learn synthetic data that distills both the modality-wise information and natural alignment from real audio-visual data. We introduce a vanilla audio-visual distribution matching framework that separately trains visual-only and audio-only DM components, enabling us to investigate the effectiveness of audio-visual integration and various multimodal fusion methods. To address the limitations of unimodal distillation, we propose two novel matching losses: implicit cross-matching and cross-modal gap matching. These losses work in conjunction with the vanilla unimodal distribution matching loss to enforce cross-modal alignment and enhance the audio-visual dataset distillation process. Extensive audio-visual classification and retrieval experiments on four audio-visual datasets, AVE, MUSIC-21, VGGSound, and VGGSound-10K, demonstrate the effectiveness of our proposed matching approaches and validate the benefits of audio-visual integration with condensed data. This work establishes a new frontier in audio-visual dataset distillation, paving the way for further advancements in this exciting field. \textit{Our source code and pre-trained models will be released}.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-hbtG6s6e7r">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/hbtG6s6e7r.html">Growing Tiny Networks: Spotting Expressivity Bottlenecks and Fixing Them Optimally</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Manon Verbockhaven &middot; Théo Rudkiewicz &middot; Sylvain Chevallier &middot; Guillaume Charpiat</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-hbtG6s6e7r"></div>
+
+    <a href="paper_pages/hbtG6s6e7r.html">
+        <img src="http://img.youtube.com/vi/VJ8Ik5OsKOE/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-hbtG6s6e7r" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-hbtG6s6e7r" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-hbtG6s6e7r">
+                Abstract <i id="caret-hbtG6s6e7r" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-hbtG6s6e7r">
+        <div class="abstract-display">
+            <p>Machine learning tasks are generally formulated as optimization problems, where one searches for an optimal function within a certain functional space. In practice, parameterized functional spaces are considered, in order to be able to perform gradient descent. Typically, a neural network architecture is chosen and fixed, and its parameters (connection weights) are optimized, yielding an architecture-dependent result. This way of proceeding however forces the evolution of the function during training to lie within the realm of what is expressible with the chosen architecture, and prevents any optimization across architectures. Costly architectural hyper-parameter optimization is often performed to compensate for this. Instead, we propose to adapt the architecture on the fly during training. We show that the information about desirable architectural changes, due to expressivity bottlenecks when attempting to follow the functional gradient, can be extracted from backpropagation. To do this, we propose a mathematical definition of expressivity bottlenecks, which enables us to detect, quantify and solve them while training, by adding suitable neurons. Thus, while the standard approach requires large networks, in terms of number of neurons per layer, for expressivity and optimization reasons, we provid tools and properties to develop an architecture starting with a very small number of neurons. As a proof of concept, we show results~on the CIFAR dataset, matching large neural network accuracy, with competitive training time, while removing the need for standard architectural hyper-parameter search.</p>
         </div>
     </div>
 </div>
@@ -2934,7 +2964,7 @@ We focus on defending against attacks that perturb features while keeping the to
     <div class="text-muted touchup-date-div" id="touchup-date-event-xNkASJL0F6"></div>
 
     <a href="paper_pages/xNkASJL0F6.html">
-        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+        <img src="http://img.youtube.com/vi/FpzWNtYQoBM/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
     </a>
 
     <div class="abstract-section">

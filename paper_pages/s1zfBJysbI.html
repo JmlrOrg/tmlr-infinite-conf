@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    Illustrated Landmark Graphs for Long-horizon Policy Learning
+                    Enhancing Temporal Consistency in Video Editing by Reconstructing Videos with 3D Gaussian Splatting
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Christopher Watson &middot; Arjun Krishna &middot; Rajeev Alur &middot; Dinesh Jayaraman
+                    Inkyu Shin &middot; Qihang Yu &middot; Xiaohui Shen &middot; In So Kweon &middot; Kuk-Jin Yoon &middot; Liang-Chieh Chen
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=0AOUWC4ss8" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=s1zfBJysbI" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=0AOUWC4ss8" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=s1zfBJysbI" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://github.com/cwatson1998/ilg-learn" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/dlsrbgg33/Video-3DGS" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://ilg-learn.github.io/static/videos/ilg_learn_march_22_2025_trimmed.mp4" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=0AOUWC4ss8"><img src="../paper_thumbnails/0AOUWC4ss8.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=s1zfBJysbI"><img src="../paper_thumbnails/s1zfBJysbI.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,7 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            Applying learning-based approaches to long-horizon sequential decision-making tasks requires a human teacher to carefully craft reward functions or curate demonstrations to elicit desired behaviors. To simplify this, we first introduce an alternative form of task-specification, Illustrated Landmark Graph (ILG), that represents the task as a directed graph where each vertex corresponds to a region of the state space (a landmark), and each edge represents an easier to achieve sub-task. A landmark in the ILG is conveyed to the agent through a few illustrative examples grounded in the agent’s observation space. Second, we propose ILG-Learn, a human in the loop algorithm that interleaves planning over the ILG and sub-task policy learning. ILG-Learn adaptively plans through the ILG by relying on the human teacher’s feedback to estimate the success rates of learned policies. We conduct experiments on long-horizon block stacking and point maze navigation tasks, and find that our approach achieves considerably higher success rates (~ 50% improvement) compared to hierarchical reinforcement learning and imitation learning baselines. Additionally, we highlight how the flexibility of the ILG specification allows the agent to learn a sequence of sub-tasks that is better suited to its limited capabilities.
+                            Recent advancements in zero-shot video diffusion models have shown promise for text-driven video editing, but challenges remain in achieving high temporal consistency. To address this, we introduce Video-3DGS, a 3D Gaussian Splatting (3DGS)-based video refiner designed to enhance temporal consistency in zero-shot video editors. Our approach utilizes a two-stage 3D Gaussian optimizing process tailored for editing dynamic monocular videos. In the first stage, Video-3DGS employs an improved version of COLMAP, referred to as MC-COLMAP, which processes original videos using a Masked and Clipped approach. For each video clip, MC-COLMAP generates the point clouds for dynamic foreground objects and complex backgrounds. These point clouds are utilized to initialize two sets of 3D Gaussians (Frg-3DGS and Bkg-3DGS) aiming to represent foreground and background views. Both foreground and background views are then merged with a 2D learnable parameter map to reconstruct full views. In the second stage, we leverage the reconstruction ability developed in the first stage to impose the temporal constraints on the video diffusion model. This approach ensures the temporal consistency in the edited videos while maintaining high fidelity to the editing text prompt. We further propose a recursive and ensembled refinement by revisiting the denoising step and guidance scale used in video diffusion process with Video-3DGS. To demonstrate the efficacy of Video-3DGS on both stages, we conduct extensive experiments across two related tasks: Video Reconstruction and Video Editing. Video-3DGS trained with 3k iterations significantly improves video reconstruction quality (+3 PSNR, +7 PSNR increase) and training efficiency (×1.9, ×4.5 times faster) over NeRF-based and 3DGS-based state-of-art methods on DAVIS dataset, respectively. Moreover, it enhances video editing by ensuring temporal consistency across 58 dynamic monocular videos.
                         </p>
                     </div>
                 </p>
