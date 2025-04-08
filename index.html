@@ -221,6 +221,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-sSOxuUjE2o">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/sSOxuUjE2o.html">Controlled Training Data Generation with Diffusion Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Teresa Yeo &middot; Andrei Atanov &middot; Harold Luc Benoit &middot; Aleksandr Alekseev &middot; Ruchira Ray &middot; Pooya Esmaeil Akhoondi &middot; Amir Zamir</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-sSOxuUjE2o"></div>
+
+    <a href="paper_pages/sSOxuUjE2o.html">
+        <img src="http://img.youtube.com/vi/PDLYk7gekYo/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-sSOxuUjE2o" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-sSOxuUjE2o" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-sSOxuUjE2o">
+                Abstract <i id="caret-sSOxuUjE2o" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-sSOxuUjE2o">
+        <div class="abstract-display">
+            <p>We present a method to control a text-to-image generative model to produce training data useful for supervised learning. Unlike previous works that employ an open-loop approach via pre-defined prompts to generate new data using either a language model or human expertise, we develop an automated closed-loop system that involves two feedback mechanisms. The first mechanism uses feedback from a given supervised model to find adversarial prompts that result in generated images that maximize the model's loss and, consequently, expose its vulnerabilities. While these adversarial prompts generate training examples curated for improving the given model, they are not curated for a specific target distribution of interest, which can be inefficient. Therefore, we introduce the second feedback mechanism that can optionally guide the generation process towards a desirable target distribution. We call the method combining these two mechanisms Guided Adversarial Prompts. The proposed closed-loop system allows us to control the training data generation for a given model and target image distribution. We evaluate on different tasks, datasets, and architectures, with different types of distribution shifts (corruptions, spurious correlations, unseen domains) and illustrate the advantages of the proposed feedback mechanisms compared to open-loop approaches.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-0AOUWC4ss8">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/0AOUWC4ss8.html">Illustrated Landmark Graphs for Long-horizon Policy Learning</a>
@@ -449,6 +479,36 @@ Code is available at https://active-diffusion-subsampling.github.io/.</p>
     <div class="collapse" id="collapse-event-abstract-IrBYuh9W3T">
         <div class="abstract-display">
             <p>ImageNet was famously created by querying several image search engines such as Flickr. What if we recreated ImageNet instead by searching the massive LAION dataset based on image captions alone? In this work, we carry out this counterfactual investigation. We find that the resulting ImageNet recreation, which we call LAIONet, looks distinctly unlike the original. Specifically, the intra-class similarity of images in the original ImageNet is dramatically higher than it is for LAIONet. Consequently, models trained on ImageNet perform significantly worse on LAIONet. We propose a rigorous explanation for the discrepancy in terms of a subtle, yet important, difference in two plausible causal data-generating processes for the respective datasets, that we support with systematic experimentation. In a nutshell, searching based on an image caption alone creates an information bottleneck that mitigates the selection bias otherwise present in image-based filtering. Our explanation formalizes a long-held intuition in the community that ImageNet images are stereotypical, unnatural, and overly simple representations of the class category. At the same time, it provides a simple and actionable takeaway for future dataset creation efforts.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-Okxp1W8If0">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/Okxp1W8If0.html">(Accelerated) Noise-adaptive Stochastic Heavy-Ball Momentum</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Anh Quang Dang &middot; Reza Babanezhad Harikandeh &middot; Sharan Vaswani</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-Okxp1W8If0"></div>
+
+    <a href="paper_pages/Okxp1W8If0.html">
+        <img src="http://img.youtube.com/vi/jtRojA5aMfE/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-Okxp1W8If0" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-Okxp1W8If0" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-Okxp1W8If0">
+                Abstract <i id="caret-Okxp1W8If0" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-Okxp1W8If0">
+        <div class="abstract-display">
+            <p>Stochastic heavy ball momentum (SHB) is commonly used to train machine learning models, and often provides empirical improvements over stochastic gradient descent. By primarily focusing on strongly-convex quadratics, we aim to better understand the theoretical advantage of SHB and subsequently improve the method. For strongly-convex quadratics, Kidambi et al. (2018) show that SHB (with a mini-batch of size $1$) cannot attain accelerated convergence, and hence has no theoretical benefit over SGD. They conjecture that the practical gain of SHB is a by-product of using larger mini-batches. We first substantiate this claim by showing that SHB can attain an accelerated rate when the mini-batch size is larger than a threshold $b^*$ that depends on the condition number $\kappa$. Specifically, we prove that with the same step-size and momentum parameters as in the deterministic setting, SHB with a sufficiently large mini-batch size results in an $O\left(\exp(-\frac{T}{\sqrt{\kappa}}) + \sigma \right)$ convergence when measuring the distance to the optimal solution in the $\ell_2$ norm, where $T$ is the number of iterations and $\sigma^2$ is the variance in the stochastic gradients. We prove a lower-bound which demonstrates that a $\kappa$ dependence in $b^*$ is necessary. To ensure convergence to the minimizer, we design a noise-adaptive multi-stage algorithm that results in an $O\left(\exp\left(-\frac{T}{\sqrt{\kappa}}\right) + \frac{\sigma}{\sqrt{T}}\right)$ rate when measuring the distance to the optimal solution in the $\ell_2$ norm. We also consider the general smooth, strongly-convex setting and propose the first noise-adaptive SHB variant that converges to the minimizer at an $O(\exp(-\frac{T}{\kappa}) + \frac{\sigma^2}{T})$ rate when measuring the distance to the optimal solution in the squared $\ell_2$ norm. We empirically demonstrate the effectiveness of the proposed algorithms.</p>
         </div>
     </div>
 </div>
