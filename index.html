@@ -161,7 +161,37 @@
             <div class="col-sm-12">
                 <div style="max-width: 1500px; margin:auto; border">
                     <div class="grid-displaycards">
-                        <div class="displaycards touchup-date" id="event-DVeFqV56Iz">
+                        <div class="displaycards touchup-date" id="event-BaRD2Nfj41">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/BaRD2Nfj41.html">Overcoming Knowledge Barriers: Online Imitation Learning from Visual Observation with Pretrained World Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Xingyuan Zhang &middot; Philip Becker-Ehmck &middot; Patrick van der Smagt &middot; Maximilian Karl</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-BaRD2Nfj41"></div>
+
+    <a href="paper_pages/BaRD2Nfj41.html">
+        <img src="http://img.youtube.com/vi/4yO3Q2AM-7o/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-BaRD2Nfj41" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-BaRD2Nfj41" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-BaRD2Nfj41">
+                Abstract <i id="caret-BaRD2Nfj41" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-BaRD2Nfj41">
+        <div class="abstract-display">
+            <p>Pretraining and finetuning models has become increasingly popular in decision-making. But there are still serious impediments in Imitation Learning from Observation (ILfO) with pretrained models. This study identifies two primary obstacles: the Embodiment Knowledge Barrier (EKB) and the Demonstration Knowledge Barrier (DKB). The EKB emerges due to the pretrained models' limitations in handling novel observations, which leads to inaccurate action inference. Conversely, the DKB stems from the reliance on limited demonstration datasets, restricting the model's adaptability across diverse scenarios. We propose separate solutions to overcome each barrier and apply them to Action Inference by Maximising Evidence (AIME), a state-of-the-art algorithm. This new algorithm, AIME-NoB, integrates online interactions and a data-driven regulariser to mitigate the EKB. Additionally, it uses a surrogate reward function to broaden the policy's supported states, addressing the DKB. Our experiments on vision-based control tasks from the DeepMind Control Suite and MetaWorld benchmarks show that AIME-NoB significantly improves sample efficiency and converged performance, presenting a robust framework for overcoming the challenges in ILfO with pretrained models. Code available at https://github.com/IcarusWizard/AIME-NoB.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-DVeFqV56Iz">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/DVeFqV56Iz.html">Change Point Detection in Dynamic Graphs with Decoder-only Latent Space Model</a>
     </div>
@@ -218,6 +248,43 @@
         <div class="abstract-display">
             <p>One of the most common approaches for self-supervised representation learning is defining pre-text tasks to learn data representations. 
 Existing works determine pre-text tasks in a "task-agnostic'' way, without considering the forthcoming downstream tasks. This offers an advantage of broad applicability across tasks, but can also lead to a mismatch between task objectives, potentially degrading performance on downstream tasks. In this paper, we introduce TST-LLM, a framework that effectively reduces this mismatch when the natural language-based description of the downstream task is given without any ground-truth labels. TST-LLM instructs the LLM to use the downstream task's description and meta-information of data to discover features relevant to the target task. These discovered features are then treated as ground-truth labels to define "target-specific'' pre-text tasks. TST-LLM consistently outperforms contemporary baselines, such as STUNT and LFR, with win ratios of 95% and 81%, when applied to 22 benchmark tabular datasets, including binary and multi-class classification, and regression tasks.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-yGGoOVpBVP">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/yGGoOVpBVP.html">Connecting Parameter Magnitudes and Hessian Eigenspaces at Scale using Sketched Methods</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Andres Fernandez &middot; Frank Schneider &middot; Maren Mahsereci &middot; Philipp Hennig</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-yGGoOVpBVP"></div>
+
+    <a href="paper_pages/yGGoOVpBVP.html">
+        <img src="http://img.youtube.com/vi/tV7hC65vQp4/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-yGGoOVpBVP" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-yGGoOVpBVP" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-yGGoOVpBVP">
+                Abstract <i id="caret-yGGoOVpBVP" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-yGGoOVpBVP">
+        <div class="abstract-display">
+            <p>Recently, it has been observed that when training a deep neural net with SGD, the majority of the loss landscape's curvature quickly concentrates in a tiny *top* eigenspace of the loss Hessian, which remains largely stable thereafter.
+Independently, it has been shown that successful magnitude pruning masks for deep neural nets emerge early in training and remain stable thereafter.
+In this work, we study these two phenomena jointly and show that they are connected:
+We develop a methodology to measure the similarity between arbitrary parameter masks and Hessian eigenspaces via Grassmannian metrics. We identify *overlap* as the most useful such metric due to its interpretability and stability.
+To compute *overlap*, we develop a matrix-free algorithm based on sketched SVDs that allows us to compute over 1000 Hessian eigenpairs for nets with over 10M parameters --an unprecedented scale by several orders of magnitude.
+Our experiments reveal an *overlap* between magnitude parameter masks and top Hessian eigenspaces consistently higher than chance-level, and that this effect gets accentuated for larger network sizes.
+This result indicates that *top Hessian eigenvectors tend to be concentrated around larger parameters*, or equivalently, that *larger parameters tend to align with directions of larger loss curvature*.
+Our work provides a methodology to approximate and analyze deep learning Hessians at scale, as well as a novel insight on the structure of their eigenspace</p>
         </div>
     </div>
 </div>
