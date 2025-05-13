@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-padding-top: 70px;">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/expo/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</script>
+
+<script>
+    if (typeof jQuery === 'undefined') {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "/static/core/js/jquery-3.6.1.min.js";
+        document.head.appendChild(script);
+    }
+</script>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.3.1/typeahead.bundle.min.js" integrity="sha512-lEb9Vp/rkl9g2E/LdHIMFTqz21+LA79f84gqP75fbimHqVTu6483JG1AwJlWLLQ8ezTehty78fObKupq3HSHPQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="/static/core/js/ajax-csrf-snippet.js" type="text/javascript"></script>
+<script src="/static/virtual/js/virtual.js"></script>
+
+
+<link rel="stylesheet" href="../virtual.css">
+<link rel="stylesheet" href="/static/virtual/css/calendar.css">
+<link rel="stylesheet" href="/static/virtual/css/calendar-ICML.css">
+<link rel="stylesheet" href="/static/virtual/css/calendar-ICML2023.css">
+<script src='https://slideslive.com/embed_presentation.js'></script>
+
+</head>
+
+<body>
+    <!-- NAV -->
+
+    <!--<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto" id="main-nav">-->
+    <nav class="navbar sticky-top navbar-expand-lg mr-auto navbar-light" id="main-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+        <img src="../tmlr_logo.jpeg" height="40px">
+            Transactions on Machine Learning Research
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+            <!--
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Main Conference
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/virtual/2023/events/oral">Orals</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/virtual/2023/events/spotlight">Spotlights</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/virtual/2023/papers.html">Papers</a>
+                </div>
+            </li>
+            -->
+
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href="../index_file.html">All Papers</a>
+            </li>
+            -->
+
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href="../">Papers with Videos</a>
+            </li>
+            -->
+
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href="../features_papers.html">Featured Papers</a>
+            </li>
+            -->
+
+    <!--
+    <li class="nav-item ">
+        <a class="nav-link" href="/virtual/2023/search"><i class="fas fa-search"></i> &nbsp;</a>
+    </li>
+    -->
+        </ul>
+    </div>
+</div>
+</nav>
+
+
+<div class="container">
+        <!-- Title -->
+        <div class="pp-card m-3" style="" id="bookmark-here">
+            <div class="card-header">
+                <!-- <h3 class="text-center">Spotlight</h3> -->
+
+                <h2 class="card-title main-title text-center" style="">
+                    Noise-free Loss Gradients: A Surprisingly Effective Baseline for Coreset Selection
+                </h2>
+
+                <h3 class="card-subtitle mb-2 text-muted text-center">
+                    Saumyaranjan Mohanty &middot; Chimata Anudeep &middot; Konda Reddy Mopuri
+                </h3>
+
+                <div class="text-center p-3">
+
+                    <!--
+                    <a class="card-link" data-toggle="collapse" role="button" href="#details">
+                        Abstract
+                    </a>
+                    -->
+
+                    <div class="schedule-html-detail"></div>
+
+                    <div>
+                        <span class="nowrap" style="white-space:nowrap">
+                            <a href="https://openreview.net/forum?id=OE4P1tW8iQ" class="btn btn-default" title="OpenReview">
+                                <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
+                        </span>
+
+                        <span class="nowrap" style="white-space:nowrap">
+                            <a href="https://openreview.net/pdf?id=OE4P1tW8iQ" class="btn btn-default href_PDF" title="Paper PDF">
+                                <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
+                            </a>
+                        </span>
+
+                                <span class="nowrap" style="white-space:nowrap">
+            <a href="https://github.com/ai23resch04001/Noise_free_gradient" class="btn btn-default href_PDF" title="Code">
+                <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
+            </a>
+        </span>
+                    </div>
+                </div>
+                <div class=" text-center text-muted text-monospace ">
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- YouTube Embed -->
+                <div class="text-center">
+            <h4 class="text-center">Video</h4>
+            <iframe width="896" height="504" src="https://drive.google.com/file/d/1h8XuoCw1BtndH2Tu8lGdmsQ3dkgK9l1q/preview" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="m-3 text-center">
+            <h4 class="text-center">Paper PDF</h4>
+            <a href="https://openreview.net/pdf?id=OE4P1tW8iQ"><img src="../paper_thumbnails/OE4P1tW8iQ.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+        </div>
+
+        <div id="details" class="pp-card m-3">
+            <div class="card-body">
+                <p class="card-text">
+                    <div id="abstractExample">
+                        <h4 class="text-center">Abstract</h4>
+                        <p>
+                            The exponential rise in size and complexity of deep learning models and datasets have resulted
+in a considerable demand for computational resources. Coreset selection is one of the
+methods to alleviate this rising demand. The goal is to select a subset from a large dataset
+to train a model that performs almost at par with the one trained on the large dataset
+while reducing computational time and resource requirements. Existing approaches either
+attempt to identify remarkable samples (e.g., Forgetting, Adversarial Deepfool, EL2N, etc.)
+that stand out from the rest or solve complex optimization (e.g., submodular maximization,
+OMP) problems to compose the coresets. This paper proposes a novel and intuitive approach
+to efficiently select a coreset based on the similarity of loss gradients. Our method
+works on the hypothesis that gradients of samples belonging to a given class will point
+in similar directions during the early training phase. Samples with most neighbours that
+produce similar gradient directions, in other words, that produce noise-free gradients, will
+represent that class. Through extensive experimentation, we have demonstrated the effectiveness
+of our approach in out-performing state-of-the-art coreset selection algorithms
+on a range of benchmark datasets from CIFAR-10 to ImageNet with architectures of varied
+complexity (ResNet-18, ResNet-50, VGG-16, ViT).We have also demonstrated the effectiveness
+of our approach in Generative Modelling by implementing coreset selection to reduce
+training time for various GAN models (DCGAN, MSGAN, SAGAN, SNGAN) for different
+datasets (CIFAR-10, CIFAR-100, Tiny ImageNet) while not impacting the performance
+metrics significantly. Source code is provided at URL.
+                        </p>
+                    </div>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    var show_abstract = false;
+</script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      "tex2jax": {
+        "inlineMath": [["$","$"], ["\(","\)"]],
+        "displayMath": [["\[","\]"]],
+        "processEscapes": true
+    }
+}
+);
+var jq2 = $;
+</script>
+
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</body>
+</html>
