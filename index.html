@@ -406,6 +406,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-6Aj0aNXfRy">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/6Aj0aNXfRy.html">Exploring and Improving Initialization for Deep Graph Neural Networks: A Signal Propagation Perspective</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Senmiao Wang &middot; Yupeng Chen &middot; Yushun Zhang &middot; Ruoyu Sun &middot; Tian Ding</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-6Aj0aNXfRy"></div>
+
+    <a href="paper_pages/6Aj0aNXfRy.html">
+        <img src="https://drive.google.com/thumbnail?id=1Pi7ACLUdqZG_h1oEjX3TXvMX11E0WqiV" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-6Aj0aNXfRy" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-6Aj0aNXfRy" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-6Aj0aNXfRy">
+                Abstract <i id="caret-6Aj0aNXfRy" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-6Aj0aNXfRy">
+        <div class="abstract-display">
+            <p>Graph Neural Networks (GNNs) often suffer from performance degradation as the network depth increases. This paper addresses this issue by introducing initialization methods that enhance signal propagation (SP) within GNNs. We propose three key metrics for effective SP in GNNs: forward propagation, backward propagation, and graph embedding variation (GEV). While the first two metrics derive from classical SP theory, the third is specifically designed for GNNs. We theoretically demonstrate that a broad range of commonly used initialization methods for GNNs, which exhibit performance degradation with increasing depth, fail to control these three metrics simultaneously. To deal with this limitation, a direct exploitation of the SP analysis--searching for weight initialization variances that optimize the three metrics--is shown to significantly enhance the SP in deep GCNs. This approach is called \textit{\textbf{S}ignal \textbf{P}ropagation \textbf{o}n \textbf{G}raph-guided \textbf{Init}ialization (\textbf{SPoGInit})}. Our experiments demonstrate that SPoGInit outperforms commonly used initialization methods on various tasks and architectures. Notably, SPoGInit enables performance improvements as GNNs deepen, which represents a significant advancement in addressing depth-related challenges and highlights the validity and effectiveness of the SP analysis framework.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-DVeFqV56Iz">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/DVeFqV56Iz.html">Change Point Detection in Dynamic Graphs with Decoder-only Latent Space Model</a>
@@ -432,6 +462,36 @@
     <div class="collapse" id="collapse-event-abstract-DVeFqV56Iz">
         <div class="abstract-display">
             <p>This manuscript studies the unsupervised change point detection problem in time series of graphs using a decoder-only latent space model. The proposed framework consists of learnable prior distributions for low-dimensional graph representations and of a decoder that bridges the observed graphs and latent representations. The prior distributions of the latent spaces are learned from the observed data as empirical Bayes to assist change point detection. Specifically, the model parameters are estimated via maximum approximate likelihood, with a Group Fused Lasso regularization imposed on the prior parameters. The augmented Lagrangian is solved via Alternating Direction Method of Multipliers, and Langevin Dynamics are recruited for posterior inference. Simulation studies show good performance of the latent space model in supporting change point detection and real data experiments yield change points that align with significant events.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-PMO30TLI4l">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/PMO30TLI4l.html">Selective Concept Bottleneck Models Without Predefined Concepts</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Simon Schrodi &middot; Julian Schur &middot; Max Argus &middot; Thomas Brox</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-PMO30TLI4l"></div>
+
+    <a href="paper_pages/PMO30TLI4l.html">
+        <img src="http://img.youtube.com/vi/sdqfkwNge-I/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-PMO30TLI4l" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-PMO30TLI4l" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-PMO30TLI4l">
+                Abstract <i id="caret-PMO30TLI4l" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-PMO30TLI4l">
+        <div class="abstract-display">
+            <p>Concept-based models like Concept Bottleneck Models (CBMs) have garnered significant interest for improving model interpretability by first predicting human-understandable concepts before mapping them to the output classes. Early approaches required costly concept annotations. To alleviate this, recent methods utilized large language models to automatically generate class-specific concept descriptions and learned mappings from a pretrained black-box model’s raw features to these concepts using vision-language models. However, these approaches assume prior knowledge of which concepts the black-box model has learned. In this work, we discover the concepts encoded by the model through unsupervised concept discovery techniques instead. We further leverage a simple input-dependent concept selection mechanism that dynamically retains a sparse set of relevant concepts of each input, enhancing both sparsity and interpretability. Our approach not only improves downstream performance, but also needs significantly fewer concepts for accurate classification. Lastly, we show how large vision-language models can guide the editing of our models' weights to correct model errors.</p>
         </div>
     </div>
 </div>
@@ -463,6 +523,36 @@
         <div class="abstract-display">
             <p>One of the most common approaches for self-supervised representation learning is defining pre-text tasks to learn data representations. 
 Existing works determine pre-text tasks in a "task-agnostic'' way, without considering the forthcoming downstream tasks. This offers an advantage of broad applicability across tasks, but can also lead to a mismatch between task objectives, potentially degrading performance on downstream tasks. In this paper, we introduce TST-LLM, a framework that effectively reduces this mismatch when the natural language-based description of the downstream task is given without any ground-truth labels. TST-LLM instructs the LLM to use the downstream task's description and meta-information of data to discover features relevant to the target task. These discovered features are then treated as ground-truth labels to define "target-specific'' pre-text tasks. TST-LLM consistently outperforms contemporary baselines, such as STUNT and LFR, with win ratios of 95% and 81%, when applied to 22 benchmark tabular datasets, including binary and multi-class classification, and regression tasks.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-Tnwci2kLna">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/Tnwci2kLna.html">CXAD: Contrastive Explanations for Anomaly Detection: Algorithms, Complexity Results and Experiments</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Ian Davidson &middot; Nicolás Kennedy &middot; S. S. Ravi</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-Tnwci2kLna"></div>
+
+    <a href="paper_pages/Tnwci2kLna.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-Tnwci2kLna" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-Tnwci2kLna" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-Tnwci2kLna">
+                Abstract <i id="caret-Tnwci2kLna" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-Tnwci2kLna">
+        <div class="abstract-display">
+            <p>Anomaly/Outlier detection (AD/OD) is often used in controversial applications to detect unusual behavior which is then further investigated or policed. This means an explanation of why something was predicted as an anomaly is desirable not only for individuals but also for the general population and policy-makers. However, existing explainable AI (XAI) methods are not well suited for Explainable Anomaly detection (XAD). In particular, most XAI methods provide instance-level explanations, whereas a model/global-level explanation is desirable for a complete understanding of the definition of normality or abnormality used by an AD algorithm. Further, existing XAI methods try to explain an algorithm’s behavior by finding an explanation of why an instance belongs to a category. However, by definition, anomalies/outliers are chosen because they are different from the normal instances. We propose a new style of model agnostic explanation, called contrastive explanation, that is designed specifically for AD algorithms. It addresses the novel challenge of providing a model-agnostic and global-level explanation by finding contrasts between the outlier group of instances and the normal group. We propose three formulations: (i) Contrastive Explanation, (ii) Strongly Contrastive Explanation, and (iii) Multiple Strong Contrastive Explanations. The last formulation is specifically for the case where a given dataset is believed to have many types of anomalies. For the first two formulations, we show the underlying problem is in the computational class P by presenting linear and polynomial time exact algorithms. We show that the last formulation is computationally intractable, and we use an integer linear program for that version to generate experimental results. We demonstrate our work on several data sets such as the CelebA image data set, the HateXplain language data set, and the COMPAS dataset on fairness. These data sets are chosen as their ground truth explanations are clear or well-known.</p>
         </div>
     </div>
 </div>
@@ -560,6 +650,36 @@ Our work provides a methodology to approximate and analyze deep learning Hessian
     <div class="collapse" id="collapse-event-abstract-JyjTJAG9yZ">
         <div class="abstract-display">
             <p>Graph Neural Networks (GNNs) combine node attributes over a fixed granularity of the local graph structure around a node to predict its label. However, different nodes may relate to a node-level property with a different granularity of its local neighborhood, and using the same level of smoothing for all nodes can be detrimental to their classification. In this work, we challenge the common fact that a single GNN layer can classify all nodes of a graph by training GNNs with a distinct personalized layer for each node. Inspired by metric learning, we propose a novel algorithm, MetSelect, to select the optimal representation layer to classify each node. In particular, we identify a prototype representation of each class in a transformed GNN layer and then, classify using the layer where the distance is smallest to a class prototype after normalizing with that layer’s variance. Results on 10 datasets and 3 different GNNs show that we significantly improve the node classification accuracy of GNNs in a plug-and-play manner. We also find that using variable layers for prediction enables GNNs to be deeper and more robust to poisoning attacks. We hope this work can inspire future works to learn more adaptive and personalized graph representations.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-FPJKZDzdsW">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/FPJKZDzdsW.html">Fairness with respect to Stereotype Predictors: Impossibilities and Best Practices</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Inbal Rachel Livni Navon &middot; Omer Reingold &middot; Judy Hanwen Shen</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-FPJKZDzdsW"></div>
+
+    <a href="paper_pages/FPJKZDzdsW.html">
+        <img src="https://drive.google.com/thumbnail?id=109Ud2KIQY0IW8pHAxMI4XRDRv7lfy_dP" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-FPJKZDzdsW" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-FPJKZDzdsW" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-FPJKZDzdsW">
+                Abstract <i id="caret-FPJKZDzdsW" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-FPJKZDzdsW">
+        <div class="abstract-display">
+            <p>As AI systems increasingly influence decision-making from consumer recommendations to educational opportunities, their accountability becomes paramount. This need for oversight has driven extensive research into algorithmic fairness, a body of work that has examined both allocative and representational harms. However, numerous works examining representational harms such as stereotypes encompass many different concepts measured by different criteria, yielding many, potentially conflicting, characterizations of harm. The abundance of measurement approaches makes the mitigation of stereotypes in downstream machine learning models highly challenging. Our work introduces and unifies a broad class of auditors through the framework of \textit{stereotype predictors}. We map notions of fairness with respect to these predictors to existing notions of group fairness. We give guidance, with theoretical foundations, for selecting one or a set of stereotype predictors and provide algorithms for achieving fairness with respect to stereotype predictors under various fairness notions. We demonstrate the effectiveness of our algorithms with different stereotype predictors in two empirical case studies.</p>
         </div>
     </div>
 </div>
