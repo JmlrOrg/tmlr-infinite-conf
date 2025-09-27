@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    NovelCraft: A Dataset for Novelty Detection and Discovery in Open Worlds
+                    Language-assisted Feature Representation and Lightweight Active Learning For On-the-Fly Category Discovery
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Cynthia Feeney &middot; Sarah Schneider &middot; Panagiotis Lymperopoulos &middot; Liping Liu &middot; Matthias Scheutz &middot; Michael C Hughes
+                    Anwesha Banerjee &middot; Soma Biswas
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=4eL6z9ziw7" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=ZihFoM8K0j" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=4eL6z9ziw7" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=ZihFoM8K0j" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://novelcraft.cs.tufts.edu/data_access.html" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/missBanerjee/SynC/tree/main" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://www.youtube.com/embed/d0AAH_eMPoQ" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/q-A2isj0x0o" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=4eL6z9ziw7"><img src="../paper_thumbnails/4eL6z9ziw7.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=ZihFoM8K0j"><img src="../paper_thumbnails/ZihFoM8K0j.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,7 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            In order for artificial agents to successfully perform tasks in changing environments, they must be able to both detect and adapt to novelty. However, visual novelty detection research often only evaluates on repurposed datasets such as CIFAR-10 originally intended for object classification, where images focus on one distinct, well-centered object. New benchmarks are needed to represent the challenges of navigating the complex scenes of an open world. Our new NovelCraft dataset contains multimodal episodic data of the images and symbolic world-states seen by an agent completing a pogo stick assembly task within a modified Minecraft environment. In some episodes, we insert novel objects of varying size within the complex 3D scene that may impact gameplay. Our visual novelty detection benchmark finds that methods that rank best on popular area-under-the-curve metrics may be outperformed by simpler alternatives when controlling false positives matters most. Further multimodal novelty detection experiments suggest that methods that fuse both visual and symbolic information can improve time until detection as well as overall discrimination. Finally, our evaluation of recent generalized category discovery methods suggests that adapting to new imbalanced categories in complex scenes remains an exciting open problem.
+                            Contemporary deep learning models are very successful in recognizing predetermined categories, but often struggle when confronted with novel ones, constraining their utility in the real world. Identifying this research gap, On-the-fly Category Discovery aims to enable machine learning systems trained on closed labeled datasets to promptly discern between novel and familiar categories of the test-images encountered in an online manner (one image at a time), along with clustering the different new classes as and when they are encountered. To address this challenging task, we propose SynC, a pragmatic yet robust framework that capitalizes on the presence of category names within the labeled datasets and the powerful knowledge-base of Large Language Models to obtain unique feature representations for each class. It also dynamically updates the classifiers of both the seen and novel classes for improved class discriminability. An extended variant, SynC-AL incorporates a lightweight active learning module to mitigate errors during inference, for long-term model deployment. Extensive evaluation show that SynC and SynC-AL achieve state-of-the-art performance across a spectrum of classification datasets.
                         </p>
                     </div>
                 </p>

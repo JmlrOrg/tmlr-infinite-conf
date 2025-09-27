@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    NovelCraft: A Dataset for Novelty Detection and Discovery in Open Worlds
+                    LumiNet: Perception-Driven Knowledge Distillation via Statistical Logit Calibration
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Cynthia Feeney &middot; Sarah Schneider &middot; Panagiotis Lymperopoulos &middot; Liping Liu &middot; Matthias Scheutz &middot; Michael C Hughes
+                    Md. Ismail Hossain &middot; M M Lutfe Elahi &middot; Sameera Ramasinghe &middot; Ali Cheraghian &middot; Fuad Rahman &middot; Nabeel Mohammed &middot; Shafin Rahman
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=4eL6z9ziw7" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=3rU1lp9w2l" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=4eL6z9ziw7" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=3rU1lp9w2l" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://novelcraft.cs.tufts.edu/data_access.html" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/ismail31416/LumiNet" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://www.youtube.com/embed/d0AAH_eMPoQ" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="https://drive.google.com/file/d/1IJmJ_YLgcpezc8jaNfNTk7gpoFE8xhbU/preview" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=4eL6z9ziw7"><img src="../paper_thumbnails/4eL6z9ziw7.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=3rU1lp9w2l"><img src="../paper_thumbnails/3rU1lp9w2l.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,7 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            In order for artificial agents to successfully perform tasks in changing environments, they must be able to both detect and adapt to novelty. However, visual novelty detection research often only evaluates on repurposed datasets such as CIFAR-10 originally intended for object classification, where images focus on one distinct, well-centered object. New benchmarks are needed to represent the challenges of navigating the complex scenes of an open world. Our new NovelCraft dataset contains multimodal episodic data of the images and symbolic world-states seen by an agent completing a pogo stick assembly task within a modified Minecraft environment. In some episodes, we insert novel objects of varying size within the complex 3D scene that may impact gameplay. Our visual novelty detection benchmark finds that methods that rank best on popular area-under-the-curve metrics may be outperformed by simpler alternatives when controlling false positives matters most. Further multimodal novelty detection experiments suggest that methods that fuse both visual and symbolic information can improve time until detection as well as overall discrimination. Finally, our evaluation of recent generalized category discovery methods suggests that adapting to new imbalanced categories in complex scenes remains an exciting open problem.
+                            In the knowledge distillation literature, feature-based methods have dominated due to their ability to effectively tap into extensive teacher models. In contrast, logit-based approaches, which aim to distill `dark knowledge' from teachers, typically exhibit inferior performance compared to feature-based methods. To bridge this gap, we present LumiNet, a novel knowledge distillation algorithm designed to enhance logit-based distillation. We introduce the concept of `perception', aiming to calibrate logits based on the model's representation capability. This concept addresses overconfidence issues in the logit-based distillation method while also introducing a novel method to distill knowledge from the teacher. It reconstructs the logits of a sample/instances by considering relationships with other samples in the batch. LumiNet excels on benchmarks like CIFAR-100, ImageNet, and MSCOCO, outperforming the leading feature-based methods, e.g., compared to KD with ResNet18 and MobileNetV2 on ImageNet, it shows improvements of 1.5\% and 2.05\%, respectively.
                         </p>
                     </div>
                 </p>
