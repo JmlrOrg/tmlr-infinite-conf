@@ -196,6 +196,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-nwQ8nitlTZ">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/nwQ8nitlTZ.html">AB-UPT: Scaling Neural CFD Surrogates for High- Fidelity Automotive Aerodynamics Simulations via Anchored- Branched Universal Physics Transformers</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Benedikt Alkin &middot; Maurits Bleeker &middot; Richard Kurle &middot; Tobias Kronlachner &middot; Reinhard Sonnleitner &middot; Matthias Dorfer &middot; Johannes Brandstetter</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-nwQ8nitlTZ"></div>
+
+    <a href="paper_pages/nwQ8nitlTZ.html">
+        <img src="http://img.youtube.com/vi/ERx5MHaZ1Jk/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-nwQ8nitlTZ" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-nwQ8nitlTZ" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-nwQ8nitlTZ">
+                Abstract <i id="caret-nwQ8nitlTZ" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-nwQ8nitlTZ">
+        <div class="abstract-display">
+            <p>Recent advances in neural surrogate modeling offer the potential for transformative innovations in applications such as automotive aerodynamics. Yet, industrial-scale problems often involve volumetric meshes with cell counts reaching 100 million, presenting major scalability challenges. Complex geometries further complicate modeling through intricate surface-volume interactions, while quantities such as vorticity are highly nonlinear and must satisfy strict divergence-free constraints. To address these requirements, we introduce AB-UPT as a novel modeling scheme for building neural surrogates for CFD simulations. AB-UPT is designed to: (i) decouple geometry encoding and prediction tasks via multi-branch operators; (ii) enable scalability to high-resolution outputs via neural simulation in a low-dimensional latent space, coupled with anchored neural field decoders to predict high-fidelity outputs; (iii) enforce physics consistency by a divergence-free formulation. We show that AB-UPT yields state-of-the-art predictive accuracy of surface and volume fields on automotive CFD simulations ranging from 33 thousand up to 150 million mesh cells. Furthermore, our anchored neural field architecture enables the enforcement of hard physical constraints on the physics predictions without degradation in performance, exemplified by modeling divergence-free vorticity fields. Notably, the proposed models can be trained on a single GPU in less than a day and predict industry-standard surface and volume fields within seconds. Additionally, we show that the flexible design of our method enables neural simulation from a CAD geometry alone, thereby eliminating the need for costly CFD meshing procedures for inference.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-8KbstCUXhH">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/8KbstCUXhH.html">D2 Actor Critic: Diffusion Actor Meets Distributional Critic</a>
@@ -435,6 +465,36 @@
 In this work, we present a unified evaluation framework designed to assess the performance of 3D representations in reconstruction and generation. We compare these representations based on multiple criteria: quality, computational efficiency, and generalization performance. Beyond standard model benchmarking, our experiments aim to derive best practices over all steps involved in the 3D generation pipeline, including preprocessing, mesh reconstruction, compression with autoencoders, and generation. Our findings highlight that reconstruction errors significantly impact overall performance, underscoring the need to evaluate generation and reconstruction jointly. 
 We provide insights that can inform the selection of suitable 3D models for various applications, facilitating the development of more robust and application-specific solutions in 3D generation. 
 The code for our framework is available at https://github.com/isl-org/unifi3d.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-NXvGOaYExG">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/NXvGOaYExG.html">Learning to Be Cautious</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Montaser Mohammedalamen &middot; Dustin Morrill &middot; Alexander Sieusahai &middot; yash satsangi &middot; Michael Bowling</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-NXvGOaYExG"></div>
+
+    <a href="paper_pages/NXvGOaYExG.html">
+        <img src="http://img.youtube.com/vi/t-pxmpCYHtA/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-NXvGOaYExG" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-NXvGOaYExG" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-NXvGOaYExG">
+                Abstract <i id="caret-NXvGOaYExG" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-NXvGOaYExG">
+        <div class="abstract-display">
+            <p>A key challenge in the field of reinforcement learning is to develop agents that behave cautiously in novel situations. It is generally impossible to anticipate all situations that an autonomous system may face or what behavior would best avoid bad outcomes. An agent that could learn to be cautious would overcome this challenge by discovering for itself when and how to behave cautiously. In contrast, current approaches typically embed task-specific safety information or explicitly cautious behaviors into the system, which is error-prone and imposes extra burdens on practitioners. In this paper, we present both a sequence of tasks where cautious behavior becomes increasingly non-obvious, as well as an algorithm to demonstrate that it is possible for a system to learn to be cautious. The essential features of our algorithm are that it characterizes reward function uncertainty without task-specific safety information and uses this uncertainty to construct a robust policy. Specifically, we construct robust policies with a $k$-of-$N$ counterfactual regret minimization (CFR) subroutine given a learned reward function uncertainty represented by a neural network ensemble belief. These policies exhibit caution in each of our tasks without any task-specific safety tuning. Our code is available at https://github.com/montaserFath/Learning-to-be-Cautious</p>
         </div>
     </div>
 </div>
