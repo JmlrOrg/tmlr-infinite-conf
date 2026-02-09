@@ -256,6 +256,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-OWfWyj6krc">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/OWfWyj6krc.html">Unlocking [CLS] Features for Continual Post-Training</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Murat Onur Yildirim &middot; Elif Ceren Gok Yildirim &middot; Joaquin Vanschoren</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-OWfWyj6krc"></div>
+
+    <a href="paper_pages/OWfWyj6krc.html">
+        <img src="http://img.youtube.com/vi/rSz1V8JsWXU/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-OWfWyj6krc" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-OWfWyj6krc" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-OWfWyj6krc">
+                Abstract <i id="caret-OWfWyj6krc" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-OWfWyj6krc">
+        <div class="abstract-display">
+            <p>Continual learning requires models to integrate new classes or domains over time while preserving previously acquired knowledge. Within this paradigm, foundation models often achieve strong performance, but they still remain subject to the stability–plasticity trade-off, where excessive plasticity leads to forgetting of prior knowledge, and excessive stability constrains the adaptation. This necessitates an effective post-training strategy that introduces minimal yet functional modifications. To address this challenge, we first introduce a new parameter-efficient fine-tuning module ‘Learn and Calibrate’, or LuCA, designed to acquire task-specific knowledge through an adapter-calibrator couple, enabling well-refined feature representations. Then, for each task, we deploy a sparse LuCA module on top of the last classification token [CLS] just before the classifier, which we refer to as ‘Token-level Sparse Calibration and Adaptation’, or TOSCA. By leaving the generalization capabilities of the foundation models intact and adapting exclusively via the last token, our approach achieves a harmonious balance between stability and plasticity while reducing both training and inference complexity. We demonstrate that TOSCA yields state-of-the-art performance while introducing 8 times fewer parameters compared to prior methods.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-g95C4zIEPg">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/g95C4zIEPg.html">One-Bit Distributed Mean Estimation with Unknown Variance</a>
@@ -705,6 +735,36 @@ individual privacy. This phenomenon is termed imitation – generation of images
     <div class="collapse" id="collapse-event-abstract-wOrkUTr0W5">
         <div class="abstract-display">
             <p>Foundation models excel at single-turn reasoning, but many real-world challenges, from scientific research to technology development, require multi-turn exploration in dynamic interactive environments. Crucial components of learning from experience in these settings, such as efficiently gathering information to test hypotheses, meta-learning a model of the world's dynamics, and adapting to unexpected changes, remain largely unexplored for these models. We first evaluate foundation models in Feature World, a setting that primarily tests information gathering about a static hidden reward function. In this initial setting, we show that state-of-the-art foundation models come close to optimal efficiency in selecting maximally informative actions in tasks with simple reward functions. As a proof of concept, we also show a model can gather information efficiently in a 3D embodied version of this task, though errors in vision limit some aspects of performance. In order to test exploration across multiple dependent turns and trials, we implement a custom, text-based version of the Alchemy environment, a benchmark designed for meta-learning. Here, agents must deduce a latent causal structure by integrating information across multiple state-dependent trials. In this more complex setting, we find that recent foundation models struggle to meta-learn strategies that enable improved performance over time. However, prompting the models to summarize their observations at regular intervals enables an emergent meta-learning process, allowing them to improve across trials. Notably, in some models, summarization also enabled adaptive re-learning of this information when the environment's rules change unexpectedly. While most models performed reasonably well on simple Feature World tasks, evaluations in Alchemy reveal stark differences in robustness among the models, with Gemini 2.5 performing best, followed by Claude 3.7, and ChatGPT-4o and o4-mini struggling the most. These results underscore Alchemy's value as a benchmark for meta-learning and strategy adaptation in foundation models. By moving beyond simple discovery to complex, stateful environments, we demonstrate that the most significant challenge for foundation agents is not selecting informative actions in the moment, but rather seeking and integrating knowledge through adaptive strategies over time. Intriguingly, we find there is likely no intrinsic barrier to future generations of foundation agents more fully mastering these abilities.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-WSRQeCUc3g">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/WSRQeCUc3g.html">Model-Free Learning with Heterogeneous Dynamical Systems: A Federated LQR Approach</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Han Wang &middot; Leonardo Felipe Toso &middot; Aritra Mitra &middot; James Anderson</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-WSRQeCUc3g"></div>
+
+    <a href="paper_pages/WSRQeCUc3g.html">
+        <img src="http://img.youtube.com/vi/wpxzC2aRh3o/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-WSRQeCUc3g" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-WSRQeCUc3g" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-WSRQeCUc3g">
+                Abstract <i id="caret-WSRQeCUc3g" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-WSRQeCUc3g">
+        <div class="abstract-display">
+            <p>We study a model-free federated linear quadratic regulator (LQR) problem where M agents with unknown, distinct yet similar dynamics collaboratively learn an optimal policy to minimize an average quadratic cost while keeping their data private. To exploit the similarity of the agents' dynamics, we propose to use federated learning (FL) to allow the agents to periodically communicate with a central server to train policies by leveraging a larger dataset from all the agents. With this setup, we seek to understand the following questions: (i) Is the learned common policy stabilizing for all agents? (ii) How close is the learned common policy to each agent's own optimal policy?  (iii) Can each agent learn its own optimal policy faster by leveraging data from all agents? To answer these questions, we propose the federated and model-free algorithm FedLQR. Our analysis overcomes numerous technical challenges, such as heterogeneity in the agents’ dynamics, multiple local updates, and stability concerns. We show that FedLQR produces a common policy that, at each iteration, is stabilizing for all agents. Moreover, we prove that when learning each agent's optimal policy, FedLQR achieves a sample complexity reduction proportional to the number of agents M in a low-heterogeneity regime, compared to the single-agent setting.</p>
         </div>
     </div>
 </div>
