@@ -316,6 +316,37 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-0ogq232VGP">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/0ogq232VGP.html">Fuzzy PyTorch: Rapid Numerical Variability Evaluation for Deep Learning Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Inés Gonzalez Pepe &middot; Hiba Akhaddar &middot; Tristan Glatard &middot; Yohan Chatelain</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-0ogq232VGP"></div>
+
+    <a href="paper_pages/0ogq232VGP.html">
+        <img src="http://img.youtube.com/vi/RbXQNfGBG30/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-0ogq232VGP" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-0ogq232VGP" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-0ogq232VGP">
+                Abstract <i id="caret-0ogq232VGP" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-0ogq232VGP">
+        <div class="abstract-display">
+            <p>We introduce Fuzzy PyTorch, a framework for rapid evaluation of numerical variability in deep learning (DL) models. As DL is increasingly applied to diverse tasks, understanding variability from floating-point arithmetic is essential to ensure robust and reliable performance. Tools assessing such variability must be scalable, efficient, and integrate seamlessly with existing frameworks while minimizing code modifications. Fuzzy PyTorch enables this by integrating stochastic arithmetic into PyTorch through Probabilistic Rounding with Instruction Set Management, a novel library interfacing with Verificarlo, a numerical analysis compiler. The library offers stochastic rounding mode and a novel mode; up-down rounding.
+Comparative evaluations show Fuzzy PyTorch maintains model performance and achieves runtime reductions of $5\times$ to $60\times$ versus Verrou, a state-of-the-art tool. We further demonstrate scalability by running models from 1 to 341 million parameters, confirming applicability across small and large DL architectures. Overall, Fuzzy PyTorch provides an efficient, scalable, and practical solution for assessing numerical variability in deep learning, enabling researchers and practitioners to quantify and manage floating-point uncertainty without compromising performance or computational efficiency.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-g95C4zIEPg">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/g95C4zIEPg.html">One-Bit Distributed Mean Estimation with Unknown Variance</a>
@@ -404,6 +435,36 @@ Experiments involving four different text-generation tasks demonstrate that our 
         <div class="abstract-display">
             <p>We propose Derivative Learning (DERL), a supervised approach that models physical systems by learning their partial derivatives. We also leverage DERL to build physical models incrementally, by designing a distillation protocol that effectively transfers knowledge from a pre-trained model to a student one. We provide theoretical guarantees that DERL can learn the true physical system, being consistent with the underlying physical laws, even when using empirical derivatives. DERL outperforms state-of-the-art methods in generalizing an ODE to unseen initial conditions and a parametric PDE to unseen parameters. We also design a method based on DERL to transfer physical knowledge across models by extending them to new portions of the physical domain and a new range of PDE parameters. This
 introduces a new pipeline to build physical models incrementally in multiple stages.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-zAo0L7Dcqt">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/zAo0L7Dcqt.html">A Multi-Fidelity Control Variate Approach for Policy Gradient Estimation</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Xinjie Liu &middot; Cyrus Neary &middot; Kushagra Gupta &middot; Wesley A. Suttle &middot; Christian Ellis &middot; ufuk topcu &middot; David Fridovich-Keil</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-zAo0L7Dcqt"></div>
+
+    <a href="paper_pages/zAo0L7Dcqt.html">
+        <img src="http://img.youtube.com/vi/AlbLyp2_Xao/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-zAo0L7Dcqt" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-zAo0L7Dcqt" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-zAo0L7Dcqt">
+                Abstract <i id="caret-zAo0L7Dcqt" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-zAo0L7Dcqt">
+        <div class="abstract-display">
+            <p>Many reinforcement learning (RL) algorithms are impractical for deployment in operational systems or for training with computationally expensive high-fidelity simulations, as they require large amounts of data. Meanwhile, low-fidelity simulators—such as reduced-order models, heuristic reward functions, or generative world models—can cheaply provide useful data for RL training, even if they are too coarse for direct sim-to-real transfer. We propose multi-fidelity policy gradients (MFPGs), an RL framework that mixes a small amount of data from the target environment with a control variate formed from a large volume of low-fidelity simulation data to construct an unbiased, variance-reduced estimator for on-policy policy gradients. We instantiate the framework by developing a practical, multi-fidelity variant of the classical REINFORCE algorithm. We show that under standard assumptions, the MFPG estimator guarantees asymptotic convergence of multi-fidelity REINFORCE to locally optimal policies in the target environment, and achieves faster finite-sample convergence rates compared to training with high-fidelity data alone. We evaluate the MFPG algorithm across a suite of simulated robotics benchmark tasks in scenarios with limited high-fidelity data but abundant off-dynamics, low-fidelity data. In our baseline comparisons, for scenarios where low-fidelity data are neutral or beneficial and dynamics gaps are mild to moderate, MFPG is, among the evaluated off-dynamics RL and low-fidelity-only approaches,the only method that consistently achieves statistically significant improvements in mean performance over a baseline trained solely on high-fidelity data. When low-fidelity data become harmful, MFPG exhibits the strongest robustness against performance degradation among the evaluated methods, whereas strong off-dynamics RL methods tend to exploit low-fidelity data aggressively and fail substantially more severely. An additional experiment in which the high- and low-fidelity environments are assigned anti-correlated rewards shows that MFPG can remain effective even when the low-fidelity environment exhibits reward misspecification. Thus, MFPG not only offers a reliable and robust paradigm for exploiting low-fidelity data, e.g., to enable efficient sim-to-real transfer, but also provides a principled approach to managing the trade-off between policy performance and data collection costs.</p>
         </div>
     </div>
 </div>
