@@ -166,7 +166,37 @@
             <div class="col-sm-12">
                 <div style="max-width: 1500px; margin:auto; border">
                     <div class="grid-displaycards">
-                        <div class="displaycards touchup-date" id="event-eG3Qy5Oux6">
+                        <div class="displaycards touchup-date" id="event-kVS7sMlv7P">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/kVS7sMlv7P.html">From Clutter to Clarity: Visual Recognition through Foveated Object-Centric Learning (FocL)</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Amitangshu Mukherjee &middot; Deepak Ravikumar &middot; Kaushik Roy</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-kVS7sMlv7P"></div>
+
+    <a href="paper_pages/kVS7sMlv7P.html">
+        <img src="http://img.youtube.com/vi/AjFTnpK3RtA/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-kVS7sMlv7P" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-kVS7sMlv7P" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-kVS7sMlv7P">
+                Abstract <i id="caret-kVS7sMlv7P" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-kVS7sMlv7P">
+        <div class="abstract-display">
+            <p>Human active vision integrates spatial attention (dorsal) and object recognition (ventral) as distinct information processing pathways. Rapid eye movements focus perception on task-relevant regions while filtering out background clutter. Mimicking this ventral specialization, we introduce FocL (Foveated Object-Centric Learning), a training strategy that biases image classification models toward label-consistent object regions by replacing full images with foveated crops. Standard training often relies on spurious correlation between label and background, increasing memorization of hard examples in the tail of the difficulty distribution. FocL simulates saccades by jittering fixation points and extracting foveated glimpses from annotated bounding boxes. This object-first restructuring reduces non-foreground contamination and lowers mean training loss. FocL reduces memorization, lowering mean cumulative sample loss by approximately 65 % and making nearly all high-memorization samples (top 1 %) easier to learn. It also increases the mean $\ell_2$ adversarial perturbation distance required to flip predictions by approximately 62 %. On ImageNet-V1, FocL achieves up to 11 % higher accuracy on oracle crops. When paired with the Segment Anything Model (SAM) as a dorsal proposal generator, FocL provides around an 7 % gain on ImageNet-V1 and up to 8 % under natural distribution shift (ImageNet-V2). Extending this setup to COCO, FocL improves cross-domain mAP by 3--4 points without any target-domain training. Finally, given object localization (bounding boxes), FocL reaches higher accuracy using roughly 56\% fewer training images, offering a simple path to more robust and efficient visual recognition.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-eG3Qy5Oux6">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/eG3Qy5Oux6.html">CodePDE: An Inference Framework for LLM-driven PDE Solver Generation</a>
     </div>
@@ -282,6 +312,37 @@
     <div class="collapse" id="collapse-event-abstract-9NnhVME4Q6">
         <div class="abstract-display">
             <p>The intrinsic capability to continuously learn a changing data stream is a desideratum of deep neural networks (DNNs). However, current DNNs suffer from catastrophic forgetting, which interferes with remembering past knowledge. To mitigate this issue, existing Continual Learning (CL) approaches often retain exemplars for replay, regularize learning, or allocate dedicated capacity for new tasks. This paper investigates an unexplored direction for CL called Retrospective Feature Estimation (RFE). RFE learns to reverse feature changes by aligning the features from the current trained DNN backward to the feature space of the old task, where performing predictions is easier. This retrospective process utilizes a chain of small feature mapping networks called retrospector modules. Empirical experiments on several CL benchmarks, including CIFAR10, CIFAR100, and Tiny ImageNet, demonstrate the effectiveness and potential of this novel CL direction compared to existing representative CL methods, motivating further research into retrospective mechanisms as a principled alternative for mitigating catastrophic forgetting in CL. Code is available at: https://github.com/mail-research/retrospective-feature-estimation.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-73PV17dVCM">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/73PV17dVCM.html">STEALTH: Secure Transformer for Encrypted Alignment of Latent Text Embeddings via Semantic Isomorphism Enforcement (SIE) Loss Function</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Nafew Azim &middot; Nabeel Mohammed</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-73PV17dVCM"></div>
+
+    <a href="paper_pages/73PV17dVCM.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-73PV17dVCM" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-73PV17dVCM" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-73PV17dVCM">
+                Abstract <i id="caret-73PV17dVCM" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-73PV17dVCM">
+        <div class="abstract-display">
+            <p>The pervasive use of large language models (LLMs) on sensitive data presents a critical privacy challenge, as traditional encryption renders data unusable for inference. We introduce STEALTH, a 120M secure transformer framework designed to process encrypted text while preserving its semantic utility under an authorized-key threat model (no decryption or side-channel access). The core innovation of STEALTH is the Semantic Isomorphism Enforcement (SIE) loss function, a loss that trains the model to learn a topology-preserving mapping between encrypted text embeddings and their original plaintext latent space. This encourages preservation of semantic relationships and topological structure in the encrypted domain. Using retrieval-based reconstruction from a domain-aligned plaintext corpus, STEALTH achieves near-perfect semantic retrieval (BLEU score of 1.0 under full-corpus coverage in our experiments) and enables accurate privacy-preserving clustering on encrypted embeddings. We evaluate STEALTH across 44 datasets spanning general language understanding, healthcare, finance, legal, e-commerce, programming, content analysis, reading comprehension, and corporate communication domains with 16 encryption schemes (704 experimental conditions), establishing a comprehensive benchmark for 
+privacy-preserving NLP on encrypted text. Performance depends on domain alignment between encrypted inputs and the indexed plaintext corpus. Our results demonstrate that, with well-aligned domain indexes and retrieval support, models can perform effective NLP on encrypted data without direct decryption.</p>
         </div>
     </div>
 </div>
@@ -529,6 +590,36 @@ introduces a new pipeline to build physical models incrementally in multiple sta
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-gO1CpPRj6A">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/gO1CpPRj6A.html">Prompt Estimation from Prototypes for Federated Prompt Tuning of Vision Transformers</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">M Yashwanth &middot; Sharannya Ghosh &middot; Aditay Tripathi &middot; Anirban Chakraborty</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-gO1CpPRj6A"></div>
+
+    <a href="paper_pages/gO1CpPRj6A.html">
+        <img src="http://img.youtube.com/vi/NCawLzaGB2o/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-gO1CpPRj6A" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-gO1CpPRj6A" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-gO1CpPRj6A">
+                Abstract <i id="caret-gO1CpPRj6A" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-gO1CpPRj6A">
+        <div class="abstract-display">
+            <p>Visual Prompt Tuning (VPT) of pre-trained Vision Transformers (ViTs) has proven highly effective as a parameter-efficient fine-tuning technique for adapting large models to downstream tasks with limited data. Its parameter efficiency makes it particularly suitable for Federated Learning (FL), where both communication and computation budgets are often constrained. However, global prompt tuning struggles to generalize across heterogeneous clients, while personalized tuning overfits to local data and lacks generalization. We propose PEP-FedPT (Prompt Estimation from Prototypes for Federated Prompt Tuning), a unified framework designed to achieve both generalization and personalization in federated prompt tuning of ViTs. Within this framework, we introduce the novel Class-Contextualized Mixed Prompt (CCMP) — based on class-specific prompts maintained alongside a globally shared prompt. For each input, CCMP adaptively combines class-specific prompts using weights derived from global class prototypes and client class priors. This approach enables per-sample prompt personalization without storing client-dependent trainable parameters. The prompts are collaboratively optimized via traditional federated averaging technique on the same. Comprehensive evaluations on CIFAR-100, TinyImageNet, DomainNet, and iNaturalist datasets demonstrate that PEP-FedPT consistently surpasses the state-of-the-art baselines under diverse data heterogeneity scenarios, establishing a strong foundation for efficient and generalizable federated prompt tuning of Vision Transformers.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-lExqWvQht8">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/lExqWvQht8.html">CADmium: Fine-Tuning Code Language Models for Text- Driven Sequential CAD Design</a>
@@ -555,6 +646,36 @@ introduces a new pipeline to build physical models incrementally in multiple sta
     <div class="collapse" id="collapse-event-abstract-lExqWvQht8">
         <div class="abstract-display">
             <p>Computer-aided design (CAD) is the digital construction of 2D and 3D objects, and is central to a wide range of engineering and manufacturing applications like automobile and aviation. Despite its importance, CAD modeling remains largely a time-intensive, manual task. Recent works have attempted to automate this process with small transformer-based models and handcrafted CAD sequence representations. However, there has been little effort to leverage the potential of large language models (LLMs) for sequential CAD design. In this work, we introduce a new large-scale dataset of more than 170k CAD models annotated with high-quality, human-like descriptions generated with our pipeline based on GPT-4.1. Using this dataset, we fine-tune powerful code-LLMs to generate CAD sequences represented in a JSON-based format from natural language descriptions, demonstrating the viability and effectiveness of this approach for text-conditioned CAD generation. Because simple metrics often fail to reflect the quality of generated objects, we introduce geometric and topological metrics based on sphericity, mean curvature, and Euler characteristic to provide richer structural insights. Our experiments and ablation studies on both synthetic and human-annotated data demonstrate that CADmium is able to automate CAD design, drastically speeding up the design of new objects. The dataset, code, and fine-tuned models are available online.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-HTQuEZwEHw">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/HTQuEZwEHw.html">Multiscale Training of Convolutional Neural Networks</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Shadab Ahamed &middot; Niloufar Zakariaei &middot; Eldad Haber &middot; Moshe Eliasof</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-HTQuEZwEHw"></div>
+
+    <a href="paper_pages/HTQuEZwEHw.html">
+        <img src="http://img.youtube.com/vi/6YlYVhMehNg/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-HTQuEZwEHw" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-HTQuEZwEHw" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-HTQuEZwEHw">
+                Abstract <i id="caret-HTQuEZwEHw" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-HTQuEZwEHw">
+        <div class="abstract-display">
+            <p>Training convolutional neural networks (CNNs) on high‑resolution images is often bottlenecked by the cost of evaluating gradients of the loss on the finest spatial mesh. To address this, we propose Multiscale Gradient Estimation (MGE), a Multilevel Monte Carlo‑inspired estimator that expresses the expected gradient on the finest mesh as a telescopic sum of gradients computed on progressively coarser meshes. By assigning larger batches to the cheaper coarse levels, MGE achieves the same variance as single‑scale stochastic gradient estimation while reducing the number of fine mesh convolutions by a factor of 4 with each downsampling. We further embed MGE within a Full‑Multiscale training algorithm that solves the learning problem on coarse meshes first and "hot‑starts" the next finer level, cutting the required fine mesh iterations by an additional order of magnitude. Extensive experiments on image denoising, deblurring, inpainting and super‑resolution tasks using UNet, ResNet and ESPCN backbones confirm the practical benefits: Full-Multiscale reduces the computation costs by  4-16$\times$ with no significant loss in performance. Together, MGE and Full‑Multiscale offer a principled, architecture‑agnostic route to accelerate CNN training on high‑resolution data without sacrificing accuracy, and they can be combined with other variance‑reduction or learning‑rate schedules to further enhance scalability.</p>
         </div>
     </div>
 </div>
@@ -916,6 +1037,49 @@ individual privacy. This phenomenon is termed imitation – generation of images
     <div class="collapse" id="collapse-event-abstract-WSRQeCUc3g">
         <div class="abstract-display">
             <p>We study a model-free federated linear quadratic regulator (LQR) problem where M agents with unknown, distinct yet similar dynamics collaboratively learn an optimal policy to minimize an average quadratic cost while keeping their data private. To exploit the similarity of the agents' dynamics, we propose to use federated learning (FL) to allow the agents to periodically communicate with a central server to train policies by leveraging a larger dataset from all the agents. With this setup, we seek to understand the following questions: (i) Is the learned common policy stabilizing for all agents? (ii) How close is the learned common policy to each agent's own optimal policy?  (iii) Can each agent learn its own optimal policy faster by leveraging data from all agents? To answer these questions, we propose the federated and model-free algorithm FedLQR. Our analysis overcomes numerous technical challenges, such as heterogeneity in the agents’ dynamics, multiple local updates, and stability concerns. We show that FedLQR produces a common policy that, at each iteration, is stabilizing for all agents. Moreover, we prove that when learning each agent's optimal policy, FedLQR achieves a sample complexity reduction proportional to the number of agents M in a low-heterogeneity regime, compared to the single-agent setting.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-4iRx9b0Csu">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/4iRx9b0Csu.html">When Are Two Scores Better Than One? Investigating Ensembles of Diffusion Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Raphaël Razafindralambo &middot; Rémy Sun &middot; Damien Garreau &middot; Frederic Precioso &middot; Pierre-Alexandre Mattei</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-4iRx9b0Csu"></div>
+
+    <a href="paper_pages/4iRx9b0Csu.html">
+        <img src="http://img.youtube.com/vi/_3c91GzjS0c/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-4iRx9b0Csu" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-4iRx9b0Csu" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-4iRx9b0Csu">
+                Abstract <i id="caret-4iRx9b0Csu" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-4iRx9b0Csu">
+        <div class="abstract-display">
+            <p>Diffusion models now generate high-quality, diverse samples, with an increasing focus on
+more powerful models. Although ensembling is a well-known way to improve supervised
+models, its application to unconditional score-based diffusion models remains largely un-
+explored. In this work we investigate whether it provides tangible benefits for generative
+modelling. We find that while ensembling the scores generally improves the score-matching
+loss and model likelihood, it fails to consistently enhance perceptual quality metrics such as
+FID on image datasets. We confirm this observation across a breadth of aggregation rules
+using Deep Ensembles, Monte Carlo Dropout, on CIFAR-10 and FFHQ. We attempt to ex-
+plain this discrepancy by investigating possible explanations, such as the link between score
+estimation and image quality. We also look into tabular data through random forests, and
+find that one aggregation strategy outperforms the others. Finally, we provide theoretical
+insights into the summing of score models, which shed light not only on ensembling but also
+on several model composition techniques (e.g. guidance). Our Python code is available at
+https://github.com/rarazafin/score_diffusion_ensemble.</p>
         </div>
     </div>
 </div>
