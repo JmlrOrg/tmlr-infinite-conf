@@ -226,6 +226,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-yPEASsx3hk">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/yPEASsx3hk.html">Reward Engineering for Spatial Epidemic Simulations: A Reinforcement Learning Platform for Individual Behavioral Learning</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Radman Rakhshandehroo &middot; Daniel Coombs</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-yPEASsx3hk"></div>
+
+    <a href="paper_pages/yPEASsx3hk.html">
+        <img src="http://img.youtube.com/vi/xrWsZDwvxOw/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-yPEASsx3hk" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-yPEASsx3hk" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-yPEASsx3hk">
+                Abstract <i id="caret-yPEASsx3hk" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-yPEASsx3hk">
+        <div class="abstract-display">
+            <p>We present ContagionRL, a Gymnasium-compatible reinforcement learning platform specifically designed for systematic reward engineering in spatial epidemic simulations. Unlike traditional agent-based models that rely on fixed behavioral rules, our platform enables rigorous evaluation of how reward function design affects learned survival strategies across diverse epidemic scenarios. ContagionRL integrates a spatial SIRS+D epidemiological model with configurable environmental parameters, allowing researchers to stress-test reward functions under varying conditions including limited observability, different movement patterns, and heterogeneous population dynamics. We evaluate five distinct reward designs, ranging from sparse survival bonuses to a novel potential field approach, across multiple RL algorithms (PPO, SAC, A2C). Through systematic ablation studies, we identify that directional guidance and explicit adherence incentives are critical components for robust policy learning. Our comprehensive evaluation across varying infection rates, grid sizes, visibility constraints, and movement patterns reveals that reward function choice dramatically impacts agent behavior and survival outcomes. Agents trained with our potential field reward consistently achieve superior performance, learning maximal adherence to non-pharmaceutical interventions while developing sophisticated spatial avoidance strategies. The platform's modular design enables systematic exploration of reward-behavior relationships, addressing a knowledge gap in models of this type where reward engineering has received limited attention. ContagionRL is an effective platform for studying adaptive behavioral responses in epidemic contexts and highlight the importance of reward design, information structure, and environmental predictability in learning. Our code is publicly available at https://github.com/redradman/ContagionRL</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-olGaiwoZHZ">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/olGaiwoZHZ.html">The Role of Feature Interactions in Graph-based Tabular Deep Learning</a>
@@ -1080,6 +1110,36 @@ individual privacy. This phenomenon is termed imitation – generation of images
     <div class="collapse" id="collapse-event-abstract-iij6nLYLjF">
         <div class="abstract-display">
             <p>The performance of reinforcement learning (RL) in real-world applications can be hindered by the absence of robustness and safety in the learned policies. More specifically, an RL agent that trains in a certain Markov decision process (MDP) often struggles to perform well in MDPs that slightly deviate. To address this issue, we employ the framework of Robust MDPs (RMDPs) in a model-based setting and introduce a second learned transition model. Our method specifically incorporates an auxiliary pessimistic model, updated adversarially, to estimate the worst-case MDP within a Kullback-Leibler uncertainty set. In comparison to several existing works, our method does not impose any additional conditions on the training environment, such as the need for a parametric simulator. To test the effectiveness of the proposed pessimistic model in enhancing policy robustness, we integrate it into a practical RL algorithm, called Robust Model-Based Policy Optimization (RMBPO). Our experimental results indicate a notable improvement in policy robustness on high-dimensional control tasks, with the auxiliary model enhancing the performance of the learned policy in distorted MDPs, while maintaining the data-efficiency of the base algorithm. Our methodology is also compared against various other robust RL approaches. We further examine how pessimism is achieved by exploring the learned deviation between the proposed auxiliary world model and the nominal model. By introducing a pessimistic world model and demonstrating its role in improving policy robustness, our research presents a general methodology for robust RL in a model-based setting.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-ICUHKhOISN">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/ICUHKhOISN.html">$\texttt{SEM-CTRL}$: Semantically Controlled Decoding</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Mohammad Albinhassan &middot; Pranava Madhyastha &middot; Alessandra Russo</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-ICUHKhOISN"></div>
+
+    <a href="paper_pages/ICUHKhOISN.html">
+        <img src="http://img.youtube.com/vi/IuObWsfw8X0/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-ICUHKhOISN" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-ICUHKhOISN" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-ICUHKhOISN">
+                Abstract <i id="caret-ICUHKhOISN" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-ICUHKhOISN">
+        <div class="abstract-display">
+            <p>Ensuring both syntactic and semantic correctness in Large Language Model (LLM) outputs remains a significant challenge, despite being critical for real-world deployment. In this paper, we introduce $\texttt{SEM-CTRL}$, a unified approach that allows for enforcing rich context-sensitive constraints, and task and instance specific semantics directly on the LLM decoder. Our approach integrates token-level MCTS which is guided by specific syntactic and semantic constraints. The constraints over desired outputs are expressed using Answer Set Grammars, which is a logic-based formalism that generalizes context sensitive grammars while incorporating background knowledge to represent task-specific semantics. We show that our approach helps guarantee valid completions for any off-the-shelf LLM without the need for fine-tuning. We evaluate $\texttt{SEM-CTRL}$ on a range of tasks, including synthetic grammar synthesis, combinatorial reasoning, JSON parsing, and planning. Our experimental results demonstrate that $\texttt{SEM-CTRL}$ allows even small pre-trained LLMs to efficiently outperform larger variants and state-of-the-art reasoning models (e.g., $\text{\textit{o4-mini}}$) while simultaneously guaranteeing semantic validity.</p>
         </div>
     </div>
 </div>
