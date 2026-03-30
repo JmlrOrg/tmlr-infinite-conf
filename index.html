@@ -933,6 +933,36 @@ introduces a new pipeline to build physical models incrementally in multiple sta
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-CuqnFjeu5a">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/CuqnFjeu5a.html">ECLipsE-Gen-Local: Efficient Compositional Local Lipschitz Estimates for Deep Neural Networks</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Yuezhu Xu &middot; S Sivaranjani</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-CuqnFjeu5a"></div>
+
+    <a href="paper_pages/CuqnFjeu5a.html">
+        <img src="http://img.youtube.com/vi/FlgxjKeMGDk/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-CuqnFjeu5a" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-CuqnFjeu5a" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-CuqnFjeu5a">
+                Abstract <i id="caret-CuqnFjeu5a" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-CuqnFjeu5a">
+        <div class="abstract-display">
+            <p>The Lipschitz constant is a key measure for certifying the robustness of neural networks to input perturbations. However, computing the exact constant is NP-hard, and standard approaches to estimate the Lipschitz constant involve solving a large matrix semidefinite program (SDP) that scales poorly with network size. Further, there is a potential to efficiently leverage local information on the input region to provide tighter Lipschitz estimates. We address this problem here by proposing a compositional framework that yields tight yet scalable Lipschitz estimates for deep feedforward neural networks. Specifically, we begin by developing a generalized SDP framework for Lipschitz estimation that is highly flexible, accommodating heterogeneous activation function slope bounds for each neuron on each layer, and allowing Lipschitz estimates with respect to arbitrary input-output pairs in the neural network and arbitrary choices of sub-networks of consecutive layers. We then decompose this generalized SDP into a equivalent small sub-problems that can be solved sequentially, yielding the ECLipsE-Gen series of algorithms, with computational complexity that scales linearly with respect to the network depth. We also develop a variant that achieves near-instantaneous computation through closed-form solutions to each sub-problem. All our algorithms are accompanied by theoretical guarantees on feasibility and validity, serving as strict upper bounds on the true Lipschitz constant. Next, we develop a series of algorithms, termed as ECLipsE-Gen-Local, that explicitly incorporate local information on the input region to provide tighter Lipschitz constant estimates. Our experiments demonstrate that our algorithms achieve substantial speedups over a multitude of benchmarks while producing significantly tighter Lipschitz bounds than global approaches. Moreover, we demonstrate that our algorithms provide strict upper bounds for the Lipschitz constant with values approaching the exact Jacobian from autodiff when the input region is small enough. Finally, we demonstrate the practical utility of our approach by showing that our Lipschitz estimates closely align with network robustness. In summary, our approach considerably advances the scalability and efficiency of certifying neural network robustness, while capturing local input–output behavior to deliver provably tighter bounds, making it particularly suitable for safety-critical and adaptive learning tasks.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-qI2Vt9P9rl">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/qI2Vt9P9rl.html">Uncovering the Computational Roles of Nonlinearity in Sequence Modeling Using Almost-Linear RNNs</a>
