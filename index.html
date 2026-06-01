@@ -528,6 +528,36 @@ We quantitatively and qualitatively evaluate *D-Garment* on both simulations and
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-whihxstZcO">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/whihxstZcO.html">Scalable Constrained Multi-Agent Reinforcement Learning via State Augmentation and Consensus for Separable Dynamics</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Santiago Amaya-Corredor &middot; Miguel Calvo-Fullana &middot; Anders Jonsson</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-whihxstZcO"></div>
+
+    <a href="paper_pages/whihxstZcO.html">
+        <img src="http://img.youtube.com/vi/IWQaxh-GgIk/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-whihxstZcO" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-whihxstZcO" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-whihxstZcO">
+                Abstract <i id="caret-whihxstZcO" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-whihxstZcO">
+        <div class="abstract-display">
+            <p>We present a distributed approach for constrained Multi-Agent Reinforcement Learning (MARL) that combines state-augmented policy learning with distributed consensus over dual variables. Our method targets systems where agents have separable dynamics but must coordinate to satisfy global resource constraints, a setting in which, as we demonstrate empirically, independent learning fails to produce feasible solutions because agents cannot determine appropriate individual contributions toward collective constraintsatisfaction. The key technical contribution is showing that lightweight neighbor-to-neighbor consensus over Lagrange multipliers suffices for globally coordinated constraint enforcement while preserving the scalability of independent training. Each agent learns a single augmented policy offline, conditioned on both its local state and a dual variable encoding constraint feedback. During execution, agents reach agreement on this dual variable through local communication alone. We prove that under mild connectivity assumptions, the consensus error among agents' multipliers is bounded, and show that this translates to a bounded constraint violation that decreases with graph connectivity and the number of consensus rounds. Unlike centralized training with decentralized execution (CTDE) approaches, whose complexity grows at least quadratically with agent count, our method scales linearly in both training and execution. Experiments on smart grid demand response demonstrate that consensus coordination is \emph{essential for feasibility}: without it, agents satisfy grid capacity constraints only by indefinitely postponing demand, a degenerate non-solution. With consensus, agents converge to a shared dual variable and satisfy both grid constraints and demand fulfillment, scaling to thousands of agents while CTDE baselines are limited to dozens.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-kVS7sMlv7P">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/kVS7sMlv7P.html">From Clutter to Clarity: Visual Recognition through Foveated Object-Centric Learning (FocL)</a>
