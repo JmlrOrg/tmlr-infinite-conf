@@ -226,6 +226,38 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-QG7mfCy9mu">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/QG7mfCy9mu.html">Attention-Head Binding as a Term-Conditioned Mechanistic Marker of Accessibility Concept Emergence in Language Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Khanh-Dung Tran</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-QG7mfCy9mu"></div>
+
+    <a href="paper_pages/QG7mfCy9mu.html">
+        <img src="http://img.youtube.com/vi/HEGpxYme6wg/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-QG7mfCy9mu" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-QG7mfCy9mu" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-QG7mfCy9mu">
+                Abstract <i id="caret-QG7mfCy9mu" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-QG7mfCy9mu">
+        <div class="abstract-display">
+            <p>Assessing when language models develop specific capabilities remains challenging, as behavioral evaluations are expensive and internal representations are opaque. We introduce attention-head binding ($EB^*$), a lightweight mechanistic metric that tracks how attention heads bind multi-token technical terms, such as accessibility concepts ("screen reader," "alt text"), into coherent units during training. Using seven models across five architectures, including Pythia (160M, 1B, 2.8B), OLMo-1B, CRFM GPT-2 Small (5 seeds), SmolLM3-3B, and Qwen2.5-1.5B, we evaluate on 41 canonical accessibility terms ($N=205$ prompts) and the 9-term pilot set, reporting five empirical findings. Discriminant validity validates $EB^*$ against token co-occurrence baselines (nonsense $0.26 \to$ real terms $0.74$, all $p<0.001$, $d=1.2$--$2.9$). The relationship between binding and behavior shifts markedly over the course of training. Early in training, the two are tightly coupled ($\rho=+0.57$, $p<0.001$). Later, this pattern reverses into a decoupled regime ($\rho=-0.20$, $p=0.01$). Cross-architecture replication confirms C1-B: OLMo-1B achieves 90% $EB^*$-leads ($p<0.0001$), CRFM 72.7% ($p<<0.001$). This gives rise to a two-factor model. First, a parameter threshold around 1B parameters controls how deeply decoupling occurs. Second, a training-step threshold near 300K steps determines when the temporal ordering between binding and behavior emerges (C1/C4). High-binding/mid-accuracy checkpoints contain unlockable latent knowledge, yielding few-shot gains up to 61 percentage points (a 183% relative improvement), replicated at 18--37 points across six of seven models (CRFM shows weak unlockability at +7.6 pp due to undertraining). Modern models such as SmolLM3 and Qwen show headroom compression where they reach the same absolute ceiling near 0.72, but display smaller nominal gains because their zero-shot baselines are already high (C3). Causal ablation reveals opposite regimes across scales. At 160M, binding heads remain necessary for performance. Removing them impairs accuracy by 16.7 percentage points. At 2.8B, these same heads have become functionally superseded; ablating them improves performance by 33.3 points. Cross-architecture C5 reveals three distinct patterns. First, OLMo and Qwen achieve near-perfect recognition ceiling with negligible ablation effects. Second, SmolLM3 operates in a distributed regime with negative specificity ($-0.043$). Third, CRFM displays striking initialization sensitivity, with four of five random seeds showing coupled behavior and one seed exhibiting suppressor dynamics (C5). Beyond establishing attention binding as a diagnostic for concept emergence, these findings demonstrate a qualitative shift in how mechanistic structures map to behavioral competence across model scales, a phenomenon we term the "binding-behavior decoupling effect".
+
+Code: https://github.com/RayoHQ/attention-binding-a11y</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-ZEmv4DhaGL">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/ZEmv4DhaGL.html">Imitating What Works: Simulation-Filtered Modular Policy Learning from Human Videos</a>
