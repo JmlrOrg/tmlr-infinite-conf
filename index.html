@@ -166,7 +166,40 @@
             <div class="col-sm-12">
                 <div style="max-width: 1500px; margin:auto; border">
                     <div class="grid-displaycards">
-                        <div class="displaycards touchup-date" id="event-R8y19hU9Ab">
+                        <div class="displaycards touchup-date" id="event-7BFbso4B3R">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/7BFbso4B3R.html">Do Object Channels Improve Robustness in Deep Reinforcement Learning?</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Jannis Blüml &middot; Cedric Derstroff &middot; Bjarne Gregori &middot; Elisabeth Dillies &middot; Quentin Delfosse &middot; Kristian Kersting</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-7BFbso4B3R"></div>
+
+    <a href="paper_pages/7BFbso4B3R.html">
+        <img src="http://img.youtube.com/vi/xxGQAkqsxHI/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-7BFbso4B3R" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-7BFbso4B3R" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-7BFbso4B3R">
+                Abstract <i id="caret-7BFbso4B3R" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-7BFbso4B3R">
+        <div class="abstract-display">
+            <p>Pixel-based reinforcement learning agents often exploit spurious visual correlations, leading to brittle policies that fail under minor visual perturbations. We systematically investigate spatial grounded semantic channel representations, often called Feature Maps, Planes, or Object Channels, as a representation design principle for reducing shortcut learning. 
+Object channels map detected entities into binary tensors aligned with the original coordinate frame, preserving compatibility with standard RL backbones without architectural modifications.
+Specifically, through systematic evaluation in Atari environments under controlled perturbations, we demonstrate that such channel representations substantially improve zero-shot robustness to distribution shifts while maintaining competitive in-distribution performance. 
+We analyze the abstraction–fidelity trade-off and show that combining object channels with raw pixels improves robustness and sample efficiency compared to pure pixel-based approaches. The experimental results indicate that spatially grounded object-based encodings offer a practical mechanism for bridging pixel- and object-centric RL.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-R8y19hU9Ab">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/R8y19hU9Ab.html">Adaptive and Stratified Subsampling for High-Dimensional Robust Estimation</a>
     </div>
@@ -314,6 +347,36 @@ Code: https://github.com/RayoHQ/attention-binding-a11y</p>
     <div class="collapse" id="collapse-event-abstract-I9VhJ5iLNr">
         <div class="abstract-display">
             <p>Federated Learning (FL) has emerged as a promising paradigm for collaborative model training without sharing local data. However, a significant challenge in FL arises from the heterogeneous data distributions across participating clients. This heterogeneity leads to highly variable gradient norms in the model's final layers, resulting in poor generalization, slower convergence, and reduced robustness of the global model. To address these issues, we propose a novel technique that incorporates a gradient penalty term into partial variance control. Our method enables diverse representation learning from heterogeneous client data in the initial layers while modifying standard SGD in the final layers. This approach reduces the variance in the classification layers, aligns the gradients, and mitigates the effects of data heterogeneity. Through theoretical analysis, we establish convergence rate bounds for the proposed algorithm, demonstrating its potential for competitive convergence compared to current FL methods in highly heterogeneous data settings. Empirical evaluations on five benchmark datasets validate our approach, showing enhanced performance and faster convergence over state-of-the-art baselines across various levels of data heterogeneity.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-4W7sgat04A">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/4W7sgat04A.html">Disentangling Intrinsic Importance from Emergent Structure in Multi-Expert Orchestration</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Sudipto Ghosh &middot; Sujoy Nath &middot; Sunny Manchanda &middot; Tanmoy Chakraborty</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-4W7sgat04A"></div>
+
+    <a href="paper_pages/4W7sgat04A.html">
+        <img src="http://img.youtube.com/vi/f8TwBV-Xl-M/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-4W7sgat04A" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-4W7sgat04A" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-4W7sgat04A">
+                Abstract <i id="caret-4W7sgat04A" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-4W7sgat04A">
+        <div class="abstract-display">
+            <p>Multi-expert systems, where multiple Large Language Models (LLMs) collaborate to solve complex tasks, are increasingly adopted for high-performance reasoning and generation. However, the orchestration policies governing expert interaction and sequencing remain largely opaque. We introduce INFORM, an interpretability analysis that treats orchestration as an explicit, analyzable computation, enabling the decoupling of expert interaction structure, execution order, and functional attribution. We use INFORM to evaluate an orchestrator on GSM8K, HumanEval, and MMLU using a homogeneous consortium of ten instruction-tuned experts drawn from LLaMA-3.1 8B, Qwen3 8B, and DeepSeek-R1 8B, with controlled decoding-temperature variation, and a secondary heterogeneous consortium spanning 1B-7B parameter models. Across tasks, routing dominance is a poor proxy for functional necessity. We reveal a divergence between relational importance, captured by routing mass and interaction topology, and intrinsic importance, measured via gradient sensitivity: frequently selected experts often act as interaction hubs with limited influence, while sparsely routed experts can be structurally critical. Orchestration behaviors emerge asynchronously, with expert centralization preceding stable routing confidence and expert ordering remaining non-deterministic. Targeted ablations show that masking intrinsically important experts induces disproportionate collapse in interaction structure compared to masking frequent peers, confirming that INFORM exposes functional and structural dependencies beyond accuracy metrics alone.</p>
         </div>
     </div>
 </div>
