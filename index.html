@@ -441,6 +441,67 @@ Code: https://github.com/RayoHQ/attention-binding-a11y</p>
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-NaLVutCHCI">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/NaLVutCHCI.html">Predictive Feature Caching for Training-free Acceleration of Molecular Geometry Generation</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Johanna Sommer &middot; Nils Fleischmann &middot; John Rachwan &middot; Stephan Günnemann &middot; Bertrand Charpentier</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-NaLVutCHCI"></div>
+
+    <a href="paper_pages/NaLVutCHCI.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-NaLVutCHCI" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-NaLVutCHCI" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-NaLVutCHCI">
+                Abstract <i id="caret-NaLVutCHCI" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-NaLVutCHCI">
+        <div class="abstract-display">
+            <p>Flow matching models generate high-fidelity molecular geometries but incur significant computational costs during inference, requiring hundreds of neural network evaluations. This inference cost becomes the primary bottleneck when such models are employed in practice to sample large numbers of molecular candidates. This work presents a training-free caching strategy that accelerates molecular geometry generation by predicting intermediate hidden states across solver steps. This caching scheme operates directly on the SE(3)-equivariant
+backbone, is compatible with pretrained models, and is orthogonal to existing training-based accelerations and system-level optimizations. Experiments on molecular geometry generation demonstrate that caching achieves a twofold reduction in wall-clock inference time at matched sample quality and a speedup of up to 3× with minimal sample quality degradation. Because these gains compound with other optimizations, applying caching alongside other general, lossless optimizations yield as much as a 7× speedup.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-MHNFjjm5nO">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/MHNFjjm5nO.html">Inference-Time Scaling for Joint Audio-Video Generation</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Jaemin Jung &middot; Kyeongha Rho &middot; Inkyu Shin &middot; Joon Son Chung</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-MHNFjjm5nO"></div>
+
+    <a href="paper_pages/MHNFjjm5nO.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-MHNFjjm5nO" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-MHNFjjm5nO" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-MHNFjjm5nO">
+                Abstract <i id="caret-MHNFjjm5nO" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-MHNFjjm5nO">
+        <div class="abstract-display">
+            <p>Joint audio-video generation aims to synthesize realistic audio-video pairs that are both semantically aligned with text prompts and precisely synchronized. While existing joint audio-video generation models often require substantial training resources to improve fidelity, Inference-Time Scaling (ITS) has recently emerged as a promising training-free alternative in single-modality domains. However, extending ITS from a single modality to multimodal domains is non-trivial, as it requires balancing multiple heterogeneous objectives. In this paper, we present the first comprehensive study of ITS for joint audio-video generation. We first demonstrate that a multi-verifier framework is essential to address the limitations of single-objective guidance, including asymmetric performance trade-offs and verifier hacking. Through systematic analysis, we then identify an optimal multi-verifier combination that yields balanced improvements across all quality dimensions. Finally, to effectively aggregate diverse reward signals, we propose Adaptive Reward Weighting (ARW), a novel test-time optimization algorithm. ARW treats reward aggregation as an online optimization problem, utilizing learnable parameters to calibrate reward variances without requiring prior knowledge of reward distributions, thereby ensuring robust multi-objective selection. Experimental results on VGGSound and JavisBench-mini benchmarks demonstrate that our framework significantly enhances semantic alignment, perceptual quality, and audio-visual synchronization of generated outputs.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-IFssttzxnP">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/IFssttzxnP.html">Learning-Augmented Robust Algorithmic Recourse</a>
@@ -563,6 +624,36 @@ We introduce \textbf{CodecSep}, a \emph{text-guided universal sound separation} 
 Across \textbf{dnr-v2} and five additional open-domain benchmarks under matched training and prompting protocols, CodecSep consistently improves over AudioSep in separation fidelity (\textbf{SI\mbox{-}SDR}) while remaining competitive in perceptual quality (\textbf{ViSQOL}), and also shows gains in human \textbf{MOS--LQS}. Further analyses show that finer-grained semantic supervision improves separation more consistently than coarse prompting, and that \emph{explicit masking} is more effective than decoder-style latent generation for codec-domain source separation. Qualitative and diagnostic analyses further support the central design premise: modern NAC latents preserve meaningful \emph{source-dependent structure}, and the learned masks exploit this structure primarily through \emph{channel-wise modulation}, indicating that source extraction can be performed through masking alone without explicit latent generation.
 
 From a systems perspective, CodecSep also provides a concrete \emph{deployment path} for codec-mediated audio processing. In deployment-typical \emph{code-stream} settings, where the edge device transmits audio as NAC codes generated by the same codec backbone used by the separator, the server can map the received codes to codec embeddings through codebook lookup and perform separation directly in codec space, avoiding a separate decode--separate--re-encode cycle. In this regime, CodecSep requires only \textbf{1.35~GMACs} end-to-end—about $\mathbf{54\times}$ less compute than AudioSep in the same codec-mediated pipeline (and about $\mathbf{25\times}$ lower separator-only compute)—while also reducing latency and memory footprint substantially and remaining fully compatible with \emph{codes in: codes out} operation. More broadly, this codes-in / codes-out formulation provides a concrete blueprint for \emph{codec-native downstream audio processing}, suggesting that tasks such as enhancement, denoising, dereverberation, and prompt-guided audio editing can be designed to operate directly on NAC representations rather than repeatedly decoding to waveform and re-encoding after each processing stage.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-zkc7u3mIaE">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/zkc7u3mIaE.html">Task Vector Bases: A Unified and Scalable Framework for Compressed Task Arithmetic</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Siqi Zeng &middot; Yifei He &middot; Meitong Liu &middot; Weiqiu You &middot; Yifan HAO &middot; Yao-Hung Hubert Tsai &middot; Makoto Yamada &middot; Han Zhao</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-zkc7u3mIaE"></div>
+
+    <a href="paper_pages/zkc7u3mIaE.html">
+        <img src="https://drive.google.com/thumbnail?id=1kQFt2Mwy9e9xKRx4E_U9VHOyC-DHuTy7" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-zkc7u3mIaE" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-zkc7u3mIaE" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-zkc7u3mIaE">
+                Abstract <i id="caret-zkc7u3mIaE" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-zkc7u3mIaE">
+        <div class="abstract-display">
+            <p>Task arithmetic, representing downstream tasks through linear operations on task vectors, has emerged as a simple yet powerful paradigm for transferring knowledge across diverse settings. However, maintaining a large collection of task vectors introduces scalability challenges in both storage and computation. We propose Task Vector Bases, a framework compressing $T$ task vectors into $M < T$ basis vectors while preserving the functionality of task arithmetic. By representing each task vector as a structured linear combination of basis atoms, our approach supports standard operations such as addition, negation, as well as more advanced arithmetic ones. The framework is orthogonal to other efficiency-oriented improvements in task arithmetic and can be used in combination with them. We provide theoretical analysis showing that basis compression retains addition generalization guarantees and enables principled unlearning, with error bounds depending on reconstruction quality. Empirically, our proposed basis construction methods consistently outperform heuristic basis construction baselines and, in some cases, even surpass the performance of full task vector collections across diverse downstream applications while reducing storage and computational requirements.</p>
         </div>
     </div>
 </div>
@@ -1879,6 +1970,37 @@ Our thorough and multifaceted analysis shows that, in controlled, toy settings w
     <div class="collapse" id="collapse-event-abstract-lPZVsDhyj3">
         <div class="abstract-display">
             <p>We introduce $\textsf{gradOL}$, the first gradient-based optimization framework for solving Chebyshev center problems, a fundamental challenge in optimal function learning and geometric optimization. $\textsf{gradOL}$ hinges on reformulating the semi-infinite problem as a finitary max-min optimization, making it amenable to gradient-based techniques. By leveraging automatic differentiation for precise numerical gradient computation, $\textsf{gradOL}$ ensures numerical stability and scalability, making it suitable for large-scale settings. Under strong convexity of the ambient norm, $\textsf{gradOL}$ provably recovers optimal Chebyshev centers while directly computing the associated radius. This addresses a key bottleneck in constructing stable optimal interpolants. Empirically, $\textsf{gradOL}$ achieves significant improvements in accuracy and efficiency on 34 benchmark Chebyshev center problems from a benchmark \textsf{CSIP} library. Moreover, we extend $\textsf{gradOL}$ to general convex semi-infinite programming (CSIP), attaining up to $4000\times$ speedups over the state-of-the-art \textsf{sipampl} solver tested on the indicated \textsf{CSIP} library containing 67 benchmark problems. Furthermore, we provide the first theoretical foundation for applying gradient-based methods to Chebyshev center problems, bridging rigorous analysis with practical algorithms. $\textsf{gradOL}$ thus offers a unified solution framework for Chebyshev centers and broader CSIPs.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-cC1TLyK3iW">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/cC1TLyK3iW.html">Gaga: Group Any Gausians via 3D-aware Memory Bank</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Weijie Lyu &middot; Xueting Li &middot; Abhijit Kundu &middot; Yi-Hsuan Tsai &middot; Ming-Hsuan Yang</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-cC1TLyK3iW"></div>
+
+    <a href="paper_pages/cC1TLyK3iW.html">
+        <img src="http://img.youtube.com/vi/rqs5BuVFOok/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-cC1TLyK3iW" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-cC1TLyK3iW" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-cC1TLyK3iW">
+                Abstract <i id="caret-cC1TLyK3iW" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-cC1TLyK3iW">
+        <div class="abstract-display">
+            <p>We introduce Gaga, a framework that reconstructs and segments open-world 3D scenes by leveraging inconsistent 2D masks predicted by zero-shot class-agnostic segmentation models. Contrasted to prior 3D scene segmentation approaches that rely on video object tracking
+or contrastive learning methods, Gaga utilizes spatial information and effectively associates object masks across diverse camera poses through a novel 3D-aware memory bank. By eliminating the assumption of continuous view changes in training images, Gaga demonstrates robustness to variations in camera poses, particularly beneficial for sparsely sampled images, ensuring precise mask label consistency. Furthermore, Gaga accommodates 2D segmentation masks from diverse sources and demonstrates robust performance with different open-world zero-shot class-agnostic segmentation models, significantly enhancing its versatility. Extensive qualitative and quantitative evaluations demonstrate that Gaga performs favorably against state-of-the-art methods, emphasizing its potential for real-world applications such as 3D scene understanding and manipulation.</p>
         </div>
     </div>
 </div>
