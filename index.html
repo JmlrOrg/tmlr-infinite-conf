@@ -259,6 +259,38 @@ Furthermore, we survey emerging frontiers such as discrete and non-Euclidean act
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-cwENvGCLRv">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/cwENvGCLRv.html">The Fake Mirror Effect: Foreign Feedback Disrupts Self-Correction in Minimal Recurrent Networks</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Sungmoon Ong</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-cwENvGCLRv"></div>
+
+    <a href="paper_pages/cwENvGCLRv.html">
+        <img src="http://img.youtube.com/vi/QydD7ZmJaHw/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-cwENvGCLRv" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-cwENvGCLRv" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-cwENvGCLRv">
+                Abstract <i id="caret-cwENvGCLRv" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-cwENvGCLRv">
+        <div class="abstract-display">
+            <p>When a recurrent network iteratively refines its predictions, is the performance gain driven primarily by generic temporal integration, or does it depend on the specific geometry of the model's own prior output? To resolve this, we dissect a minimal 35-neuron recurrent network with controlled feedback interventions. Recurrent-specific gain is isolated by two contrasts that do not depend on the convergence-sensitive variable-noise residual: static repeated input, where any deterministic stateless aggregator yields zero gain by construction, and a 120k-parameter MNIST extension where the recurrent loop retains a small but reliable residual. Under variable noise a loop−ensemble residual is additionally present at low-to-moderate noise but is convergence-dependent (reported descriptively), with the no-feedback within-network ensemble matching or nominally exceeding the loop at high noise.
+Testing feedback-source dependence directly, we replace self-generated feedback with structurally valid output from an independently trained clone. This consistently degrades performance relative to self-feedback at all tested scales. At the minimal scale, clone feedback drops accuracy below the no-feedback baseline — a scale-bounded fake-mirror inversion (robust under static input; marginal under variable noise). This absolute-harm penalty is scale-dependent in both regimes: under variable noise it transitions to a net-positive but still suboptimal signal at the larger tested widths and on MNIST, while under static input it attenuates toward near-neutral at the larger widths; coordinate-shuffled feedback by contrast is harmful at every tested scale.
+Progressively stronger static aligners recover the clone-feedback loss essentially fully under static input but plateau near ~85% under variable noise, indicating that static open-loop mapping does not fully restore closed-loop compatibility across the aligner capacities we evaluated. A relative condition-number analysis does not separate the evaluated feedback-source conditions. Together, these results characterize feedback-geometry compatibility: an empirical relation between a recurrent receiver and the geometry of its self-generated feedback that is not captured by generic temporal integration alone.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-7BFbso4B3R">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/7BFbso4B3R.html">Do Object Channels Improve Robustness in Deep Reinforcement Learning?</a>
@@ -530,6 +562,36 @@ Code: https://github.com/RayoHQ/attention-binding-a11y</p>
     <div class="collapse" id="collapse-event-abstract-ZEmv4DhaGL">
         <div class="abstract-display">
             <p>The ability to learn manipulation skills by watching videos of humans has the potential to unlock a new source of highly scalable data for robot learning. Here, we tackle prehensile manipulation, in which tasks involve grasping an object before performing various post-grasp motions. Human videos offer strong signals for learning the post-grasp motions, but they are less useful for learning the prerequisite grasping behaviors, especially for robots without human-like hands. A promising way forward is to use a modular policy design, leveraging a dedicated grasp generator to produce stable grasps. However, arbitrary stable grasps are often not task-compatible, hindering the robot's ability to perform the desired downstream motion. To address this challenge, we present Perceive-Simulate-Imitate (PSI), a framework for training a modular manipulation policy using human video motion data processed by paired grasp-trajectory filtering in simulation. This simulation step extends the trajectory data with grasp suitability labels, which allows for supervised learning of task-oriented grasping capabilities. We show through real-world experiments that our framework can be used to learn precise manipulation skills efficiently without any robot data, resulting in significantly more robust performance than using a grasp generator naively.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-71svCWi178">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/71svCWi178.html">LoraQuant: Mixed-Precision Quantization of LoRA to Ultra- Low Bits for LLM Customization</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Amir Reza Mirzaei &middot; Yuqiao Wen &middot; Yanshuai Cao &middot; Lili Mou</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-71svCWi178"></div>
+
+    <a href="paper_pages/71svCWi178.html">
+        <img src="https://drive.google.com/thumbnail?id=1cOhe2yGOg-jAVgeR0k0iGBL9GBVa6CPD" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-71svCWi178" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-71svCWi178" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-71svCWi178">
+                Abstract <i id="caret-71svCWi178" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-71svCWi178">
+        <div class="abstract-display">
+            <p>Low-Rank Adaptation (LoRA) has become a popular technique for parameter-efficient fine-tuning of large language models (LLMs). In many real-world scenarios, multiple adapters are loaded simultaneously to enable LLM customization for personalized user experiences or to support a diverse range of tasks. Although each adapter is lightweight in isolation, their aggregate cost becomes substantial at scale. To address this, we propose LoraQuant, a mixed-precision post-training quantization method tailored to LoRA. Specifically, LoraQuant reparameterizes each adapter by singular value decomposition (SVD) to concentrate the most important information into specific rows and columns. This makes it possible to quantize the important components to higher precision, while quantizing the rest to lower bitwidth. We conduct comprehensive experiments with LLaMA 2-7B, LLaMA 2-13B, and Mistral 7B models on mathematical reasoning, coding, and summarization tasks. Results show that our LoraQuant uses significantly lower bits than other quantization methods, but achieves comparable or even higher performance.</p>
         </div>
     </div>
 </div>
@@ -899,6 +961,44 @@ We quantitatively and qualitatively evaluate *D-Garment* on both simulations and
     <div class="collapse" id="collapse-event-abstract-lDnMlhk3aw">
         <div class="abstract-display">
             <p>Some real networks keep a fixed structure (e.g., roads, sensors and their connections) while node or edge signals evolve over time. Existing graph generators either model topology changes (i.e., edge additions/deletions) or focus only on static graph properties (such as degree distributions or motifs), without considering how temporal signals shape the generated structure. By approaching the problem from an unconventional perspective, we introduce TANGEM, that integrate a temporal similarity matrix into biased random walks, thereby coupling signals with structure to generate graphs that highlight patterns reflecting how nodes co-activate over time. We evaluate TANGEM using an approach that separates structural fidelity (clustering, spectral metrics) from downstream temporal consistency, allowing us to clearly isolate the impact of the topology generator itself. In structural benchmarks, TANGEM consistently outperforms strong baselines while remaining lightweight. These results show that adding attribute-guided bias to structural sampling produces more realistic graphs and establishes TANGEM as a basis for future models that further integrate evolving signals and structure.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-BCNPJ3WRVI">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/BCNPJ3WRVI.html">Using RKHS Weight Functions in Random Feature Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Gabriel Dubé &middot; Mario Marchand &middot; Frédéric LeBlanc</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-BCNPJ3WRVI"></div>
+
+    <a href="paper_pages/BCNPJ3WRVI.html">
+        <img src="http://img.youtube.com/vi/gKrGv9BN4E8/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-BCNPJ3WRVI" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-BCNPJ3WRVI" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-BCNPJ3WRVI">
+                Abstract <i id="caret-BCNPJ3WRVI" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-BCNPJ3WRVI">
+        <div class="abstract-display">
+            <p>We examine the consequences of positing that the weight function $\alpha$ in the classical random feature model formulation $f(x) = \E_{w\sim p}\qty[\alpha(w)\phi(w,x)]$ belongs to a reproducing kernel Hilbert space.
+Depending on the choices of parameters of the random feature model, this assumption grants the ability to exactly calculate the model instead of relying on the random kitchen sinks method of approximation.
+We present several such examples.
+Additionally, using this form of the model, the functional gradient of the loss can be approximated in an unbiased way through sampling of the random features.
+This allows using a stochastic functional gradient descent to learn the weight function.
+We show that convergence is guaranteed under mild assumptions. 
+Further theoretical analysis shows that the empirical risk minimizer converges with the same $\Ocal\qty(\frac 1 {\sqrt m} + \frac 1 {\sqrt T})$ rate as Rahimi & Recht (2009).
+We also present two other algorithms for learning the weight function.
+We run experiments to compare these three learning algorithms, and to compare this random feature model variant to the original random kitchen sinks and other state of the art algorithms.</p>
         </div>
     </div>
 </div>
