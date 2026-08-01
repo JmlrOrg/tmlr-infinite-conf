@@ -256,6 +256,66 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-YiLcQY4Nje">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/YiLcQY4Nje.html">Benford’s Law as a Distributional Prior for Post-Training Quantization of Large Language Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Arthur Negrão de Faria Martins da Costa &middot; Pedro Silva &middot; Vander L. S. Freitas &middot; Gladston Moreira &middot; Eduardo Luz</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-YiLcQY4Nje"></div>
+
+    <a href="paper_pages/YiLcQY4Nje.html">
+        <img src="http://img.youtube.com/vi/NU-umsMLhA8/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-YiLcQY4Nje" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-YiLcQY4Nje" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-YiLcQY4Nje">
+                Abstract <i id="caret-YiLcQY4Nje" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-YiLcQY4Nje">
+        <div class="abstract-display">
+            <p>Post-training quantization (PTQ) is a practical way to reduce the memory footprint of large language models, but low-bit quantization is sensitive to mismatches between the quantization codebook and the empirical weight/activation distributions. We revisit Benford-like leading-digit statistics as a lightweight diagnostic of scale-broad behavior in transformer tensors. Across several model families, we observe a consistent functional dichotomy: transformational nn.Linear weights tend to be Benford-like, whereas LayerNorm and embedding parameters systematically deviate. Motivated by this observation, we propose BenQ, a data-free PTQ codebook that uses a simple log-spaced grid as a proxy for scale-broad distributions and applies it selectively to transformational layers while keeping stability-critical parameters in higher precision. In 4-bit group-wise PTQ, BenQ consistently improves over uniform RTN and is often competitive with NF4, while remaining substantially simpler than optimization-based methods. We additionally report activation quantization results as an exploratory stress test: BenQ can improve robustness over uniform baselines in some families, but performance remains mixed across models, highlighting open challenges for static-grid activation PTQ. Code is available at https://github.com/ufopcsilab/benford-quant.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-PIXVov5LQq">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/PIXVov5LQq.html">On-the-go Forgetting without Explicit Unlearning via ERASE</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Kushal Chakrabarti &middot; Mayank Baranwal</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-PIXVov5LQq"></div>
+
+    <a href="paper_pages/PIXVov5LQq.html">
+        <img src="https://drive.google.com/thumbnail?id=1IxZ4ggXXuCLhavtxP7uQebnKxIDgszxH" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-PIXVov5LQq" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-PIXVov5LQq" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-PIXVov5LQq">
+                Abstract <i id="caret-PIXVov5LQq" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-PIXVov5LQq">
+        <div class="abstract-display">
+            <p>Existing unlearning approaches typically rely on post hoc weight adaptation or distillation, leading to duplicated memory costs, degraded generalization, and limited scalability. In this work, we introduce ERASE, Erasure via Reconstructive Adversarial Signal Editing, a framework for on-the-go forgetting that suppresses the observable influence of private data without modifying model weights. ERASE leverages structured, class-conditioned input perturbations to induce selective forgetting during inference, eliminating the need for retraining, fine-tuning, or model copies. We rigorously characterize sufficient conditions when ERASE provably achieves functional forgetting of designated subclasses while preserving predictions across other subclasses within the same superclass. This analysis offers a principled foundation for inference-time forgetting under mild regularity assumptions. Across diverse architectures and benchmark datasets, ERASE maintains the best observed balance between forgetting efficacy, computational efficiency, and retention fidelity over recent unlearning-based methods. By reimagining data removal as forgetting without unlearning, our work establishes a scalable, regulation-aligned pathway for continual, privacy-conscious learning.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-P6e5IC4gPe">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/P6e5IC4gPe.html">A Survey of Flow Matching in Reinforcement Learning</a>
