@@ -310,6 +310,36 @@ was an artifact of sequential threading rather than a stable model property.</p>
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-yBVwYxHxUq">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/yBVwYxHxUq.html">Simple is Better than Complex: A Representation-centric Perspective for Prompting-based Vision--Language Fusion</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Yujia Yin &middot; Jinhong Ni &middot; Renjie Wu &middot; HONGJI LI &middot; Tianxin Wei &middot; Zhong Li &middot; Yifan Chen</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-yBVwYxHxUq"></div>
+
+    <a href="paper_pages/yBVwYxHxUq.html">
+        <img src="https://drive.google.com/thumbnail?id=1HeYI-2bWXERN1Ven-QlrkytlM7dvZTZL" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-yBVwYxHxUq" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-yBVwYxHxUq" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-yBVwYxHxUq">
+                Abstract <i id="caret-yBVwYxHxUq" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-yBVwYxHxUq">
+        <div class="abstract-display">
+            <p>Interactive prompting is an appealing approach to vision–language fusion using frozen uni-modal transformers, yet recent progress often relies on increasingly complex prompting architectures. A natural question arises: instead of refining prompt designs, can fusion be improved more effectively by directly adapting internal representations within attention layers? Our analysis, from a representation-centric perspective, suggests that within each frozen attention layer, prompt tokens have limited direct control over the value representations of original modality tokens and their query–key interactions, motivating a lightweight alternative that targets these internal attention representations rather than increasing prompting complexity. Specifically, we use this analysis to guide where lightweight adaptation is applied: we investigate the cross-attention mechanism and propose combining value-only low-rank adaptation with a key–query replacement strategy, yielding a simple and parameter-efficient fusion design. Across common multimodal fusion benchmarks, the proposed method consistently outperforms prior prompting-based fusion baselines while requiring fewer trainable parameters. These results, along with further ablations, support representation-centric adaptation as an effective principle for prompting-based vision–language fusion in the frozen-encoder setting.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-NlSBeHZEz5">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/NlSBeHZEz5.html">Analyzing the Effect of Noise in LLM Fine-Tuning</a>
@@ -336,6 +366,36 @@ was an artifact of sequential threading rather than a stable model property.</p>
     <div class="collapse" id="collapse-event-abstract-NlSBeHZEz5">
         <div class="abstract-display">
             <p>Fine-Tuning is the dominant paradigm for adapting pretrained large language models (LLMs) to downstream NLP tasks. In practice, fine-tuning datasets may contain various forms of noise that arise from annotation errors or automated data collection. Although prior work has concentrated on designing robust learning algorithms to mitigate performance degradation under noisy conditions, comparatively little is known about how different types of noise affect the internal learning dynamics of LLMs during fine-tuning. In this work, we systematically study the impact of noise on model behaviour across five pretrained models (GPT-2, Qwen2, Qwen2.5-Instruct, Llama-2, and Gemma3) and four diverse NLP tasks. We introduce controlled perturbations that correspond to three common real-world noise types: label noise, grammatical noise, and typographical noise. Beyond task-level performance, we analyse layer-wise representation changes and attention patterns in order to understand how noise propagates through the network. Our results show that the corruption of labels (i.e., label noise) generally causes the largest performance degradation, whereas grammatical noise and typographical noise occasionally yield mild regularisation benefits. We further find that the effects of noise are localised primarily to task-specific layers, while attention structures remain comparatively stable. Our code is available here\footnote{\url{https://github.com/LingfangLi/analyzing-noise-llm-finetuning}}.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-y4FJDMpWq3">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/y4FJDMpWq3.html">Improving the Usefulness of Decision Trees as Explanations</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Jiří Němeček &middot; Tomáš Pevný &middot; Jakub Marecek</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-y4FJDMpWq3"></div>
+
+    <a href="paper_pages/y4FJDMpWq3.html">
+        <img src="http://img.youtube.com/vi/fHF8TLM2VGQ/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-y4FJDMpWq3" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-y4FJDMpWq3" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-y4FJDMpWq3">
+                Abstract <i id="caret-y4FJDMpWq3" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-y4FJDMpWq3">
+        <div class="abstract-display">
+            <p>In classification with tabular data, one often utilizes tree-based models. Those can be competitive with deep neural networks on tabular data and, under some conditions, explainable. The explainability depends on the tree's depth and the accuracy of each leaf. Decision trees containing leaves with unbalanced accuracy can provide misleading explanations. Low-accuracy leaves provide less useful explanations to the individuals they classify. Here, we train a shallow tree that minimizes the maximum misclassification error across leaf nodes. The shallow tree provides a more useful global explanation, while its overall statistical performance can approach that of state-of-the-art methods by extending the leaves with additional models, creating a partially interpretable model.</p>
         </div>
     </div>
 </div>
