@@ -374,6 +374,36 @@ was an artifact of sequential threading rather than a stable model property.</p>
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-t6xhcnLlEl">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/t6xhcnLlEl.html">Use Bayesian Paired Tests with a ROPE to Improve the Comparison of Machine Learning Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Chris Williams</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-t6xhcnLlEl"></div>
+
+    <a href="paper_pages/t6xhcnLlEl.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-t6xhcnLlEl" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-t6xhcnLlEl" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-t6xhcnLlEl">
+                Abstract <i id="caret-t6xhcnLlEl" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-t6xhcnLlEl">
+        <div class="abstract-display">
+            <p>This tutorial paper argues that model comparison in machine learning can be  much improved by using \emph{paired testing}, i.e.\ comparing  the predictions of methods A and B on each (common) test example. Due to the limitations of null hypothesis significance testing, a Bayesian approach is recommended, including the use of the region of practical equivalence (ROPE; Kruschke 2015a; Kruschke and Liddell 2018; Benavoli, Corani, Dem\v{s}ar, and Zaffalon 2017).   We discuss a Bayesian $t$-test and a Bayesian McNemar test for comparisons on a single task, and Bayesian hierarchical models for comparisons over multiple tasks. Three worked examples are presented to illustrate the methods, and the use of reporting guidelines is discussed as a potential means of changing current practice.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-NlSBeHZEz5">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/NlSBeHZEz5.html">Analyzing the Effect of Noise in LLM Fine-Tuning</a>
@@ -1074,6 +1104,36 @@ We analyze the abstraction–fidelity trade-off and show that combining object c
     <div class="collapse" id="collapse-event-abstract-7Uo1yRWUpo">
         <div class="abstract-display">
             <p>Combinatorial optimization problems are ubiquitous in science and engineering. Still, learning-based approaches to accelerate combinatorial optimization often require solving a large number of difficult instances to collect training data, incurring significant computational cost. Existing learning-based methods require training dedicated models for each problem distribution, for each downstream task, severely limiting their scalability and generalization. We introduce Forge: Foundational Optimization Representations from Graph Embeddings, a framework that pre-trains a vector-quantized graph autoencoder on a large, diverse collection of mixed-integer programming (MIP) instances in an unsupervised manner, without relying on optimization solvers or optimal solutions. Vector quantization produces discrete code assignments that serve as a vocabulary for representing optimization instances. We evaluate Forge in both unsupervised and supervised settings. In the unsupervised setting, Forge embeddings effectively cluster unseen instances across problem domains and sizes. In the supervised setting, we fine-tune Forge embeddings and show that a single pre-trained model helps predicting both the integrality gap for cut-generation and variable hints for search guidance across multiple problem and size distributions. In both tasks, we improve the performance of a commercial optimization solver and outperform state-of-the-art learning-based methods. Finally, we open-source our training code, pre-trained Forge weights, and embeddings for multiple MIP distributions to foster further research in representation learning for optimization problems.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-JVUk7fT0Ll">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/JVUk7fT0Ll.html">Guided Diffusion by Optimized Loss Functions on Relaxed Parameters for Inverse Material Design</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Jens U. Kreber &middot; Christian Weißenfels &middot; Joerg Stueckler</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-JVUk7fT0Ll"></div>
+
+    <a href="paper_pages/JVUk7fT0Ll.html">
+        <img src="http://img.youtube.com/vi/hGfjTukTcsA/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-JVUk7fT0Ll" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-JVUk7fT0Ll" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-JVUk7fT0Ll">
+                Abstract <i id="caret-JVUk7fT0Ll" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-JVUk7fT0Ll">
+        <div class="abstract-display">
+            <p>Inverse design problems are common in engineering and materials science. The forward direction, i.e., computing output quantities from design parameters, typically requires running a numerical simulation, such as a FEM, as an intermediate step, which is an optimization problem by itself. In many scenarios, several design parameters can lead to the same or similar output values. For such cases, multi-modal probabilistic approaches are advantageous to obtain diverse solutions. A major difficulty in inverse design stems from the structure of the design space, since discrete parameters or further constraints disallow the direct use of gradient-based optimization. To tackle this problem, we propose a novel inverse design method based on diffusion models. Our approach relaxes the original design space into a continuous grid representation, where gradients can be computed by implicit differentiation in the forward simulation. A diffusion model is trained on this relaxed parameter space in order to serve as a prior for plausible relaxed designs. Parameters are sampled by guided diffusion using gradients that are propagated from an objective function specified at inference time through the differentiable simulation. A design sample is obtained by backprojection into the original parameter space. We develop our approach for a composite material design problem where the forward process is modeled as a linear FEM problem. We evaluate the performance of our approach in finding designs that match a specified bulk modulus. We demonstrate that our method can propose multiple diverse designs within 1% relative error margin from medium to high target bulk moduli in 2D and 3D settings. We also demonstrate that the material density of generated samples can be minimized simultaneously by using a multi-objective loss function.</p>
         </div>
     </div>
 </div>
