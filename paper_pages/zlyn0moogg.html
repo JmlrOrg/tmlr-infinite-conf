@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    IntervalGP-VAE: Uncertainty-Aware Individual Treatment Effect Estimation via Identifiable Proxy-Based Latent Confounder Recovery
+                    GICA: The Gap-Index Compositional Arm Framework for Sample-Efficient Test-Time Scaling
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Zhigao Guo &middot; Feng Dong
+                    Mohsen Amiri &middot; Venktesh V &middot; Ali Beikmohammadi &middot; Sindri Magnússon
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=vh7cshQCAE" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=zlyn0moogg" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=vh7cshQCAE" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=zlyn0moogg" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://github.com/ZhigaoGuo/IntervalGP-VAE" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/mohsen1amiri/GICA" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://www.youtube.com/embed/3ZNvI5BSh0o" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/qeeVY6tIpHw" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=vh7cshQCAE"><img src="../paper_thumbnails/vh7cshQCAE.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=zlyn0moogg"><img src="../paper_thumbnails/zlyn0moogg.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,7 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            Estimating individual treatment effects (ITEs) in the presence of unobserved confounding remains a central challenge in causal inference. Existing proxy-based methods aim to recover latent confounders from observational proxies, but typically produce only point estimates without uncertainty quantification. This lack of uncertainty modeling provides incomplete and potentially insufficient information for downstream decision-making, especially when uncertainty is inherent in the data. We propose IntervalGP-VAE, a novel framework that combines variational autoencoders with Interval Gaussian Processes (GPs) to model both the latent confounders and their associated uncertainty. This approach accounts for uncertainty arising from noisy and imperfect proxy variables and yields calibrated ITE intervals to support more robust causal decisions. We provide theoretical guarantees for identifiability of the latent confounder up to a smooth invertible reparameterisation under weak assumptions. Experiments on identifiable synthetic datasets show that IntervalGP-VAE achieves accurate ITE estimation, reliable latent recovery, and well-calibrated ITE intervals. On the semi-synthetic IHDP benchmark, IntervalGP-VAE provides competitive PEHE and ATE estimation, sharper intervals, and lower computational cost.
+                            Test-time scaling (TTS) improves the reasoning capabilities of large language models (LLMs) by generating multiple candidate reasoning paths and using a verifier to select among them. Process reward models (PRMs), which score each intermediate step rather than only the final answer, yield stronger downstream accuracy but at a higher cost. Recently, PRMs that scale at test-time by generating long verification chains-of-thoughts (CoTs) have been found to be more accurate at verification, but with a prohibitive cost that scales with both the number of paths and their length (number of steps), limiting scalability precisely where TTS is most beneficial. We recast reasoning-based process-level verification as a sample-efficient adaptive selection problem. We propose GICA (Gap-Index Compositional Arm framework), a bandit-based framework that exploits the compositional structure of reasoning paths to share information across related steps and identify the top-K candidates. We establish theoretical correctness and a fixed-confidence sample complexity bound, and validate GICA through synthetic experiments and in a TTS setup employing an end-to-end pipeline across three mathematical reasoning benchmarks. We experiment with two open-weight math LLMs serving as generators and two LLMs as process-level, reasoning-based verifiers. GICA matches the accuracy of exhaustive process-level verification while substantially reducing verifier calls (by 4.6 $\times$) and inference runtime (by 4.5 $\times$) relative to competitive bandit-based methods, making fine-grained, step-level supervision practical at scale. We open-source our code and data to facilitate future research. https://github.com/mohsen1amiri/GICA
                         </p>
                     </div>
                 </p>
