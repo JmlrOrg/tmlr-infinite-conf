@@ -985,6 +985,36 @@ Progressively stronger static aligners recover the clone-feedback loss essential
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-ajv7wvEvnh">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/ajv7wvEvnh.html">XConv: Low-memory stochastic backpropagation for convolutional layers</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Anirudh Thatipelli &middot; Jeffrey J. Sam &middot; Mathias Louboutin &middot; Ali Siahkoohi &middot; Rongrong Wang &middot; Felix Johan Herrmann</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-ajv7wvEvnh"></div>
+
+    <a href="paper_pages/ajv7wvEvnh.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-ajv7wvEvnh" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-ajv7wvEvnh" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-ajv7wvEvnh">
+                Abstract <i id="caret-ajv7wvEvnh" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-ajv7wvEvnh">
+        <div class="abstract-display">
+            <p>Training convolutional neural networks at scale demands substantial memory, largely due to storing intermediate activations for backpropagation. Existing approaches---such as checkpointing, invertible architectures, or gradient approximation methods like randomized automatic differentiation---either incur significant computational overhead, impose architectural constraints, or require non-trivial codebase modifications. We propose XConv, a near-drop-in replacement for standard convolutional layers that addresses all three limitations: it preserves standard backpropagation, imposes no architectural constraints, and integrates into existing codebases with minimal changes. XConv exploits the algebraic structure of convolutional layer gradients, storing highly compressed activations and approximating weight gradients via multi-channel randomized trace estimation. We establish convergence guarantees and derive error bounds for the proposed estimator, showing that the variance of the resulting gradient errors is comparable to that of stochastic gradient descent. Empirically, XConv achieves performance comparable to exact gradient methods across classification, generative modeling, super-resolution, inpainting, and segmentation---with gaps that narrow as the number of probing vectors increases---while reducing activation memory---by a factor of two or more when convolutional activations dominate---and remaining computationally competitive with optimized convolution implementations at larger batch sizes. At reduced (half) precision the gradient approximation error falls to the rounding floor, so XConv adds essentially no error beyond that of low-precision arithmetic, a regime typical of finetuning and on-device training.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-7BFbso4B3R">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/7BFbso4B3R.html">Do Object Channels Improve Robustness in Deep Reinforcement Learning?</a>
