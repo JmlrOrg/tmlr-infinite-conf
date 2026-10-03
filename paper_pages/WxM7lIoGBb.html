@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    Not All Objectives Are Born Equal: Priority-Constrained Descent for Hierarchical Multi-Objective Optimization
+                    Hyperdimensional Probe: Decoding LLM Representations via Vector Symbolic Architectures
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Dara Varam &middot; Mohamed I. AlHajri
+                    Marco Bronzini &middot; Carlo Nicolini &middot; Bruno Lepri &middot; Jacopo Staiano &middot; Andrea Passerini
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=HT01yGHLEt" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=WxM7lIoGBb" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=HT01yGHLEt" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=WxM7lIoGBb" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://daravaram.github.io/PCD/" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/Ipazia-AI/hyperprobe" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://daravaram.github.io/PCD/assets/pcd-video.mp4" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=HT01yGHLEt"><img src="../paper_thumbnails/HT01yGHLEt.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=WxM7lIoGBb"><img src="../paper_thumbnails/WxM7lIoGBb.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,7 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            Deep learning problems rarely involve objectives that are equal in importance. A primary objective defines the goal, whilst secondary objectives, such as sparsity, compression, or robustness, constrain the solution. While existing multi-objective methods have proven effective in practice, they have a clear symmetry problem and neglect the inherent objective hierarchy built into these objective spaces. We introduce Priority-Constrained Descent (PCD), a gradient-based optimization framework designed to explicitly exploit hierarchical objective structures. PCD preserves the direction of primary descent whilst allowing for the minimal distortion necessary to guarantee first-order progress on secondary objectives, controlled by a single $\tau \in [0,1]$ that dictates the strength of the distortion. The resulting formulation is asymptotically invariant to objective scaling and admits exact closed-form solutions for problems with two and three objectives. We evaluate PCD within structured network compression settings, unstructured sparsity and low-rankness, and across a variety of synthetic experiments, showing stronger trade-offs and better per-objective performance than existing multi-objective methods as well as tuned application-specific baselines, further exhibiting the interpretable trade-off that $\tau$ provides.
+                            Despite their capabilities, Large Language Models (LLMs) remain opaque with limited understanding of their internal representations. Current interpretability methods either focus on input-oriented feature extraction, such as supervised probes and Sparse Autoencoders (SAEs), or on output distribution inspection, such as logit-oriented approaches. A full understanding of LLM vector spaces, however, requires integrating both perspectives, something existing approaches struggle with due to constraints on latent feature definitions. We introduce the *Hyperdimensional Probe*, a hybrid supervised probe that combines symbolic representations with neural probing. Leveraging Vector Symbolic Architectures (VSAs) and hypervector algebra, it unifies prior methods: the top-down interpretability of supervised probes, SAE’s sparsity-driven proxy space, and output-oriented logit investigation. By combining the supervised learning paradigm of traditional probes with the dictionary-based representation principle of SAEs, our approach enables deeper input-focused feature extraction while supporting output-oriented analysis. Our experiments demonstrate that our approach consistently extracts meaningful semantic information across different LLMs, embedding sizes, and configurations, uncovering concept-oriented insights into LLM inference across two distinct scenarios: input-completion tasks and QA-focused text generation. VSA-based probing overcomes the limitations of logit-based analyses, which are constrained by the model’s token vocabulary, while also mitigating the noisier interpretability outcomes often produced by SAEs in settings with a bounded conceptual feature space. By supporting a joint investigation of input-output features, this work1 advances the semantic understanding of neural representations while unifying the complementary perspectives of prior methods
                         </p>
                     </div>
                 </p>

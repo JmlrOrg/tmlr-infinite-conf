@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    Not All Objectives Are Born Equal: Priority-Constrained Descent for Hierarchical Multi-Objective Optimization
+                    When Should the Agent Speak? A Survey of Intervention Timing for Always-On AI Assistants
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Dara Varam &middot; Mohamed I. AlHajri
+                    Tao An
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=HT01yGHLEt" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=b0yKEdAXEr" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=HT01yGHLEt" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=b0yKEdAXEr" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://daravaram.github.io/PCD/" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/tao-hpu/awesome-proactive-agents" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://daravaram.github.io/PCD/assets/pcd-video.mp4" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/roLy47J2m-M" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=HT01yGHLEt"><img src="../paper_thumbnails/HT01yGHLEt.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=b0yKEdAXEr"><img src="../paper_thumbnails/b0yKEdAXEr.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,7 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            Deep learning problems rarely involve objectives that are equal in importance. A primary objective defines the goal, whilst secondary objectives, such as sparsity, compression, or robustness, constrain the solution. While existing multi-objective methods have proven effective in practice, they have a clear symmetry problem and neglect the inherent objective hierarchy built into these objective spaces. We introduce Priority-Constrained Descent (PCD), a gradient-based optimization framework designed to explicitly exploit hierarchical objective structures. PCD preserves the direction of primary descent whilst allowing for the minimal distortion necessary to guarantee first-order progress on secondary objectives, controlled by a single $\tau \in [0,1]$ that dictates the strength of the distortion. The resulting formulation is asymptotically invariant to objective scaling and admits exact closed-form solutions for problems with two and three objectives. We evaluate PCD within structured network compression settings, unstructured sparsity and low-rankness, and across a variety of synthetic experiments, showing stronger trade-offs and better per-objective performance than existing multi-objective methods as well as tuned application-specific baselines, further exhibiting the interpretable trade-off that $\tau$ provides.
+                            Agents now complete multi-step tasks against verifiable goals, and egocentric perception resolves user intent with high reported accuracy. What remains unmodeled is the decision of when to act unprompted. We survey intervention timing for always-on assistants (smart glasses, MR headsets, ambient copilots) around a single decision rule, intervene iff the expected benefit of acting exceeds the expected cost of interrupting, and organize the literature into five layers: signals, decision, action, memory, and evaluation. We reconnect two lineages that have proceeded almost without citing each other: the 1999-2017 interruptibility literature, which formalized interruption cost rigorously but had no capable actor, and the 2024-2026 proactive-agent wave, which has actors but rediscovers the cost term only in fragments (false-alarm pricing, cognitive load, social violation, compute) that no work unifies. We argue that evaluation is the gating layer. Mobile health already learns intervention timing online by randomizing decision points against a validated proximal outcome; open-world assistance has no analogous outcome, so a reinforcement-learning objective for proactivity has no shared, validated reward to train against. We therefore propose the design of a benchmark for open-world intervention timing with an explicit cost term, machine-score its metric suite over 131.5 hours of seeded labels to show it separates the reference policies, and assemble a reference architecture for the priced decision from surveyed components. Six open problems close the survey.
                         </p>
                     </div>
                 </p>

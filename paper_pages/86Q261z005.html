@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    Not All Objectives Are Born Equal: Priority-Constrained Descent for Hierarchical Multi-Objective Optimization
+                    Diffusion Models in Simulation-Based Inference: A Tutorial Review
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Dara Varam &middot; Mohamed I. AlHajri
+                    Jonas Arruda &middot; Niels Leif Bracher &middot; Ullrich Koethe &middot; Jan Hasenauer &middot; Stefan T. Radev
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=HT01yGHLEt" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=86Q261z005" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=HT01yGHLEt" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=86Q261z005" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://daravaram.github.io/PCD/" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/bayesflow-org/diffusion-experiments" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://daravaram.github.io/PCD/assets/pcd-video.mp4" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/ZlcEkHXgF5k" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=HT01yGHLEt"><img src="../paper_thumbnails/HT01yGHLEt.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=86Q261z005"><img src="../paper_thumbnails/86Q261z005.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,12 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            Deep learning problems rarely involve objectives that are equal in importance. A primary objective defines the goal, whilst secondary objectives, such as sparsity, compression, or robustness, constrain the solution. While existing multi-objective methods have proven effective in practice, they have a clear symmetry problem and neglect the inherent objective hierarchy built into these objective spaces. We introduce Priority-Constrained Descent (PCD), a gradient-based optimization framework designed to explicitly exploit hierarchical objective structures. PCD preserves the direction of primary descent whilst allowing for the minimal distortion necessary to guarantee first-order progress on secondary objectives, controlled by a single $\tau \in [0,1]$ that dictates the strength of the distortion. The resulting formulation is asymptotically invariant to objective scaling and admits exact closed-form solutions for problems with two and three objectives. We evaluate PCD within structured network compression settings, unstructured sparsity and low-rankness, and across a variety of synthetic experiments, showing stronger trade-offs and better per-objective performance than existing multi-objective methods as well as tuned application-specific baselines, further exhibiting the interpretable trade-off that $\tau$ provides.
+                            Diffusion models have recently emerged as powerful learners for simulation-based inference (SBI), enabling fast and accurate estimation of latent parameters from simulated and real data.
+Their score-based formulation offers a flexible way to learn conditional or joint distributions over parameters and observations, thereby providing a versatile solution to various modeling problems.
+In this tutorial review, we synthesize recent developments on diffusion models for SBI, covering design choices for training, inference, and evaluation.
+We highlight opportunities created by various concepts such as guidance, score composition, flow matching, consistency models, and joint modeling.
+Furthermore, we discuss how efficiency and statistical accuracy are affected by noise schedules, parameterizations, backbones, and samplers.
+Finally, we illustrate these concepts with case studies across parameter dimensionalities, simulation budgets, and model types and outline open questions for future research.
                         </p>
                     </div>
                 </p>

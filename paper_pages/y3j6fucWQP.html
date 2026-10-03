@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    Not All Objectives Are Born Equal: Priority-Constrained Descent for Hierarchical Multi-Objective Optimization
+                    MeritKV: Utility-Gated Admission Control for KV-Cache Reuse in LLM Serving
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Dara Varam &middot; Mohamed I. AlHajri
+                    Kushal Khemani &middot; Evan J. Leri &middot; Sparsh Mittal
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=HT01yGHLEt" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=y3j6fucWQP" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=HT01yGHLEt" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=y3j6fucWQP" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://daravaram.github.io/PCD/" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/Kushalk0677/meritkv" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://daravaram.github.io/PCD/assets/pcd-video.mp4" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/X5VAFEl17zE" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=HT01yGHLEt"><img src="../paper_thumbnails/HT01yGHLEt.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=y3j6fucWQP"><img src="../paper_thumbnails/y3j6fucWQP.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,7 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            Deep learning problems rarely involve objectives that are equal in importance. A primary objective defines the goal, whilst secondary objectives, such as sparsity, compression, or robustness, constrain the solution. While existing multi-objective methods have proven effective in practice, they have a clear symmetry problem and neglect the inherent objective hierarchy built into these objective spaces. We introduce Priority-Constrained Descent (PCD), a gradient-based optimization framework designed to explicitly exploit hierarchical objective structures. PCD preserves the direction of primary descent whilst allowing for the minimal distortion necessary to guarantee first-order progress on secondary objectives, controlled by a single $\tau \in [0,1]$ that dictates the strength of the distortion. The resulting formulation is asymptotically invariant to objective scaling and admits exact closed-form solutions for problems with two and three objectives. We evaluate PCD within structured network compression settings, unstructured sparsity and low-rankness, and across a variety of synthetic experiments, showing stronger trade-offs and better per-objective performance than existing multi-objective methods as well as tuned application-specific baselines, further exhibiting the interpretable trade-off that $\tau$ provides.
+                            Key-value (KV) cache reuse lowers prefill latency, but lookup, cache manipulation, and speculative precompute can cost more than the computation they save, so a serving system can be slower than no cache even at a high hit rate. We argue that KV reuse should be a per-request economic decision rather than an unconditional mode, and present MeritKV, a lightweight admission-control layer that scores each candidate reuse by its net utility (saved prefill time minus reuse cost minus expected waste) and executes it only when that estimate is positive, bypassing otherwise. The gate is backend-agnostic and composes on top of existing prefix caches, while a single waste-feedback loop makes admission self-correcting as workloads change. Across controlled studies on five Hugging Face models (GPT-2, TinyLlama, Qwen2.5, Gemma, and Phi-3; 124M–3.8B parameters) and ten datasets, MeritKV matches no-cache performance on low-reuse traffic (0.99–1.01×) and observes 1.31–1.61× in custom-HF diagnostic configurations on structured prompts. In a 360-cell admission-policy comparison, it improves speedup from 1.085× to 1.110× while reducing the waste ratio from 24.0% to 5.6% relative to MeritKV-Sem, the reactive-plus-speculative variant without the policy controller. We additionally evaluate twelve models up to 32B and write-through SGLang, LMCache, and vLLM overlays, which establish compatibility and controller overhead, not acceleration. Under capacity pressure, five-seed native SGLang traces on Gemma-4-31B and Qwen2.5-32B show skip-write admission eliminating measured evictions and reducing mean latency/energy by 6.8–7.7%/7.6–8.5% versus native admit-all LRU; Qwen P95 regresses by 1.65% versus write-through, and native LFU remains stronger on that trace. A controlled multi-round trace reduces latency by 11.6–16.7% and improves recovery by 41–61 percentage points versus write-through; recovery remains 15.2–28.2 percentage points above controlled-bank LFU.
                         </p>
                     </div>
                 </p>

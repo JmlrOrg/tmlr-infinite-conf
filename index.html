@@ -166,7 +166,103 @@
             <div class="col-sm-12">
                 <div style="max-width: 1500px; margin:auto; border">
                     <div class="grid-displaycards">
-                        <div class="displaycards touchup-date" id="event-HT01yGHLEt">
+                        <div class="displaycards touchup-date" id="event-y3j6fucWQP">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/y3j6fucWQP.html">MeritKV: Utility-Gated Admission Control for KV-Cache Reuse in LLM Serving</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Kushal Khemani &middot; Evan J. Leri &middot; Sparsh Mittal</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-y3j6fucWQP"></div>
+
+    <a href="paper_pages/y3j6fucWQP.html">
+        <img src="http://img.youtube.com/vi/X5VAFEl17zE/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-y3j6fucWQP" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-y3j6fucWQP" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-y3j6fucWQP">
+                Abstract <i id="caret-y3j6fucWQP" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-y3j6fucWQP">
+        <div class="abstract-display">
+            <p>Key-value (KV) cache reuse lowers prefill latency, but lookup, cache manipulation, and speculative precompute can cost more than the computation they save, so a serving system can be slower than no cache even at a high hit rate. We argue that KV reuse should be a per-request economic decision rather than an unconditional mode, and present MeritKV, a lightweight admission-control layer that scores each candidate reuse by its net utility (saved prefill time minus reuse cost minus expected waste) and executes it only when that estimate is positive, bypassing otherwise. The gate is backend-agnostic and composes on top of existing prefix caches, while a single waste-feedback loop makes admission self-correcting as workloads change. Across controlled studies on five Hugging Face models (GPT-2, TinyLlama, Qwen2.5, Gemma, and Phi-3; 124M–3.8B parameters) and ten datasets, MeritKV matches no-cache performance on low-reuse traffic (0.99–1.01×) and observes 1.31–1.61× in custom-HF diagnostic configurations on structured prompts. In a 360-cell admission-policy comparison, it improves speedup from 1.085× to 1.110× while reducing the waste ratio from 24.0% to 5.6% relative to MeritKV-Sem, the reactive-plus-speculative variant without the policy controller. We additionally evaluate twelve models up to 32B and write-through SGLang, LMCache, and vLLM overlays, which establish compatibility and controller overhead, not acceleration. Under capacity pressure, five-seed native SGLang traces on Gemma-4-31B and Qwen2.5-32B show skip-write admission eliminating measured evictions and reducing mean latency/energy by 6.8–7.7%/7.6–8.5% versus native admit-all LRU; Qwen P95 regresses by 1.65% versus write-through, and native LFU remains stronger on that trace. A controlled multi-round trace reduces latency by 11.6–16.7% and improves recovery by 41–61 percentage points versus write-through; recovery remains 15.2–28.2 percentage points above controlled-bank LFU.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-b0yKEdAXEr">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/b0yKEdAXEr.html">When Should the Agent Speak? A Survey of Intervention Timing for Always-On AI Assistants</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Tao An</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-b0yKEdAXEr"></div>
+
+    <a href="paper_pages/b0yKEdAXEr.html">
+        <img src="http://img.youtube.com/vi/roLy47J2m-M/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-b0yKEdAXEr" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-b0yKEdAXEr" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-b0yKEdAXEr">
+                Abstract <i id="caret-b0yKEdAXEr" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-b0yKEdAXEr">
+        <div class="abstract-display">
+            <p>Agents now complete multi-step tasks against verifiable goals, and egocentric perception resolves user intent with high reported accuracy. What remains unmodeled is the decision of when to act unprompted. We survey intervention timing for always-on assistants (smart glasses, MR headsets, ambient copilots) around a single decision rule, intervene iff the expected benefit of acting exceeds the expected cost of interrupting, and organize the literature into five layers: signals, decision, action, memory, and evaluation. We reconnect two lineages that have proceeded almost without citing each other: the 1999-2017 interruptibility literature, which formalized interruption cost rigorously but had no capable actor, and the 2024-2026 proactive-agent wave, which has actors but rediscovers the cost term only in fragments (false-alarm pricing, cognitive load, social violation, compute) that no work unifies. We argue that evaluation is the gating layer. Mobile health already learns intervention timing online by randomizing decision points against a validated proximal outcome; open-world assistance has no analogous outcome, so a reinforcement-learning objective for proactivity has no shared, validated reward to train against. We therefore propose the design of a benchmark for open-world intervention timing with an explicit cost term, machine-score its metric suite over 131.5 hours of seeded labels to show it separates the reference policies, and assemble a reference architecture for the priced decision from surveyed components. Six open problems close the survey.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-AZExWUZRPd">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/AZExWUZRPd.html">When Does Data Value Reduce to Class Balance? A Coverage View of Per-Point Data Valuation</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Yingjie Bai &middot; Weiming Zhi</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-AZExWUZRPd"></div>
+
+    <a href="paper_pages/AZExWUZRPd.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-AZExWUZRPd" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-AZExWUZRPd" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-AZExWUZRPd">
+                Abstract <i id="caret-AZExWUZRPd" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-AZExWUZRPd">
+        <div class="abstract-display">
+            <p>Per-point data-valuation scores — Data Shapley, influence, leverage — are routinely used to select training data: keep the points with the top $k$ scores. We argue that top-$k$ by a fixed, mode-blind per-point score is the wrong selection rule precisely in the regime where data selection matters. The reason is that a point's value is not a fixed number but depends on what else has been selected — a near-duplicate of an already-chosen point adds almost nothing, however high its score — and a per-point scalar cannot express this interaction.
+
+The theory quantifies this failure exactly: in an equal latent-mode model, fixed top-$k$ selection incurs a closed-form excess risk over adaptive coverage because it repeatedly spends budget on already-covered modes. The gap is largest when the budget is tight, the learner representation is redundant, and missing a mode is costly.
+
+The practical rule is simple: use balance when the labels available at selection identify the learner's modes, and use explicit coverage when they do not. On standard classification tasks with strong pretrained features, class-balancing the same per-point scores recovers the missing coverage and matches or outperforms generic set coverage across our datasets. Without labels, label-free coverage improves accuracy by up to +0.20 while raw top-$k$ can fall below random; when labels are coarser than the modes, coverage within coarse strata performs best. We turn this distinction into a pre-specified diagnostic and validate it across both favorable and stress-test settings.
+
+The limits are part of the claim: the advantage is representation-relative. Coverage fails when the relevant modes are not expressed in the learner geometry, as with spurious subgroups, or when data quality varies independently of coverage — exactly as the theory predicts.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-HT01yGHLEt">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/HT01yGHLEt.html">Not All Objectives Are Born Equal: Priority-Constrained Descent for Hierarchical Multi-Objective Optimization</a>
     </div>
@@ -192,6 +288,36 @@
     <div class="collapse" id="collapse-event-abstract-HT01yGHLEt">
         <div class="abstract-display">
             <p>Deep learning problems rarely involve objectives that are equal in importance. A primary objective defines the goal, whilst secondary objectives, such as sparsity, compression, or robustness, constrain the solution. While existing multi-objective methods have proven effective in practice, they have a clear symmetry problem and neglect the inherent objective hierarchy built into these objective spaces. We introduce Priority-Constrained Descent (PCD), a gradient-based optimization framework designed to explicitly exploit hierarchical objective structures. PCD preserves the direction of primary descent whilst allowing for the minimal distortion necessary to guarantee first-order progress on secondary objectives, controlled by a single $\tau \in [0,1]$ that dictates the strength of the distortion. The resulting formulation is asymptotically invariant to objective scaling and admits exact closed-form solutions for problems with two and three objectives. We evaluate PCD within structured network compression settings, unstructured sparsity and low-rankness, and across a variety of synthetic experiments, showing stronger trade-offs and better per-objective performance than existing multi-objective methods as well as tuned application-specific baselines, further exhibiting the interpretable trade-off that $\tau$ provides.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-E8oetPdxH6">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/E8oetPdxH6.html">Parameter-Efficient Construction of the Rashomon Slice for Concept Bottleneck Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Shihan Feng &middot; Cheng Zhang &middot; Michael Xi &middot; Ethan Hsu &middot; Lesia Semenova &middot; Chudi Zhong</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-E8oetPdxH6"></div>
+
+    <a href="paper_pages/E8oetPdxH6.html">
+        <img src="http://img.youtube.com/vi/E-NAwabwpFg/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-E8oetPdxH6" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-E8oetPdxH6" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-E8oetPdxH6">
+                Abstract <i id="caret-E8oetPdxH6" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-E8oetPdxH6">
+        <div class="abstract-display">
+            <p>In many machine learning problems, there may exist multiple models that achieve nearly identical predictive performance while relying on fundamentally different internal logic. However, standard training procedures produce a single model, offering no practical way to explore alternatives that may better suit downstream needs. The set of these equally accurate models is known as the Rashomon set. Exploring the Rashomon set is particularly challenging in large and complex hypothesis spaces, such as Concept Bottleneck Models (CBMs), which are widely used in computer vision to make predictions through intermediate, human-understandable concepts. In this paper, we provide a method for efficiently exploring the Rashomon set of CBMs. Our framework introduces a specialized parallel parameter-efficient adaptation module, combined with a checkpointing scheme and a concept diversity objective, to generate multiple equally accurate CBMs from a single training process. Empirical results show that our method finds models with better diversity than baselines while using much less memory. We further demonstrate that access to these diverse yet accurate CBMs enables trustworthy model selection, resolution of inter-class confusion, and reliable abstention in decision-making.</p>
         </div>
     </div>
 </div>
@@ -222,6 +348,67 @@
     <div class="collapse" id="collapse-event-abstract-zlyn0moogg">
         <div class="abstract-display">
             <p>Test-time scaling (TTS) improves the reasoning capabilities of large language models (LLMs) by generating multiple candidate reasoning paths and using a verifier to select among them. Process reward models (PRMs), which score each intermediate step rather than only the final answer, yield stronger downstream accuracy but at a higher cost. Recently, PRMs that scale at test-time by generating long verification chains-of-thoughts (CoTs) have been found to be more accurate at verification, but with a prohibitive cost that scales with both the number of paths and their length (number of steps), limiting scalability precisely where TTS is most beneficial. We recast reasoning-based process-level verification as a sample-efficient adaptive selection problem. We propose GICA (Gap-Index Compositional Arm framework), a bandit-based framework that exploits the compositional structure of reasoning paths to share information across related steps and identify the top-K candidates. We establish theoretical correctness and a fixed-confidence sample complexity bound, and validate GICA through synthetic experiments and in a TTS setup employing an end-to-end pipeline across three mathematical reasoning benchmarks. We experiment with two open-weight math LLMs serving as generators and two LLMs as process-level, reasoning-based verifiers. GICA matches the accuracy of exhaustive process-level verification while substantially reducing verifier calls (by 4.6 $\times$) and inference runtime (by 4.5 $\times$) relative to competitive bandit-based methods, making fine-grained, step-level supervision practical at scale. We open-source our code and data to facilitate future research. https://github.com/mohsen1amiri/GICA</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-xjCJY8Xxcm">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/xjCJY8Xxcm.html">Evaluating the evidence trace of NeurIPS 2025 contributions with agentic code auditing</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Pascal Iversen &middot; Ferdous Nasri &middot; Bernhard Y Renard &middot; Katharina Baum</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-xjCJY8Xxcm"></div>
+
+    <a href="paper_pages/xjCJY8Xxcm.html">
+        <img src="http://img.youtube.com/vi/QiP65fftK8o/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-xjCJY8Xxcm" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-xjCJY8Xxcm" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-xjCJY8Xxcm">
+                Abstract <i id="caret-xjCJY8Xxcm" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-xjCJY8Xxcm">
+        <div class="abstract-display">
+            <p>Code serves as the primary evidence behind computational publications, yet a detailed review of an unfamiliar codebase imposes a commonly prohibitive time burden on volunteer reviewers. Consequently, self-reported reproducibility checklists at major machine learning venues are rarely empirically verified. This leaves code as a significant blind spot in peer review. To bridge this gap, we introduce AuditOwl, an autonomous, verification-centric LLM pipeline designed to make code auditing feasible for authors pre-submission and reviewers post-submission. With this framework, we conduct an audit of 100 randomly sampled empirical papers from the NeurIPS 2025 main track. For each paper, an LLM agent inspects the repository and evaluates its scientific claims against the evidence in the underlying code. Following an independent adversarial verification pass to maximize precision, the system raises 609 discrepancies across the 87 papers with retrievable code (median 7 per paper), of which 388 are high or medium severity. It produces evidence that can be quickly checked by humans: findings cite specific code and paper locations, and about half are backed by executable verification checks that the agent implements. Eleven ML researchers evaluated 120 such findings for 30 paper-code pairs and judged 1.7% incorrect and 10.0% incorrect or trivial. Our approach reveals a steep reproducibility funnel: only 87% of papers in our sample release code at all, and for just 8% AuditOwl locates producing code for every traced result. Discrepancies we find are heavily dominated by incompleteness of code and mismatches between what the paper describes and what the code does. We also detect a prevalence of technical bugs and serious methodological issues. Operating at reasonable cost, agentic code auditing can augment human peer review and help to make computational science more reproducible. Code available at: https://github.com/PascalIversen/auditowl-neurips2025.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-MhYd4okrNa">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/MhYd4okrNa.html">Wavenumber-Resolved Spectral Gating for Diffusion Models of Two-Dimensional Turbulence</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Nishat Tasnim &middot; Yong Shi</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-MhYd4okrNa"></div>
+
+    <a href="paper_pages/MhYd4okrNa.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-MhYd4okrNa" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-MhYd4okrNa" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-MhYd4okrNa">
+                Abstract <i id="caret-MhYd4okrNa" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-MhYd4okrNa">
+        <div class="abstract-display">
+            <p>We study unconditional generative modeling of two-dimensional Kolmogorov flow with denoising diffusion. A plain U-Net diffusion model reproduces the point-wise statistics of turbulent vorticity fields but distorts the inertial-range spectrum and the spectral fluxes that carry energy and enstrophy across scales. We add a wavenumber-resolved spectral gate: a small Fourier-domain bottleneck that learns a per-channel multiplicative correction over a coarse radial-wavenumber grid, conditioned on the diffusion noise level and a continuous log-viscosity parameter. The gate is paired with physics losses on enstrophy, modal spectral amplitude, vorticity structure functions, integral length, and spectral flux. On forced 2D Kolmogorov flow at seven viscosity regimes spanning a factor of nine in Reynolds number, and against four unconditional baselines (a plain U-Net, a squeeze and-excite bottleneck, an FNO-block bottleneck at 2.8× the parameters, and a standalone Fourier neural operator), the gated model (WRSG, 2.51M parameters) reduces the aggregate log-spectral distance to direct numerical simulation (DNS) by 59% relative to the plain U-Net, beats the larger FNO block on that metric, and raises inverse-energy and forward-enstrophy cascade recovery from 10% and 21% to 49% and 89%. Adding an FNO branch to the gate (WRSG+FNO, 7.27M) is best overall, reaching 84% and 110% cascade recovery and the lowest flux error. A factorial ablation separates the gate, which routes spectral power and corrects the large scales and cascade transport, from the losses, which correct small-scale point statistics, and shows a strong positive interaction: the gate alone barely lowers the spectral distance and the losses alone raise it, but together they cut it by more than half. A one-parameter scalar variance recalibration, fit on a regime-stratified calibration split, brings the ensemble to the 90% coverage target, raising empirical coverage from 0.72–0.85 to 0.899–0.902. The single viscosity-conditioned model generalizes to unseen and out-of-range Reynolds numbers, and the gate, though not the vorticity-tuned loss weights, transfers to a different forcing geometry and to a passive scalar, evidence that the architectural component is general rather than turbulence-specific. We report two negative results: the physics losses worsen the large-scale integral length relative to the gate alone, and no variant fully recovers the DNS cascade peaks. 
+Code is available at https://github.com/nishattasnim15215/Wavenumber-Resolved-Spectral-Gating-for-Diffusion-Models-of-Two-Dimensional-Turbulence.</p>
         </div>
     </div>
 </div>
@@ -282,6 +469,36 @@
     <div class="collapse" id="collapse-event-abstract-Eq9k6Va3hY">
         <div class="abstract-display">
             <p>This paper proposes to perform image restoration through a state-dependent mean-reverting forward diffusion (FoD) process. In contrast to traditional diffusion-based approaches that rely on a coupled forward-backward diffusion scheme, FoD directly learns image restoration through a single forward diffusion process, yielding a simple yet efficient framework. The core of FoD is a state-dependent stochastic differential equation (SDE) that involves a mean-reverting term in both the drift and diffusion functions. This mean-reverting structure drives the low-quality data toward the clean endpoint with controlled stochastic variation, therefore simulating a stochastic interpolation between source and target distributions. More importantly, FoD is analytically tractable and is trained using a simple stochastic flow matching objective, enabling few-step sampling during inference. The proposed FoD model, despite its simplicity, achieves strong overall performance on various image restoration tasks compared to representative diffusion, diffusion bridge, and flow matching approaches.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-2JxXGhpCP4">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/2JxXGhpCP4.html">CountLoop: Training-Free High-Instance Image Generation via Iterative Agent Guidance</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Anindya Mondal &middot; Sauradip Nag &middot; Ayan Banerjee &middot; Josep Llados &middot; Xiatian Zhu &middot; Anjan Dutta</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-2JxXGhpCP4"></div>
+
+    <a href="paper_pages/2JxXGhpCP4.html">
+        <img src="http://img.youtube.com/vi/F9vE5Yakizs/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-2JxXGhpCP4" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-2JxXGhpCP4" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-2JxXGhpCP4">
+                Abstract <i id="caret-2JxXGhpCP4" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-2JxXGhpCP4">
+        <div class="abstract-display">
+            <p>Diffusion models excel at photorealistic synthesis but struggle with object count fidelity, especially in high-density settings. We introduce COUNTLOOP, a training-free framework that achieves structured instance and count control through iterative, structured feedback. Our method alternates between synthesis and evaluation: a VLM-based planner generates structured scene layouts, while a VLM-based critic provides explicit feedback on object counts, spatial arrangements, and visual quality to refine the layout iteratively. Instance-driven attention masking and cumulative attention composition further prevent semantic leakage, ensuring clear object separation even in densely occluded scenes. Evaluations on COCO-Count, T2I-CompBench, and two newly introduced high instance benchmarks show that COUNTLOOP reduces counting error by up to 57% and achieves the highest or comparable spatial quality scores across all benchmarks, while maintaining photorealism. Project page is at https://mondalanindya.github.io/CountLoop/.</p>
         </div>
     </div>
 </div>
@@ -610,6 +827,41 @@ was an artifact of sequential threading rather than a stable model property.</p>
     <div class="collapse" id="collapse-event-abstract-VjbBxj4aWb">
         <div class="abstract-display">
             <p>Recent symmetry-based approaches in Variational Autoencoders (VAEs) have advanced disentanglement learning and compositional generalization. However, existing methods can encode identical semantic transformations differently depending on the specific sample pairs, which reduce the representational consistency of identical transformations. In this paper, we analyze how three commonly used symmetry parameterization families in prior work, namely (1) matrix-exponential parameterizations over the general linear group GL(n), (2) vector-additive actions in latent space, and (3) surjective mappings from latent vectors to the unit circle, can make it difficult to represent identical transformations consistently in dimension-wise disentangled latent spaces. To address this issue, we propose a framework that maps latent vectors to a bijective cyclic representation on the unit circle via the Cayley transform, together with a fixed-grid codebook regularization. We study this problem in a controlled setting and develop practical weakly supervised and supervised variants. Experiments on disentanglement benchmarks and compositional generalization tasks show that the proposed framework yields improved disentanglement performance and strong compositional generalization under supervised settings, with the stronger-supervision variants providing empirical reference points for the representational capacity of the framework. Overall, our results suggest that consistent representation of identical transformations is a useful design principle for improving disentanglement and generalization performance in the considered setting. The code is available at https://github.com/GIST-IRR/RCIT.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-86Q261z005">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/86Q261z005.html">Diffusion Models in Simulation-Based Inference: A Tutorial Review</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Jonas Arruda &middot; Niels Leif Bracher &middot; Ullrich Koethe &middot; Jan Hasenauer &middot; Stefan T. Radev</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-86Q261z005"></div>
+
+    <a href="paper_pages/86Q261z005.html">
+        <img src="http://img.youtube.com/vi/ZlcEkHXgF5k/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-86Q261z005" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-86Q261z005" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-86Q261z005">
+                Abstract <i id="caret-86Q261z005" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-86Q261z005">
+        <div class="abstract-display">
+            <p>Diffusion models have recently emerged as powerful learners for simulation-based inference (SBI), enabling fast and accurate estimation of latent parameters from simulated and real data.
+Their score-based formulation offers a flexible way to learn conditional or joint distributions over parameters and observations, thereby providing a versatile solution to various modeling problems.
+In this tutorial review, we synthesize recent developments on diffusion models for SBI, covering design choices for training, inference, and evaluation.
+We highlight opportunities created by various concepts such as guidance, score composition, flow matching, consistency models, and joint modeling.
+Furthermore, we discuss how efficiency and statistical accuracy are affected by noise schedules, parameterizations, backbones, and samplers.
+Finally, we illustrate these concepts with case studies across parameter dimensionalities, simulation budgets, and model types and outline open questions for future research.</p>
         </div>
     </div>
 </div>
@@ -1470,6 +1722,36 @@ Code: https://github.com/RayoHQ/attention-binding-a11y</p>
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-MdeXZVjNKu">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/MdeXZVjNKu.html">FedPS: Federated Preprocessing for structured data via aggregated Statistics</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Xuefeng Xu &middot; Graham Cormode</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-MdeXZVjNKu"></div>
+
+    <a href="paper_pages/MdeXZVjNKu.html">
+        <img src="http://img.youtube.com/vi/e7zOyQBjfBU/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-MdeXZVjNKu" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-MdeXZVjNKu" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-MdeXZVjNKu">
+                Abstract <i id="caret-MdeXZVjNKu" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-MdeXZVjNKu">
+        <div class="abstract-display">
+            <p>Federated Learning (FL) enables multiple parties to collaboratively train machine learning models without sharing raw data. However, before training, data must be preprocessed to address missing values, inconsistent formats, and heterogeneous feature scales. This preprocessing stage is critical for model performance but is largely overlooked in FL research. In practical FL systems, privacy constraints prohibit centralizing raw data, while communication efficiency introduces further challenges for distributed preprocessing. We introduce FedPS, a framework for federated data preprocessing based on aggregated statistics. FedPS leverages data-sketching techniques to efficiently summarize local datasets while preserving essential statistical information. Building on these summaries, we design federated algorithms for feature scaling, encoding, discretization, and missing-value imputation, and extend preprocessing-related models such as Bayesian Linear Regression to both horizontal and vertical FL settings. FedPS provides flexible, communication-efficient, and consistent preprocessing pipelines for practical FL deployments.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-71svCWi178">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/71svCWi178.html">LoraQuant: Mixed-Precision Quantization of LoRA to Ultra- Low Bits for LLM Customization</a>
@@ -1865,6 +2147,36 @@ We introduce \textbf{CodecSep}, a \emph{text-guided universal sound separation} 
 Across \textbf{dnr-v2} and five additional open-domain benchmarks under matched training and prompting protocols, CodecSep consistently improves over AudioSep in separation fidelity (\textbf{SI\mbox{-}SDR}) while remaining competitive in perceptual quality (\textbf{ViSQOL}), and also shows gains in human \textbf{MOS--LQS}. Further analyses show that finer-grained semantic supervision improves separation more consistently than coarse prompting, and that \emph{explicit masking} is more effective than decoder-style latent generation for codec-domain source separation. Qualitative and diagnostic analyses further support the central design premise: modern NAC latents preserve meaningful \emph{source-dependent structure}, and the learned masks exploit this structure primarily through \emph{channel-wise modulation}, indicating that source extraction can be performed through masking alone without explicit latent generation.
 
 From a systems perspective, CodecSep also provides a concrete \emph{deployment path} for codec-mediated audio processing. In deployment-typical \emph{code-stream} settings, where the edge device transmits audio as NAC codes generated by the same codec backbone used by the separator, the server can map the received codes to codec embeddings through codebook lookup and perform separation directly in codec space, avoiding a separate decode--separate--re-encode cycle. In this regime, CodecSep requires only \textbf{1.35~GMACs} end-to-end—about $\mathbf{54\times}$ less compute than AudioSep in the same codec-mediated pipeline (and about $\mathbf{25\times}$ lower separator-only compute)—while also reducing latency and memory footprint substantially and remaining fully compatible with \emph{codes in: codes out} operation. More broadly, this codes-in / codes-out formulation provides a concrete blueprint for \emph{codec-native downstream audio processing}, suggesting that tasks such as enhancement, denoising, dereverberation, and prompt-guided audio editing can be designed to operate directly on NAC representations rather than repeatedly decoding to waveform and re-encoding after each processing stage.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-WxM7lIoGBb">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/WxM7lIoGBb.html">Hyperdimensional Probe: Decoding LLM Representations via Vector Symbolic Architectures</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Marco Bronzini &middot; Carlo Nicolini &middot; Bruno Lepri &middot; Jacopo Staiano &middot; Andrea Passerini</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-WxM7lIoGBb"></div>
+
+    <a href="paper_pages/WxM7lIoGBb.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-WxM7lIoGBb" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-WxM7lIoGBb" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-WxM7lIoGBb">
+                Abstract <i id="caret-WxM7lIoGBb" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-WxM7lIoGBb">
+        <div class="abstract-display">
+            <p>Despite their capabilities, Large Language Models (LLMs) remain opaque with limited understanding of their internal representations. Current interpretability methods either focus on input-oriented feature extraction, such as supervised probes and Sparse Autoencoders (SAEs), or on output distribution inspection, such as logit-oriented approaches. A full understanding of LLM vector spaces, however, requires integrating both perspectives, something existing approaches struggle with due to constraints on latent feature definitions. We introduce the *Hyperdimensional Probe*, a hybrid supervised probe that combines symbolic representations with neural probing. Leveraging Vector Symbolic Architectures (VSAs) and hypervector algebra, it unifies prior methods: the top-down interpretability of supervised probes, SAE’s sparsity-driven proxy space, and output-oriented logit investigation. By combining the supervised learning paradigm of traditional probes with the dictionary-based representation principle of SAEs, our approach enables deeper input-focused feature extraction while supporting output-oriented analysis. Our experiments demonstrate that our approach consistently extracts meaningful semantic information across different LLMs, embedding sizes, and configurations, uncovering concept-oriented insights into LLM inference across two distinct scenarios: input-completion tasks and QA-focused text generation. VSA-based probing overcomes the limitations of logit-based analyses, which are constrained by the model’s token vocabulary, while also mitigating the noisier interpretability outcomes often produced by SAEs in settings with a bounded conceptual feature space. By supporting a joint investigation of input-output features, this work1 advances the semantic understanding of neural representations while unifying the complementary perspectives of prior methods</p>
         </div>
     </div>
 </div>

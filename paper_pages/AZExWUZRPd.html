@@ -121,11 +121,11 @@ crossorigin="anonymous"></script>
                 <!-- <h3 class="text-center">Spotlight</h3> -->
 
                 <h2 class="card-title main-title text-center" style="">
-                    Not All Objectives Are Born Equal: Priority-Constrained Descent for Hierarchical Multi-Objective Optimization
+                    When Does Data Value Reduce to Class Balance? A Coverage View of Per-Point Data Valuation
                 </h2>
 
                 <h3 class="card-subtitle mb-2 text-muted text-center">
-                    Dara Varam &middot; Mohamed I. AlHajri
+                    Yingjie Bai &middot; Weiming Zhi
                 </h3>
 
                 <div class="text-center p-3">
@@ -140,18 +140,18 @@ crossorigin="anonymous"></script>
 
                     <div>
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/forum?id=HT01yGHLEt" class="btn btn-default" title="OpenReview">
+                            <a href="https://openreview.net/forum?id=AZExWUZRPd" class="btn btn-default" title="OpenReview">
                                 <img src="../message-logo2.svg" width="30px" alt="Discussion Logo"/> OpenReview
                         </span>
 
                         <span class="nowrap" style="white-space:nowrap">
-                            <a href="https://openreview.net/pdf?id=HT01yGHLEt" class="btn btn-default href_PDF" title="Paper PDF">
+                            <a href="https://openreview.net/pdf?id=AZExWUZRPd" class="btn btn-default href_PDF" title="Paper PDF">
                                 <img src="../pdf-logo.svg" width="30px" alt="PDF Logo"/> Paper PDF
                             </a>
                         </span>
 
                                 <span class="nowrap" style="white-space:nowrap">
-            <a href="https://daravaram.github.io/PCD/" class="btn btn-default href_PDF" title="Code">
+            <a href="https://github.com/Benjy-byj/Data-Value-Class-Balance" class="btn btn-default href_PDF" title="Code">
                 <img src="../github-logo.svg" width="30px" alt="Github Logo"/> Code
             </a>
         </span>
@@ -168,12 +168,12 @@ crossorigin="anonymous"></script>
         <!-- YouTube Embed -->
                 <div class="text-center">
             <h4 class="text-center">Video</h4>
-            <iframe width="896" height="504" src="https://daravaram.github.io/PCD/assets/pcd-video.mp4" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="896" height="504" src="" title="Embedded Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="m-3 text-center">
             <h4 class="text-center">Paper PDF</h4>
-            <a href="https://openreview.net/pdf?id=HT01yGHLEt"><img src="../paper_thumbnails/HT01yGHLEt.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
+            <a href="https://openreview.net/pdf?id=AZExWUZRPd"><img src="../paper_thumbnails/AZExWUZRPd.pdf.jpg" class="border border-dark rounded" alt="Thumbnail of paper pages" /></a>
         </div>
 
         <div id="details" class="pp-card m-3">
@@ -182,7 +182,13 @@ crossorigin="anonymous"></script>
                     <div id="abstractExample">
                         <h4 class="text-center">Abstract</h4>
                         <p>
-                            Deep learning problems rarely involve objectives that are equal in importance. A primary objective defines the goal, whilst secondary objectives, such as sparsity, compression, or robustness, constrain the solution. While existing multi-objective methods have proven effective in practice, they have a clear symmetry problem and neglect the inherent objective hierarchy built into these objective spaces. We introduce Priority-Constrained Descent (PCD), a gradient-based optimization framework designed to explicitly exploit hierarchical objective structures. PCD preserves the direction of primary descent whilst allowing for the minimal distortion necessary to guarantee first-order progress on secondary objectives, controlled by a single $\tau \in [0,1]$ that dictates the strength of the distortion. The resulting formulation is asymptotically invariant to objective scaling and admits exact closed-form solutions for problems with two and three objectives. We evaluate PCD within structured network compression settings, unstructured sparsity and low-rankness, and across a variety of synthetic experiments, showing stronger trade-offs and better per-objective performance than existing multi-objective methods as well as tuned application-specific baselines, further exhibiting the interpretable trade-off that $\tau$ provides.
+                            Per-point data-valuation scores — Data Shapley, influence, leverage — are routinely used to select training data: keep the points with the top $k$ scores. We argue that top-$k$ by a fixed, mode-blind per-point score is the wrong selection rule precisely in the regime where data selection matters. The reason is that a point's value is not a fixed number but depends on what else has been selected — a near-duplicate of an already-chosen point adds almost nothing, however high its score — and a per-point scalar cannot express this interaction.
+
+The theory quantifies this failure exactly: in an equal latent-mode model, fixed top-$k$ selection incurs a closed-form excess risk over adaptive coverage because it repeatedly spends budget on already-covered modes. The gap is largest when the budget is tight, the learner representation is redundant, and missing a mode is costly.
+
+The practical rule is simple: use balance when the labels available at selection identify the learner's modes, and use explicit coverage when they do not. On standard classification tasks with strong pretrained features, class-balancing the same per-point scores recovers the missing coverage and matches or outperforms generic set coverage across our datasets. Without labels, label-free coverage improves accuracy by up to +0.20 while raw top-$k$ can fall below random; when labels are coarser than the modes, coverage within coarse strata performs best. We turn this distinction into a pre-specified diagnostic and validate it across both favorable and stress-test settings.
+
+The limits are part of the claim: the advantage is representation-relative. Coverage fails when the relevant modes are not expressed in the learner geometry, as with spurious subgroups, or when data quality varies independently of coverage — exactly as the theory predicts.
                         </p>
                     </div>
                 </p>
