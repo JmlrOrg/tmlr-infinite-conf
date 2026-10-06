@@ -225,6 +225,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-foLGwG3ne4">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/foLGwG3ne4.html">Directional Curvature from Armijo Backtracking: A Low-Cost Sharpness Probe and a Calibration-Free Learning-Rate Safeguard for Adam</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Ashmitha R &middot; Jörg Frochte</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-foLGwG3ne4"></div>
+
+    <a href="paper_pages/foLGwG3ne4.html">
+        <img src="https://img.youtube.com/vi/15dP4rbk3QE/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-foLGwG3ne4" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-foLGwG3ne4" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-foLGwG3ne4">
+                Abstract <i id="caret-foLGwG3ne4" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-foLGwG3ne4">
+        <div class="abstract-display">
+            <p>Local sharpness, defined by the largest Hessian eigenvalue λ1, sets the maximum stable gradient update size, but its computation would usually require running Lanczos or Hessian-vector products. However, we notice that even a single Armijo backtracking line search already contains this information with just a few forward passes, as the accepted step α determines the directional curvature along the search direction up to the multiplicative band set by the backtracking factor. In other words, the measured quantity is the average curvature across the tested step, which empirically turns out to be equal to the pointwise value q = gᵀHg/‖g‖² to within the band. The correlation between log α and log λ1 on CIFAR-10, Fashion-MNIST and Imagenette datasets reaches −0.91 to −0.95 in Pearson correlation, and even after removing the trend per run the correlation remains at −0.60 to −0.70. This allows for a cheap online Edge-of-Stability estimate of the slow sharpness component. The employed probing mechanism searches along Adam's first-step update direction, re-evaluated at the current parameters, at initialisation and nine times over the course of the first 50 optimiser steps. The learning-rate cap is set as twice the smallest observed step size, and in the studied learning-rate ranges (10⁻³ to 3.0) and GPT-2 pretraining experiments all capped runs avoid divergence; in the general architecture analysis, one MLP architecture is still sensitive to the initial batch order. This probing protocol incurs an approximately one percent overhead, and using a non-binding cap means that the optimiser's state and first update are bit-identical. There is no fine-tuning of any of the protocol parameters to any specific architecture; this is the sense in which this is a calibration-free safeguard. It is meant as a way of avoiding divergence, not achieving accuracy. For example, on AG News, a capped run at an aggressive learning rate still stays at chance-level accuracy. At GPT-2 scale, multiple measurements also illustrate why an initialisation-only cap is insufficient: directional curvature rises substantially in the first five optimiser steps, which motivates the short probationary window.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-AZExWUZRPd">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/AZExWUZRPd.html">When Does Data Value Reduce to Class Balance? A Coverage View of Per-Point Data Valuation</a>
