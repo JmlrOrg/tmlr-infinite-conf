@@ -385,6 +385,36 @@ Our empirical results on large-scale architectures, including ViT-B16 and DeBERT
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-AQIyD6jSSl">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/AQIyD6jSSl.html">LOCO: Local Orbit Consistency for Symmetry-Robust Neural Operators</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Michal Lewandowski &middot; Bernhard Heinzl &middot; Roman Rainer &middot; Bernhard Nessler &middot; Bernhard A. Moser</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-AQIyD6jSSl"></div>
+
+    <a href="paper_pages/AQIyD6jSSl.html">
+        <img src="https://img.youtube.com/vi/G-iEeYmqlJM/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-AQIyD6jSSl" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-AQIyD6jSSl" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-AQIyD6jSSl">
+                Abstract <i id="caret-AQIyD6jSSl" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-AQIyD6jSSl">
+        <div class="abstract-display">
+            <p>Known Lie symmetries specify how a partial differential equation (PDE) solution operator should transform under group actions, but finite supervised training data constrain this relationship only at observed input--output pairs. To encourage equivariance without changing the architecture, we introduce \textbf{LOCO}  (\textbf{L}ocal \textbf{O}rbit \textbf{Co}nsistency), a lightweight and flexible training objective for neural operators. LOCO samples a small Lie-group transformation during training and explicitly penalizes the mismatch between the operator's prediction on the transformed input and the transformed prediction of the original input. By leveraging known input and output actions, LOCO leaves the underlying neural-operator architecture unchanged and introduces no computational overhead at inference time. We evaluate our method on a periodic $64 \times 64$ two-dimensional Navier--Stokes Galilean benchmark. With  2\% of the training examples labeled, combining data augmentation with LOCO ($\lambda_{\mathrm{orb}} = 0.30$) reduces the orbit out-of-distribution (OOD) relative $L_2$ error by 35.3\% and the equivariance defect by 46.4\% compared to a supervised augmentation baseline matched in the number of model forward evaluations. Furthermore, a  lower-weight setting, $\lambda_{\mathrm{orb}} = 0.10$, yields consistent performance gains across varying label fractions and OOD boost radii. Finally, solver-level closure residuals remain negligible, and action-mismatch ablations support the role of the prescribed Galilean input--output action in the observed gains.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-E8oetPdxH6">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/E8oetPdxH6.html">Parameter-Efficient Construction of the Rashomon Slice for Concept Bottleneck Models</a>
@@ -713,6 +743,36 @@ Code is available at https://github.com/nishattasnim15215/Wavenumber-Resolved-Sp
     <div class="collapse" id="collapse-event-abstract-2JxXGhpCP4">
         <div class="abstract-display">
             <p>Diffusion models excel at photorealistic synthesis but struggle with object count fidelity, especially in high-density settings. We introduce COUNTLOOP, a training-free framework that achieves structured instance and count control through iterative, structured feedback. Our method alternates between synthesis and evaluation: a VLM-based planner generates structured scene layouts, while a VLM-based critic provides explicit feedback on object counts, spatial arrangements, and visual quality to refine the layout iteratively. Instance-driven attention masking and cumulative attention composition further prevent semantic leakage, ensuring clear object separation even in densely occluded scenes. Evaluations on COCO-Count, T2I-CompBench, and two newly introduced high instance benchmarks show that COUNTLOOP reduces counting error by up to 57% and achieves the highest or comparable spatial quality scores across all benchmarks, while maintaining photorealism. Project page is at https://mondalanindya.github.io/CountLoop/.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-5sjQt9I2mt">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/5sjQt9I2mt.html">Fine-tuning Pocket-Aware Diffusion Models via Denoising Policy Optimization</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Yuan Xue &middot; Daniel Kudenko &middot; Megha Khosla</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-5sjQt9I2mt"></div>
+
+    <a href="paper_pages/5sjQt9I2mt.html">
+        <img src="https://img.youtube.com/vi/8xplUgkVlKU/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-5sjQt9I2mt" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-5sjQt9I2mt" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-5sjQt9I2mt">
+                Abstract <i id="caret-5sjQt9I2mt" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-5sjQt9I2mt">
+        <div class="abstract-display">
+            <p>Structure-based drug design has been accelerated by pocket-aware 3D generative models, yet most methods primarily fit the training distribution and may fall short of satisfying multiple properties required in real-world therapeutic drug discovery. Recently, increasing attention has focused on structure-based molecule optimization (SBMO), which targets fine-grained control over multiple specified molecular properties. In this paper, we present DEPPA, a novel SBMO approach building upon Denoising Diffusion Policy Optimization for fine-tuning a pre-trained pocket-aware diffusion model via reinforcement learning. DEPPA enables optimization over multiple properties, including binding affinity, drug-likeness, synthesizability and diversity. We formulate the reverse denoising process of the pretrained pocket-aware diffusion model as a multi-step Markov Decision Process, where the desired properties that serve as reward signals are evaluated on the final generated ligand molecules. DEPPA incorporates a coarse denoising scheduler during the RL fine-tuning to achieve efficient and effective molecule optimization. Experimental results on the CrossDocked2020 benchmark demonstrate that DEPPA outperforms baselines in binding affinity (Vina Score -8.5 kcal/mol), drug-likeness and diversity while exhibiting competitive performance in synthesizability. The source code is available at https://github.com/xy9485/DePPA.</p>
         </div>
     </div>
 </div>
@@ -1320,6 +1380,36 @@ All four criteria fit a common design template: specify the criterion’s feasib
     <div class="collapse" id="collapse-event-abstract-PIXVov5LQq">
         <div class="abstract-display">
             <p>Existing unlearning approaches typically rely on post hoc weight adaptation or distillation, leading to duplicated memory costs, degraded generalization, and limited scalability. In this work, we introduce ERASE, Erasure via Reconstructive Adversarial Signal Editing, a framework for on-the-go forgetting that suppresses the observable influence of private data without modifying model weights. ERASE leverages structured, class-conditioned input perturbations to induce selective forgetting during inference, eliminating the need for retraining, fine-tuning, or model copies. We rigorously characterize sufficient conditions when ERASE provably achieves functional forgetting of designated subclasses while preserving predictions across other subclasses within the same superclass. This analysis offers a principled foundation for inference-time forgetting under mild regularity assumptions. Across diverse architectures and benchmark datasets, ERASE maintains the best observed balance between forgetting efficacy, computational efficiency, and retention fidelity over recent unlearning-based methods. By reimagining data removal as forgetting without unlearning, our work establishes a scalable, regulation-aligned pathway for continual, privacy-conscious learning.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-FdXB4u27LD">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/FdXB4u27LD.html">Delta-Rule Writes in Linear Attention: A Controlled Factorial Study of Decay Design</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Satyajit Das</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-FdXB4u27LD"></div>
+
+    <a href="paper_pages/FdXB4u27LD.html">
+        <img src="https://img.youtube.com/vi/CeEJInqh0qM/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-FdXB4u27LD" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-FdXB4u27LD" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-FdXB4u27LD">
+                Abstract <i id="caret-FdXB4u27LD" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-FdXB4u27LD">
+        <div class="abstract-display">
+            <p>In a controlled fixed-budget study of linear attention decay mechanisms, we find that the delta rule is the largest observed factor under our protocol. We evaluate seven linear-attention variants plus a standard softmax baseline on two datasets (TinyStories, WikiText-103) with 3 random seeds each at both 18M and 125M parameters, and 5 variants at 42M on TinyStories. The data-independent subset, where decay gates are learned parameters rather than token-conditioned functions, forms a complete 2×2 comparison over granularity (scalar vs. channel-wise) and delta rule (absent vs. present), while the data-dependent variants provide additional controlled pairwise comparisons. We measure the delta rule's dominance by rank separation and loss gaps: all delta-rule variants (ranks 1–4) beat every model without a delta-rule write, including the softmax baseline (ranks 5–8), at 18M and 125M on both datasets; at 125M the worst delta variant beats the best model without a delta-rule write by 0.057 nats on TinyStories and 0.072 on WikiText-103 (0.217 versus softmax). A *granularity×delta interaction* provides the second key finding at 18M on both datasets: channel-wise decay hurts without the delta rule but helps with it. At 125M the picture is dataset-dependent: on TinyStories granularity effects fall below cross-seed variability, while on WikiText-103 channel-wise decay retains a robust benefit within delta (−0.036 ± 0.003, every seed) and the non-delta penalty falls within seed-to-seed variability — so the collapse of granularity effects is specific to TinyStories rather than a general property of 125M scale, consistent with dataset saturation. Within the top-4 delta variants, data-independent *StaticChannelDelta* leads at 18M on both datasets, while at 125M the top two are not robustly ordered (KDA ahead on TinyStories, StaticChannelDelta on WikiText-103, each within seed-to-seed variability).</p>
         </div>
     </div>
 </div>
