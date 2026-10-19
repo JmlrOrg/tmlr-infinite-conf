@@ -385,6 +385,36 @@ Our empirical results on large-scale architectures, including ViT-B16 and DeBERT
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-ppOrbSsMM0">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/ppOrbSsMM0.html">SafeExplorer: An Unbiased Mixed-Policy Gradient for Reinforcement Learning with Recovery Interventions</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Elham Daneshmand &middot; Majid Khadiv &middot; Glen Berseth &middot; Hsiu-Chin Lin</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-ppOrbSsMM0"></div>
+
+    <a href="paper_pages/ppOrbSsMM0.html">
+        <img src="https://img.youtube.com/vi/Fcvv6jQkTjY/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-ppOrbSsMM0" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-ppOrbSsMM0" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-ppOrbSsMM0">
+                Abstract <i id="caret-ppOrbSsMM0" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-ppOrbSsMM0">
+        <div class="abstract-display">
+            <p>Training agents directly on the task they will be deployed on often leads to the best policy performance, but training on physical robots can cause damage through falls, so minimizing training falls is critical. A standard mitigation hands control to a separate recovery policy whenever the agent leaves a designer-specified safe region. The resulting mixed-policy rollouts bias the on-policy update, and importance sampling cannot remove this bias when the recovery policy is deterministic. We propose SafeExplorer, a drop-in modification of proximal policy optimization (PPO) built on an unbiased policy-gradient estimator of the mixed-policy return. The estimator uses the score function only inside the safe region and never evaluates the recovery policy's density, so deterministic recovery policies pose no problem. On final reward, the estimator matches or outperforms truncated importance sampling, which is itself biased for that same gradient. SafeExplorer also speeds up learning near the safe-region boundary with a closed-form critic target at recovery-triggering states when dynamics and recovery are deterministic, and an imitation loss that copies recovery actions only from successful recoveries. On three simulated locomotion environments with ten seeds each, and given an already available recovery controller, SafeExplorer incurs $255\times$, $43\times$, and $21\times$ fewer training falls than standard PPO on HalfCheetah, Ant, and Unitree Go1. SafeExplorer also matches or exceeds the final reward of PPO. On Ant, where 8.7% of recovery interventions end in a fall, over $40\times$ the HalfCheetah rate, SafeExplorer reaches the success threshold on every seed and none of the five baselines reaches the threshold on any seed.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-AQIyD6jSSl">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/AQIyD6jSSl.html">LOCO: Local Orbit Consistency for Symmetry-Robust Neural Operators</a>
@@ -2573,6 +2603,40 @@ We quantitatively and qualitatively evaluate *D-Garment* on both simulations and
     <div class="collapse" id="collapse-event-abstract-TbcqPEgJ9z">
         <div class="abstract-display">
             <p>We study a common domain adaptation setting in causal systems with local causal knowledge: the target variable is observed in the source domain but is entirely missing in the target domain, and the conditional mechanism of the target given its Markov blanket is assumed stable across domains. We aim to impute the target variable in the target domain from the remaining observed variables under various shifts. Our central transfer mechanism is structural: restricting the predictor to the Markov blanket of the target screens off shift-prone non-blanket variation and yields zero-shot transfer under blanket invariance. On top of this restriction, we frame estimation as learning a compact, mechanism-stable representation, and we instantiate it with the Information Bottleneck (IB) as a principled compression and regularization mechanism. For linear Gaussian causal models, we derive a closed-form Gaussian Information Bottleneck (GIB) solution that reduces to a canonical correlation analysis (CCA)–style projection and is provably lossless relative to using all non-target variables; in this well-specified regime, ordinary least squares on the blanket is already near-optimal, so the value of IB is regularization rather than accuracy gains. For nonlinear or non-Gaussian data, where no closed-form conditional estimator is available, we introduce a Variational Information Bottleneck (VIB) encoder–predictor that scales to high dimensions and can be trained on source data and deployed zero-shot to the target domain. Across synthetic and real datasets, our approach consistently attains accurate imputations, supporting practical use in high-dimensional causal models and furnishing a unified, lightweight toolkit for causal domain adaptation.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-S98skK3FfD">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/S98skK3FfD.html">Conflict-Averse IL-RL: Resolving Gradient Conflicts for Stable Imitation-to-Reinforcement Learning Transfer</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Vaibhav Bajaj &middot; Bo Liu &middot; Peter Stone &middot; Guni Sharon</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-S98skK3FfD"></div>
+
+    <a href="paper_pages/S98skK3FfD.html">
+        <img src="https://img.youtube.com/vi/a4_-rrvpQ8s/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-S98skK3FfD" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-S98skK3FfD" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-S98skK3FfD">
+                Abstract <i id="caret-S98skK3FfD" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-S98skK3FfD">
+        <div class="abstract-display">
+            <p>Reinforcement Learning (RL) and Imitation Learning (IL) offer complementary capabilities: RL can learn high-performing policies but is data-intensive, whereas IL enables rapid learning from demonstrations but is limited by the demonstrator’s quality. Combining them offers the potential for improved sample efficiency in learning high-performing policies, yet naïve integrations often suffer from two fundamental issues: (1) negative transfer, where optimizing the IL loss hinders effective RL fine-tuning, and (2) gradient conflict, where a negative inner product between IL and RL gradients might result in a counter-productive policy update step.
+Addressing both challenges, we introduce the Conflict-Averse IL-RL (CAIR) framework. Given IL and RL baseline algorithms, CAIR combines them through two components: (1) Loss Manipulation: adaptive weighting of the IL and RL losses targeting maximal RL weight subject to a capped gradient misalignment between the policy update direction and the IL gradient. (2) Gradient Manipulation: Conflict-Averse Gradient Descent (CAGrad) adjusts the resulting policy update step to balance the normalized predicted first-order decreases of both objectives (IL and RL). For an idealized stagewise optimization process, we establish conditional monotonic non-deterioration in expected return between successive stages.
+We evaluate CAIR in (1) sparse-reward robotic manipulation (Fetch and Adroit), where existing RL algorithms (without demonstrations) struggle to converge, and (2) dense-reward continuous control locomotion (Gymnasium MuJoCo), where existing RL algorithms (without demonstrations) can converge effectively yet demonstrations can be used to improve sample efficiency.
+We evaluate CAIR over various IL (BC, DAgger) and RL (DDPG, SAC, PPO) combinations. The results show that the BC+SAC variant and DAgger+DDPG variant attain the highest average normalized reward among the baseline algorithms in the sparse-reward and dense-reward domains respectively. 
+Evaluations across IL and RL combinations demonstrate CAIR’s applicability to diverse IL–RL pairings, with pairing- and domain-dependent performance and no consistently dominant combination.</p>
         </div>
     </div>
 </div>
