@@ -599,6 +599,37 @@ Our empirical results on large-scale architectures, including ViT-B16 and DeBERT
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-teXV1OiQCo">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/teXV1OiQCo.html">Spectral Analysis of Molecular Features: When Richer Features Do Not Guarantee Better Generalization</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Asma Jamali &middot; Tin Sum Cheng &middot; Rodrigo Vargas-Hernandez</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-teXV1OiQCo"></div>
+
+    <a href="paper_pages/teXV1OiQCo.html">
+        <img src="https://img.youtube.com/vi/fmWEUqraa50/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-teXV1OiQCo" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-teXV1OiQCo" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-teXV1OiQCo">
+                Abstract <i id="caret-teXV1OiQCo" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-teXV1OiQCo">
+        <div class="abstract-display">
+            <p>The spectral properties of feature embeddings offer critical insights into model generalization and representation quality. While deep learning models are widely used for molecular property prediction, kernel methods remain competitive in low-data regimes, yet their spectral behavior is largely unexplored. 
+We present the first comprehensive spectral analysis of kernel ridge regression across diverse representations—including molecular fingerprints (ECFP), pretrained transformers, graph neural networks, and 3D descriptors—evaluated on QM9 and 3 MoleculeNet benchmarks. Surprisingly, richer spectral features do not consistently yield better generalization performance, contradicting common representation heuristics used in self-supervised learning (SSL). Across 4 spectral metrics, only ECFP-based kernels show a strictly positive correlation with performance. Transformer and global 3D representations exhibit mixed behavior, whereas local 3D representations show consistently negative correlations. Truncation analysis further emphasizes this disparity: for local 3D representations on thermodynamic targets, fewer than 2\% of eigenvalues (and occasionally as few as 0.02\%) are needed to recover 95\% of performance, whereas ECFP and transformer kernels require significantly more. By demonstrating a strong dependence on both task and representation, our results challenge the heuristic that richer spectra inherently improve generalization, providing new guidance for evaluating representations in SSL and in label-limited scientific tasks.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-LV1ffpXXeV">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/LV1ffpXXeV.html">A Function-Centric Perspective on Flat and Sharp Minima</a>
@@ -957,6 +988,36 @@ Code is available at https://github.com/nishattasnim15215/Wavenumber-Resolved-Sp
     <div class="collapse" id="collapse-event-abstract-jpUDUJfE1K">
         <div class="abstract-display">
             <p>Recent data protection laws have accelerated the adoption of Federated Learning (FL) for privacy-preserving decentralized training. Nevertheless, increasing model sizes impose substantial computational demands on client devices, limiting FL applicability in resource-constrained settings. We introduce a novel multi-domain federated learning framework in which lightweight client-side proxy models collaborate with a server-side Foundation Model (FM) to learn new concepts without sharing private data. Our approach, EFFEKT, enables efficient server-side training of domain-specific LoRA adapters while preserving feature-space alignment between the FM and proxy extractors via novel bi-directional cross-distillation strategies. Experiments on multiple real-world datasets and deployments on low-power edge devices demonstrate improvements over state-of-the-art baselines in most considered domains while maintaining lightweight computation at the client side.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-6RB9FJdqld">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/6RB9FJdqld.html">An Empirical Analysis of Static Analysis Methods for Detection and Mitigation of Code Library Hallucinations</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Clarissa Miranda-Pena &middot; Andrew Reeson &middot; Cecile Paris &middot; Josiah Poon &middot; Jonathan K. Kummerfeld</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-6RB9FJdqld"></div>
+
+    <a href="paper_pages/6RB9FJdqld.html">
+        <img src="https://img.youtube.com/vi/utsVpzxwpHk/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-6RB9FJdqld" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-6RB9FJdqld" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-6RB9FJdqld">
+                Abstract <i id="caret-6RB9FJdqld" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-6RB9FJdqld">
+        <div class="abstract-display">
+            <p>Despite extensive research, Large Language Models continue to hallucinate when generating code, particularly when using libraries. On NL-to-code benchmarks that require library use, we find that LLMs generate code that uses non-existent library features in 8.1-40% of responses. One intuitive approach for detection and mitigation of hallucinations is static analysis. In this paper, we analyse the potential of static analysis tools, both in terms of what they can solve and what they cannot. We find that static analysis tools can detect 16-70% of all errors, and 14-85% of library hallucinations, with performance varying by LLM and dataset. Through manual analysis, we identify cases a static method could not plausibly catch, which gives an upper bound on their potential from 48.5% to 77%. Overall, we show that static analysis methods are cheap method for addressing some forms of hallucination, and we quantify how far short of solving the problem they will always be.</p>
         </div>
     </div>
 </div>
