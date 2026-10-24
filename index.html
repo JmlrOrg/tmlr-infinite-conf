@@ -165,7 +165,37 @@
             <div class="col-sm-12">
                 <div style="max-width: 1500px; margin:auto; border">
                     <div class="grid-displaycards">
-                        <div class="displaycards touchup-date" id="event-y3j6fucWQP">
+                        <div class="displaycards touchup-date" id="event-5p1S532fXM">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/5p1S532fXM.html">HeavyBridge: Tempered Lévy Bridges for Anchored Diffusion Driving Policies</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Sotirios Chatzis &middot; Loukas Papadoulas</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-5p1S532fXM"></div>
+
+    <a href="paper_pages/5p1S532fXM.html">
+        <img src="tmlr_logo.jpeg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-5p1S532fXM" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-5p1S532fXM" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-5p1S532fXM">
+                Abstract <i id="caret-5p1S532fXM" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-5p1S532fXM">
+        <div class="abstract-display">
+            <p>Diffusion-based driving planners often work in two stages: first pick one of $K$ candidate anchor trajectories, then refine it with a denoising bridge. The refinement noise is Gaussian, and Gaussian noise has a structural weakness: large corrections through the noise are exponentially unlikely, so whatever recovery from a poor anchor the planner achieves must come from its learned denoiser alone. Heavy-tailed noise adds a second channel, occasional large jumps. We show that how the heavy tail is introduced matters more than the tail itself. If it comes from one random scale drawn per rollout, we prove that the deterministic part of the sampler is exactly the Gaussian policy: the tail is a single bet, placed before refinement begins and never revised. If instead a scale is drawn at every denoising step, the sampler can make a large correction at any point along the way. We construct this per-step variant exactly: positive $\alpha/2$-stable mixing is the only choice consistent with the bridge, and it yields a forward noising chain whose law is precisely that of an $\alpha$-stable Lévy bridge on any time grid, with a tempered finite-variance version, a one-parameter calibration, and all standard bridge machinery (training, fast samplers, warm starts) carried over unchanged to the learned planner. Experiments on NAVSIM support the theory, and they say what the per-step tail buys: anchor-independence. Trained to convergence and replicated over two training seeds, the per-step Lévy planner scores the same whichever anchor it is handed, from the best-ranked to the worst of twenty, at no cost at the deployed argmax and at unchanged compute. The margin is small because the room is small: the Gaussian bridge already recovers most of a poor anchor through its denoiser and loses only a tenth of a point from best anchor to worst in each seed, and the per-step tail closes all of it, keeping a modest but significant edge at the worst anchor (pooled paired bootstrap +0.16, 95% CI [+0.03, +0.29]). The same stress test shows how a per-rollout tail fails. In a controlled comparison of eleven variants, the scene-amortized per-rollout policy matches every standard metric yet loses 34 PDMS points when forced onto the worst-ranked anchor, while its fixed-scale counterparts simply track the Gaussian baseline, as the cancellation permits. This failure is invisible to the standard benchmark; our stress test detects it and reproduces it on the held-out 12,146-scene split.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-y3j6fucWQP">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/y3j6fucWQP.html">MeritKV: Utility-Gated Admission Control for KV-Cache Reuse in LLM Serving</a>
     </div>
@@ -251,6 +281,36 @@
     <div class="collapse" id="collapse-event-abstract-HoQBaPXhKk">
         <div class="abstract-display">
             <p>Test-time scaling of diffusion models with sequential Monte Carlo (SMC) has become a promising strategy for sampling under user-specified rewards, such as human preference scores. However, the standard SMC framework typically relies on stochastic proposals and therefore does not directly transfer to flow matching models, in which inference is governed by deterministic ODEs. In this work, we introduce noise-rejuvenated SMC, an inference-time scaling method tailored for text-to-image flow matching models. Our key idea is to perturb each resampled particle by changing its source noise and constructing a new intermediate state using its current endpoint estimate. This moves the particle to another state that remains representable under the flow-matching interpolation form, enabling particle exploration without converting the sampler to an SDE. We further introduce a look-ahead mechanism to refine resampled particles before weighting. Experiments on Stable Diffusion 3, FLUX.1-dev, and Z-Image demonstrate consistent improvements in reward-guided generation, while ablation studies validate the contributions of noise rejuvenation and look-ahead refinement. Code is available at \url{https://github.com/shermanlian/NR-SMC}.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-r8F3dqoopt">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/r8F3dqoopt.html">A Theoretical Analysis of Bayes-Optimal Calibration under the Logit-Noise Model</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Noriaki Abe &middot; Gendo Kumoi</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-r8F3dqoopt"></div>
+
+    <a href="paper_pages/r8F3dqoopt.html">
+        <img src="https://img.youtube.com/vi/fXSf3O1Yi9o/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-r8F3dqoopt" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-r8F3dqoopt" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-r8F3dqoopt">
+                Abstract <i id="caret-r8F3dqoopt" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-r8F3dqoopt">
+        <div class="abstract-display">
+            <p>We formulate the calibration of predicted probabilities as a problem in Bayesian decision theory. Under an additive Gaussian noise model in logit space, we show that the Bayes-optimal calibration function for the squared-error loss is uniquely characterized as the conditional posterior mean E[p* | p̂], and our main theorem expresses it, under a Gaussian prior, as a sigmoid integral over a Gaussian posterior whose parameters are available in closed form. We further show that the MacKay approximation to this optimal estimator, in the limit of a flat, noninformative prior in logit space, takes the same functional form as temperature scaling, and we derive the correspondence between the temperature parameter and the noise variance. We do not claim that the exact estimator and temperature scaling are identical as estimation procedures. We also prove that the Bayes-optimal estimator under the Brier score reduces to the same posterior mean, providing a unified theoretical basis for squared-type losses. Finally, numerical experiments under two conditions — synthetic logit data in which the assumption holds by construction, and data mediated by logistic regression in which departures from the assumption are diagnosed empirically — corroborate the predicted theoretical behavior and quantify the range over which temperature-scaling-type correction is effective. This verification presupposes that the true logit is analytically known; extending noise-level estimation to real data, where it is not, remains an open problem.</p>
         </div>
     </div>
 </div>
