@@ -629,6 +629,36 @@ Our empirical results on large-scale architectures, including ViT-B16 and DeBERT
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-wBagHznSw7">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/wBagHznSw7.html">Multimodal Concept Bottleneck Models</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Tongqing Shi &middot; Ge Yan &middot; Tuomas Oikarinen &middot; Tsui-Wei Weng</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-wBagHznSw7"></div>
+
+    <a href="paper_pages/wBagHznSw7.html">
+        <img src="https://img.youtube.com/vi/1SsLiukXCNA/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-wBagHznSw7" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-wBagHznSw7" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-wBagHznSw7">
+                Abstract <i id="caret-wBagHznSw7" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-wBagHznSw7">
+        <div class="abstract-display">
+            <p>Concept Bottleneck Models (CBMs) enhance the interpretability of deep neural networks by aligning the features extracted from images with human-interpretable concepts. However, existing CBMs rely on a linear classifier, which not only restricts them to a fixed set of predefined classes, but also allows the model to bypass concept activations and compensate with non-concept predictive cues. In this paper, we propose Multimodal Concept Bottleneck Model (MM-CBM) to address these issues and extend CBMs into CLIP structure. MM-CBM utilizes dual Concept Bottleneck Layers (CBLs) to align both the image and text embeddings into interpretable features. This allows us to perform new vision tasks like zero-shot classification or image retrieval in an interpretable way. Compared to existing methods, MM-CBM achieves 23.28% accuracy improvement on average across four standard benchmarks. Our method maintains competitive performance compared with black-box CLIP while offering interpretability. Under classification tasks, MM-CBM achieves average accuracy gaps of 3.94% in the target-dataset adaptation setting and 9.84% in the zero-shot transfer setting. Under image-text retrieval tasks, it achieves an average gap of 2.48% for image retrieval and 9.22% for text retrieval.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-zlyn0moogg">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/zlyn0moogg.html">GICA: The Gap-Index Compositional Arm Framework for Sample-Efficient Test-Time Scaling</a>
@@ -655,6 +685,36 @@ Our empirical results on large-scale architectures, including ViT-B16 and DeBERT
     <div class="collapse" id="collapse-event-abstract-zlyn0moogg">
         <div class="abstract-display">
             <p>Test-time scaling (TTS) improves the reasoning capabilities of large language models (LLMs) by generating multiple candidate reasoning paths and using a verifier to select among them. Process reward models (PRMs), which score each intermediate step rather than only the final answer, yield stronger downstream accuracy but at a higher cost. Recently, PRMs that scale at test-time by generating long verification chains-of-thoughts (CoTs) have been found to be more accurate at verification, but with a prohibitive cost that scales with both the number of paths and their length (number of steps), limiting scalability precisely where TTS is most beneficial. We recast reasoning-based process-level verification as a sample-efficient adaptive selection problem. We propose GICA (Gap-Index Compositional Arm framework), a bandit-based framework that exploits the compositional structure of reasoning paths to share information across related steps and identify the top-K candidates. We establish theoretical correctness and a fixed-confidence sample complexity bound, and validate GICA through synthetic experiments and in a TTS setup employing an end-to-end pipeline across three mathematical reasoning benchmarks. We experiment with two open-weight math LLMs serving as generators and two LLMs as process-level, reasoning-based verifiers. GICA matches the accuracy of exhaustive process-level verification while substantially reducing verifier calls (by 4.6 $\times$) and inference runtime (by 4.5 $\times$) relative to competitive bandit-based methods, making fine-grained, step-level supervision practical at scale. We open-source our code and data to facilitate future research. https://github.com/mohsen1amiri/GICA</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-6ukieTMBcG">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/6ukieTMBcG.html">Consensus Density Predicts Output Dispersion in Aligned LLMs</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Tao An &middot; Shuai Feng</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-6ukieTMBcG"></div>
+
+    <a href="paper_pages/6ukieTMBcG.html">
+        <img src="https://img.youtube.com/vi/4_Gzy4mbSQQ/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-6ukieTMBcG" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-6ukieTMBcG" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-6ukieTMBcG">
+                Abstract <i id="caret-6ukieTMBcG" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-6ukieTMBcG">
+        <div class="abstract-display">
+            <p>We study how much the outputs of an aligned language model vary when the same prompt is sampled repeatedly, and which property of the task predicts that variation. For each prompt we draw 25 completions, embed them, and measure their dispersion, the mean pairwise cosine distance. The central finding is that dispersion is predicted by the consensus density of the task, defined as the degree of agreement about what a good answer looks like. Three held-out judge models score consensus from the prompt alone and never see any output. Their scores predict measured dispersion at Spearman ρ = −0.91 (n = 20). The task-type ordering of dispersion holds on two unrelated models (ρ = 0.85 and 0.84). The judge-to-dispersion relation holds within two professional domains (ρ = −0.83 across 42 pharmaceutical-market prompts and −0.62 across 40 software-engineering prompts). A preliminary human expert panel tracks the judges at ρ = 0.74. The relation also holds after conditioning. The dispersion of a conditioned prompt follows that prompt's own judge-scored consensus and can fall below or rise above the unconditioned default. The surface form of the instruction does not predict the direction. A matched base-versus-instruct comparison on open weights shows that the pretrained model already has the gradient and that alignment amplifies it, compressing the high-consensus end about 8.7-fold against 1.8-fold at the low end. Absolute magnitudes drift between sampling batches. All claims therefore rest on rank correlations and effect directions, which are stable across five batches, two embedders, and four model families. In a separate section we state, as an untested hypothesis, how this gradient may relate to reports that AI equalizes outcomes on some tasks and amplifies differences on others.</p>
         </div>
     </div>
 </div>
