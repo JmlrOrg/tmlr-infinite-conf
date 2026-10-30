@@ -781,6 +781,37 @@ However, this connection has proven nuanced in recent studies, with both theoret
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-zKLMev1mnQ">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/zKLMev1mnQ.html">Spectral and Conformal: Neural Network Methods for Calibrated Trajectory Prediction and Control-Point Intervals</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Jasmine Ratchford &middot; Raffaele Romagnoli</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-zKLMev1mnQ"></div>
+
+    <a href="paper_pages/zKLMev1mnQ.html">
+        <img src="https://img.youtube.com/vi/bjBo2bwbaxM/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-zKLMev1mnQ" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-zKLMev1mnQ" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-zKLMev1mnQ">
+                Abstract <i id="caret-zKLMev1mnQ" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-zKLMev1mnQ">
+        <div class="abstract-display">
+            <p>Autonomous systems that navigate their environment need methods to quickly assess the feasibility and safety of desired trajectories. Traditional solutions that rely on numerical integration can be computationally heavy, while fast data-driven surrogates lack the formal guarantees that numerical approaches provide. This work demonstrates a framework that uses (1) a neural network with a spectral backbone to learn trajectories and quantile bands with built-in constraints (initial conditions and stability); (2) a modified conformal quantile regression to provide calibrated, joint trajectory-level coverage; and (3) interval arithmetic to extend noise-free
+coverage guarantees to control points. After refactoring the network for inference, the trajectory inference time for a quadrotor under a closed-loop linear quadratic regulator is 3.45 ms on a Raspberry Pi Zero 2 W. The total pipeline time, including trajectory inference time, is 9.81 ms, or approximately 100 Hz, consistent with typical control rates.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-XXYGHfqzvA">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/XXYGHfqzvA.html">Squeeze3D: Extreme Neural Compression with Latent Space Bridging</a>
@@ -1048,6 +1079,36 @@ Code is available at https://github.com/nishattasnim15215/Wavenumber-Resolved-Sp
     <div class="collapse" id="collapse-event-abstract-2JxXGhpCP4">
         <div class="abstract-display">
             <p>Diffusion models excel at photorealistic synthesis but struggle with object count fidelity, especially in high-density settings. We introduce COUNTLOOP, a training-free framework that achieves structured instance and count control through iterative, structured feedback. Our method alternates between synthesis and evaluation: a VLM-based planner generates structured scene layouts, while a VLM-based critic provides explicit feedback on object counts, spatial arrangements, and visual quality to refine the layout iteratively. Instance-driven attention masking and cumulative attention composition further prevent semantic leakage, ensuring clear object separation even in densely occluded scenes. Evaluations on COCO-Count, T2I-CompBench, and two newly introduced high instance benchmarks show that COUNTLOOP reduces counting error by up to 57% and achieves the highest or comparable spatial quality scores across all benchmarks, while maintaining photorealism. Project page is at https://mondalanindya.github.io/CountLoop/.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-75xIeUlse6">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/75xIeUlse6.html">Conjugate Bayesian Chain-Rule Prediction-Powered Inference for Binary Prevalence Estimation</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Dowoo Kim &middot; Russell J. Steele</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-75xIeUlse6"></div>
+
+    <a href="paper_pages/75xIeUlse6.html">
+        <img src="https://img.youtube.com/vi/1SzuIboQwmc/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-75xIeUlse6" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-75xIeUlse6" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-75xIeUlse6">
+                Abstract <i id="caret-75xIeUlse6" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-75xIeUlse6">
+        <div class="abstract-display">
+            <p>Prediction-powered inference (PPI) combines abundant machine predictions with scarce human labels to estimate population quantities. We study binary prevalence estimation using a thresholded autorater decision $A$ and human label $H$, with target $g=P(H=1)=P(A=1)P(H=1\mid A=1)+P(A=0)P(H=1\mid A=0)$. Under independent Beta priors and Bernoulli likelihoods, the chain-rule estimator (CRE) has a posterior that factorizes into three independent Beta distributions; uncertainty for $g$ is propagated by direct sampling without MCMC. This is a focused conjugate specialization of broader Bayesian PPI, providing an interpretable posterior for the binary audit table. We compare CRE with labeled-only Bayes, a binary difference estimator, continuous-score PPI, and a scalar PPI++-style power-tuned baseline. Experiments use subject-level out-of-fold predictions from ADNI MRI data. In the full cohort ($2116$ scans, $503$ subjects), Uniform-prior CRE has empirical 95\% coverage of $0.944$--$0.970$ across label budgets $n=10,20,40,80$; the age 65--70 subset ($291$ scans, $93$ subjects) is conservative, with coverage $0.978$--$0.986$. Jeffreys-prior sensitivity yields coverage $0.930$--$0.960$ and $0.936$--$0.988$, respectively, including mild empirical undercoverage in three configurations. CRE is competitive with the continuous-score baselines, without a claim of universal dominance. Threshold audits, age-stratified discrimination, exchangeability diagnostics, conjugate K-bin sensitivity, and simulation-based calibration delimit the method's scope. The repeated-labeling study targets the assembled scan population and does not provide a cluster-robust subject-level coverage guarantee.</p>
         </div>
     </div>
 </div>
