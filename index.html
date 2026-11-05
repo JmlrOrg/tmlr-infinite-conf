@@ -285,6 +285,36 @@
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-ixDBhyLgWs">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/ixDBhyLgWs.html">To Freeze or Not to Freeze? Memory-Constrained End-to-End Training for Whole-Slide Image Classification in Histopathology</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Dhananjay Tomar &middot; Andreas Kleppe</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-ixDBhyLgWs"></div>
+
+    <a href="paper_pages/ixDBhyLgWs.html">
+        <img src="https://img.youtube.com/vi/EM2VGHzHn9g/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-ixDBhyLgWs" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-ixDBhyLgWs" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-ixDBhyLgWs">
+                Abstract <i id="caret-ixDBhyLgWs" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-ixDBhyLgWs">
+        <div class="abstract-display">
+            <p>Training deep neural networks on gigapixel Whole Slide Images (WSIs) poses significant GPU memory challenges. Multiple Instance Learning (MIL) circumvents this by processing a bag of patches per WSI; however, memory limits typically force the feature encoder—whether a Convolutional Neural Network (CNN) or a foundation model—to remain frozen. In this work, we investigate whether end-to-end (E2E) training improves MIL performance and out-of-domain generalisation. To overcome the memory bottleneck, we introduce a memory-efficient strategy that divides computations into manageable chunks. For CNNs, this involves dynamically offloading intermediate activations to CPU RAM. For ViT-based MIL encoders, we process patches in micro-batches and recompute each micro-batch during backpropagation, recovering the full-bag encoder gradient without retaining all encoder activations simultaneously. Across PANDA/TCGA-PRAD and CAMELYON17/16, we find that E2E training is useful but not uniformly beneficial: its external effect depends on the adaptation recipe and evaluation setting. In particular, combining full E2E ResNet-18 (RN18) training with WSI-level augmentation gives the strongest RN18 transfer to TCGA-PRAD, and E2E combined with WSI-level augmentation and Learning without Forgetting allows H0-mini to match or exceed much larger frozen foundation models there. On CAMELYON16, however, frozen foundation models remain stronger. These results suggest that E2E training is a conditional but important tool for WSI model adaptation rather than a universal replacement for frozen encoders.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-r8F3dqoopt">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/r8F3dqoopt.html">A Theoretical Analysis of Bayes-Optimal Calibration under the Logit-Noise Model</a>
@@ -595,6 +625,36 @@ Our empirical results on large-scale architectures, including ViT-B16 and DeBERT
     <div class="collapse" id="collapse-event-abstract-E8oetPdxH6">
         <div class="abstract-display">
             <p>In many machine learning problems, there may exist multiple models that achieve nearly identical predictive performance while relying on fundamentally different internal logic. However, standard training procedures produce a single model, offering no practical way to explore alternatives that may better suit downstream needs. The set of these equally accurate models is known as the Rashomon set. Exploring the Rashomon set is particularly challenging in large and complex hypothesis spaces, such as Concept Bottleneck Models (CBMs), which are widely used in computer vision to make predictions through intermediate, human-understandable concepts. In this paper, we provide a method for efficiently exploring the Rashomon set of CBMs. Our framework introduces a specialized parallel parameter-efficient adaptation module, combined with a checkpointing scheme and a concept diversity objective, to generate multiple equally accurate CBMs from a single training process. Empirical results show that our method finds models with better diversity than baselines while using much less memory. We further demonstrate that access to these diverse yet accurate CBMs enables trustworthy model selection, resolution of inter-class confusion, and reliable abstention in decision-making.</p>
+        </div>
+    </div>
+</div>
+
+<div class="displaycards touchup-date" id="event-QkVwGr7sRR">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/QkVwGr7sRR.html">Langevin Monte-Carlo Provably Learns Depth Two Neural Nets at Any Size and Data</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Dibyakanti Kumar &middot; Samyak Jha &middot; Anirbit Mukherjee</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-QkVwGr7sRR"></div>
+
+    <a href="paper_pages/QkVwGr7sRR.html">
+        <img src="https://img.youtube.com/vi/je0uDWI0T_M/0.jpg" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-QkVwGr7sRR" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-QkVwGr7sRR" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-QkVwGr7sRR">
+                Abstract <i id="caret-QkVwGr7sRR" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-QkVwGr7sRR">
+        <div class="abstract-display">
+            <p>In this note we prove that the Langevin Monte Carlo (LMC) algorithm can minimize the population risk of appropriately regularized  depth-2 nets with no restrictions on the size of the net and for any choice of training data --- and we give non-asymptotic convergence rates for it. We achieve this via showing that in q-Renyi divergence, the iterates of LMC converge to the Gibbs distribution of certain Frobenius norm regularized losses for these nets --- in both classification and regression settings.  The key technicality of the work is two-fold (a) to keep the amount of regularization needed be independent of the size of the net and (b) to obtain convergence rates that scale with just the Poincare constant of the corresponding Gibbs measure. This work synthesizes several recent observations about isoperimetry conditions under which LMC converges and that two-layer neural loss functions can always be regularized by a constant amount such that they satisfy the Villani conditions, and thus their Gibbs measures satisfy a Poincare inequality.</p>
         </div>
     </div>
 </div>
