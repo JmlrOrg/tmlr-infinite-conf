@@ -1452,6 +1452,36 @@ self-play $+$ MCTS pipeline, we compare vanilla AlphaZero, a multi-frame variant
     </div>
 </div>
 
+<div class="displaycards touchup-date" id="event-8LkOGzFcVL">
+    <div style="width:80%;margin:auto;">
+        <a class="small-title" href="paper_pages/8LkOGzFcVL.html">DS-RNNs: Conditional Computation in Recurrent Models via Input-Dependent Sparse Gating</a>
+    </div>
+    <div class="type_display_name_minus_type"></div>
+    <div class="author-str">Andrea Terlizzi &middot; Giuseppe Todisco &middot; Roberto TAGLIAFERRI</div>
+    <div class="author-str higher"></div>
+    <div class="text-muted touchup-date-div" id="touchup-date-event-8LkOGzFcVL"></div>
+
+    <a href="paper_pages/8LkOGzFcVL.html">
+        <img src="https://drive.google.com/thumbnail?id=1VNYdZL7tXlxj31KowtBnNTwuH6Yt5mRn" class="social-img-thumb rounded" alt="thumbnail"/>
+    </a>
+
+    <div class="abstract-section">
+        <div>
+            <a id="abstract-link-8LkOGzFcVL" class="abstract-link" data-toggle="collapse"
+               href="#collapse-event-abstract-8LkOGzFcVL" role="button"
+               aria-expanded="false" aria-controls="collapse-event-abstract-8LkOGzFcVL">
+                Abstract <i id="caret-8LkOGzFcVL" class="fas fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapse-event-abstract-8LkOGzFcVL">
+        <div class="abstract-display">
+            <p>Recurrent neural networks (RNNs) and state-space models (SSMs) typically execute the same dense computation for every input, coupling inference cost to parameter count and exacerbating interference in multi-task or heterogeneous regimes. We introduce Dynamic-Sparse RNNs (DS-RNNs), a framework for conditional computation via learnable, input-dependent sparse gating. In DS-RNNs, a small router network predicts sparse masks over input and hidden-state channels, effectively routing each input to a specialized sparse subnetwork, whose size is fixed by the target sparsity. Unlike prior adaptive methods such as DeltaRNNs or static sparse training like RigL, our approach is fully learned and budget-controlled, and utilizes structured masking that translates into practical FLOP savings on commodity hardware by reducing sparse matrix multiplications to dense operations on active submatrices. Empirically, DS-RNNs maintain most of the dense model performance at 90\% sparsity (sometimes even exceeding it) across diverse architectures, including LSTMs, GRUs, LTCs, and S4 models. They match or outperform RigL and DeltaRNNs on most tasks, while remaining stable in regimes where these baselines fail. We further show that DS-RNNs naturally induce subnetwork specialization without explicit supervision: masks for different classes exhibit low overlap and are predictive of class identity. Our theoretical analysis provides intuition for this behavior, linking it to a formal bound on gradient interference. As a result, DS-RNNs improve robustness: DS-LSTM scales better with task count in multi-task regression and consistently reduces forgetting across benchmarks when combined with standard continual learning methods (e.g., GEM, replay). Code publicly available at: https://github.com/Attornado/ds-rnn/tree/tmlr2026.</p>
+        </div>
+    </div>
+</div>
+
 <div class="displaycards touchup-date" id="event-QcuSMNG7J8">
     <div style="width:80%;margin:auto;">
         <a class="small-title" href="paper_pages/QcuSMNG7J8.html">Cog-VADU: A Training-Free Cognitive Reasoning Framework for Video Anomaly Detection and Understanding</a>
